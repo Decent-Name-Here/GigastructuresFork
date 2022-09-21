@@ -1,0 +1,40 @@
+namespace = giga_katzenprison
+# Loris = 1000
+
+#########################
+### Katzen Prison GUI ###
+#########################
+country_event = { 
+	id = giga_katzenprison.0001
+	title = giga_katzenprison.0001.name
+	desc = giga_katzenprison.0001.desc
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "giga_katzen_prison"
+	trigger = { NOT = { has_country_flag = katzenprison_map_active } }
+
+	picture_event_data = { 
+		portrait = ROOT.species
+		room = "katzen_prison_room"
+	}
+
+	immediate = { 
+		set_country_flag = katzenprison_map_active
+	}
+	option = {
+		name = EXIT
+		hidden_effect = {
+			remove_country_flag = katzenprison_map_active
+		}
+	}
+}
+
+#############
+### LORIS ###
+#############
+
+#Loris main - LET ME OUT GROBCREMOR
+country_event = {
+	id = giga_katzenprison.1000
+	title = "Katzgouverneur Loris"
+}

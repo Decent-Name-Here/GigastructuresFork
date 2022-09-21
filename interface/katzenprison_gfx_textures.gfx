@@ -1,0 +1,4 @@
+spriteTypes = {
+	spriteType = { name = "GFX_katzen_prison_bg"									textureFile = "gfx/interface/katzenprison_ui/katzenprison_bg.dds"   }
+	spriteType = { name = "GFX_katzen_prison_leader_overlay"						texturefile = "gfx/interface/katzenprison_ui/katzenprison_portrait_overlay.dds" }
+}
