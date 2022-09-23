@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = { name = "GFX_katzen_prison_bg"									textureFile = "gfx/interface/katzenprison_ui/katzenprison_bg.dds"   }
+	spriteType = { name = "GFX_katzen_prison_leader_overlay"						texturefile = "gfx/interface/katzenprison_ui/katzenprison_portrait_overlay.dds" }
+	spriteType = { name = "GFX_katzen_prison_close"									textureFile = "gfx/interface/katzenprison_ui/button_background.dds" }
+
+
+	#Borders
+	spriteType = { name = "GFX_katzen_prison_state_management_border" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management_border.dds" }	
+
+	#Real characters
+	spriteType = { name = "GFX_katzen_prison_kaiser_real_active" 					textureFile = "gfx/interface/katzenprison_ui/characters/real/kaiser_real_active.dds" }
+	#Silly characters
+	spriteType = { name = "GFX_katzen_prison_kaiser_cattail_active"					textureFile = "gfx/interface/katzenprison_ui/characters/silly/kaiser_cattail_active.dds" }
+}
