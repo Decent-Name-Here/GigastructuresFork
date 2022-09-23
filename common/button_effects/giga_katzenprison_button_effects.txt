@@ -1,0 +1,10 @@
+giga_kaiser_real_active = {
+	potential = { exists = from NOT = { has_global_flag = silly_flusionian_portraits_enabled_cattail } NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_country_flag = giga_achievement_kaiser7 } }
+	allow = { hidden_trigger = { always = yes } }
+	effect = { hidden_effect = { from = {  } } }
+}
+giga_kaiser_cattail_active = { 
+    potential = { exists = from has_global_flag = silly_flusionian_portraits_enabled_cattail NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_country_flag = giga_achievement_kaiser7 } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
