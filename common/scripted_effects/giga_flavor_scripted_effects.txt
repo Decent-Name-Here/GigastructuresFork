@@ -1152,7 +1152,7 @@ set_dofus_real_portrait = {
 
 set_aaron_real_portrait = {
 	if = {
-		limit = { has_global_flag = silly_flusionian_portraits_enabled }
+		limit = { OR = { has_global_flag = silly_flusionian_portraits_enabled has_global_flag = silly_flusionian_portraits_enabled_cattail } }
 		change_species = event_target:aaron_portrait_real
 		change_leader_portrait = species
 	}

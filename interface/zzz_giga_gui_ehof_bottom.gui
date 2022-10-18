@@ -114,6 +114,14 @@ guiTypes = {
 				spriteType = "GFX_flusion_ezic_button"
 				position = { x = -555 y = 35 }
 			}
+			effectButtonType  = { # buttons for flusion
+				scale = 0.8
+				name = "giga_contact_laurn"
+				no_clicksound = yes
+				effect = "giga_contact_laurn"
+				spriteType = "GFX_flusion_laurn_button"
+				position = { x = -620 y = 35 }
+			}
 
 			effectButtonType  = { #buttons for aeternum (NEW)
 				scale = 0.8
