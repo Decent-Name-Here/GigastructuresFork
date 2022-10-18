@@ -1,0 +1,158 @@
+#Invulnerable Bozos
+giga_kaiser_real_active = { 
+    potential = { exists = from has_global_flag = silly_flusionian_portraits_enabled NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_country_flag = giga_achievement_kaiser7 } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_kaiser_cattail_active = { 
+    potential = { exists = from has_global_flag = silly_flusionian_portraits_enabled_cattail NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_country_flag = giga_achievement_kaiser7 } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_douclaw_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_global_flag = douclaw_found_on_aiondia } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Vulnerable 
+#Loris
+giga_loris_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = loris_dead has_global_flag = loris_kidnapped has_global_flag = loris_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Loris
+giga_meolson_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = meolson_dead has_global_flag = meolson_kidnapped has_global_flag = meolson_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Steve
+giga_steve_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = steve_dead has_global_flag = steve_kidnapped has_global_flag = steve_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Wolfgang
+giga_wolfgang_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = wolfgang_dead has_global_flag = wolfgang_kidnapped has_global_flag = wolfgang_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Dietrich
+giga_dietrich_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = dietrich_dead has_global_flag = dietrich_kidnapped has_global_flag = dietrich_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }  
+}
+#Flopparnold
+giga_flopparnold_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = flopparnold_dead has_global_flag = flopparnold_kidnapped has_global_flag = flopparnold_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Itch
+giga_itch_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = itch_dead has_global_flag = itch_kidnapped has_global_flag = itch_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Katzsauffe
+giga_katzsauffe_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = katzsauffe_dead has_global_flag = katzsauffe_kidnapped has_global_flag = katzsauffe_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Kimitz
+giga_kimitz_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = kimitz_dead has_global_flag = kimitz_kidnapped has_global_flag = kimitz_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Koko
+giga_koko_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = koko_dead has_global_flag = koko_kidnapped has_global_flag = koko_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Meorwin
+giga_meorwin_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = meorwin_dead has_global_flag = meorwin_kidnapped has_global_flag = meorwin_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Pawllas
+giga_pawllas_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = pawllas_dead has_global_flag = pawllas_kidnapped has_global_flag = pawllas_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Pawtton
+giga_pawtton_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = pawtton_dead has_global_flag = pawtton_kidnapped has_global_flag = pawtton_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Katzmann
+giga_katzmann_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = katzmann_dead has_global_flag = katzmann_kidnapped has_global_flag = katzmann_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#Lilith
+giga_lilith_real_active = {
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = lilith_dead has_global_flag = lilith_kidnapped has_global_flag = lilith_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+#
+giga_novasum_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = novasum_dead has_global_flag = novasum_kidnapped has_global_flag = novasum_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_pawlbert_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = pawlbert_dead has_global_flag = pawlbert_kidnapped has_global_flag = pawlbert_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_tarynn_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = tarynn_dead has_global_flag = tarynn_kidnapped has_global_flag = tarynn_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_birch_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = birch_dead has_global_flag = birch_kidnapped has_global_flag = birch_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_garf_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = garf_dead has_global_flag = garf_kidnapped has_global_flag = garf_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_katzhaum_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = katzhaum_dead has_global_flag = katzhaum_kidnapped has_global_flag = katzhaum_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_rex_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = rex_dead has_global_flag = rex_kidnapped has_global_flag = rex_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_strobel_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = strobel_dead has_global_flag = strobel_kidnapped has_global_flag = strobel_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_stron_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = stron_dead has_global_flag = stron_kidnapped has_global_flag = stron_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_ungers_real_active = { 
+    potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = ungers_dead has_global_flag = ungers_kidnapped has_global_flag = ungers_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}

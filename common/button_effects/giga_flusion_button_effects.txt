@@ -1070,6 +1070,31 @@ giga_contact_ezic = {
 	effect = { custom_tooltip = "giga_contact_ezic_tooltip" hidden_effect = { from = { country_event = { id = giga_katrebels.0012 } } } }
 }
 
+giga_contact_laurn = { 
+	potential = {
+		# exists = from 
+		# from = { 
+		# 	has_global_flag = laurn_resistance_active
+		# 	has_country_flag = contacted_laurn_rebels
+		# 	NOT = { 
+		# 		has_country_flag = katzen_vassal #can still be contaced after the kaiser is dead, can be disabled though
+		# 	}
+		# 	any_country = { is_country_type = katzenartig_imperium }
+		# }
+		always = yes
+	}
+	allow = {
+		hidden_trigger = {
+			from = { 
+				NOT = { 
+					has_country_flag = katzenprison_map_active
+				}
+			}
+		}
+	}
+	effect = { custom_tooltip = "giga_contact_laurn_tooltip" hidden_effect = { from = { country_event = { id = giga_katzenprison.0001 } } } }
+}
+
 #Moon
 giga_kaiser_moon_barrel = {
 	potential = { exists = from NOT = { has_global_flag = kaiser_moon_barrel_sabotaged } event_target:flusion_primitives_country = { NOT = { has_country_flag = kaiser_moon_destroyed } } }

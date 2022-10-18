@@ -14,7 +14,7 @@ country_event = {
 	trigger = { NOT = { has_country_flag = katzenprison_map_active } }
 
 	picture_event_data = { 
-		portrait = ROOT.species
+		portrait = event_target:laurn_aaron
 		room = "katzen_prison_room"
 	}
 
@@ -37,4 +37,6 @@ country_event = {
 country_event = {
 	id = giga_katzenprison.1000
 	title = "Katzgouverneur Loris"
+	is_triggered_only = yes
+
 }
