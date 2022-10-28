@@ -1225,11 +1225,11 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/titanic_ringworld.dds
 	}
 	spriteType = {
-		name = GFX_ringworld_titanic_ruined_outliner_icon
+		name = GFX_ring_world_titanic_ruined_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/titanic_ringworld_ruined.dds
 	}
 	spriteType = {
-		name = GFX_ringworld_titanic_restored_outliner_icon
+		name = GFX_ring_world_titanic_restored_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/titanic_ringworld.dds
 	}
 	
@@ -1488,6 +1488,30 @@ spriteTypes = {
 		name = GFX_planetcraft_printer_make_planet_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
 	}
+	spriteType = {
+		name = GFX_planetcraft_printer_0_real_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
+	}
+	spriteType = {
+		name = GFX_planetcraft_printer_1_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
+	}
+	spriteType = {
+		name = GFX_planetcraft_printer_2_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
+	}
+	spriteType = {
+		name = GFX_planetcraft_printer_3_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
+	}
+	spriteType = {
+		name = GFX_planetcraft_printer_make_planet_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
+	}
+	spriteType = {
+		name = GFX_planetcraft_printer_ready_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/planetcraft_printer.dds
+	}
 	
 	# behemoth planetcraft X
 	spriteType = {
@@ -1547,11 +1571,11 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/behemoth_ringworld.dds
 	}
 	spriteType = {
-		name = GFX_ringworld_behemoth_ruined_outliner_icon
+		name = GFX_ring_world_behemoth_ruined_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/behemoth_ringworld_ruined.dds
 	}
 	spriteType = {
-		name = GFX_ringworld_behemoth_restored_outliner_icon
+		name = GFX_ring_world_behemoth_restored_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/behemoth_ringworld.dds
 	}
 	
@@ -1573,11 +1597,11 @@ spriteTypes = {
 		textureFile = gfx/interface/icons/megastructures/gargantuan_ringworld.dds
 	}
 	spriteType = {
-		name = GFX_ringworld_gargantuan_ruined_outliner_icon
+		name = GFX_ring_world_gargantuan_ruined_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/gargantuan_ringworld_ruined.dds
 	}
 	spriteType = {
-		name = GFX_ringworld_gargantuan_restored_outliner_icon
+		name = GFX_ring_world_gargantuan_restored_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/gargantuan_ringworld.dds
 	}
 	
@@ -1640,6 +1664,26 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = GFX_lunar_macroreplicator_make_moon_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/attack_moon_printer.dds
+	}
+	spriteType = {
+		name = GFX_lunar_macroreplicator_0_real_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/attack_moon_printer.dds
+	}
+	spriteType = {
+		name = GFX_lunar_macroreplicator_1_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/attack_moon_printer.dds
+	}
+	spriteType = {
+		name = GFX_lunar_macroreplicator_2_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/attack_moon_printer.dds
+	}
+	spriteType = {
+		name = GFX_lunar_macroreplicator_make_moon_fake_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/attack_moon_printer.dds
+	}
+	spriteType = {
+		name = GFX_lunar_macroreplicator_ready_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/attack_moon_printer.dds
 	}
 	
@@ -2744,5 +2788,13 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_lgate_base_outliner_icon
 		textureFile = gfx/interface/icons/megastructures/gateway.dds
+	}
+	spriteType = {
+		name = GFX_hyper_relay_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/hyper_relay.dds
+	}
+	spriteType = {
+		name = GFX_hyper_relay_restored_outliner_icon
+		textureFile = gfx/interface/icons/megastructures/hyper_relay.dds
 	}
 }

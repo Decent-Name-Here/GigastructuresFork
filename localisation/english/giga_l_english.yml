@@ -341,6 +341,7 @@
     requires_no_gargantua:0 "$TRIGGER_FAIL$Cannot build $ehof_ehof$ in the Gargantua system."
     requires_cohesive_system:0 "$TRIGGER_FAIL$Requires $ehof_cohesive$ system."
     requires_no_crisis_system:0 "$TRIGGER_FAIL$Something about this system doesn't feel right."
+    requires_no_crisis_planet:0 "$TRIGGER_FAIL$Something about this planet doesn't feel right."
 
     must_build_around_asteroid:0 "$TRIGGER_FAIL$Must be built around an asteroid."
     must_build_around_core_black_hole:0 "$TRIGGER_FAIL$The $name_birch$ must be built around a Supermassive Black Hole."
@@ -419,7 +420,7 @@
     giga_menu.2.refresh.tooltip:0 "Here you can double check your active settings."
 
     giga_menu.1.name:0 ""
-    giga_menu.1.desc:0 "v 3.25.4"
+    giga_menu.1.desc:0 "v 3.25.6"
 
     giga_menu_1:0 "Megastructure Capacity: §H1§!"
     giga_menu_2:0 "Megastructure Capacity: §Y2§!"
@@ -4623,20 +4624,20 @@
 
     ########################################################################################################################################################
     # Regular
-    job_matter_synthesizer:0 "Matter Synthesizing Engineer"
+    job_matter_synthesizer:0 "Matter Synthesis Engineer"
     job_matter_synthesizer_desc:0 "Fabricating minerals using energy."
     job_matter_synthesizer_effect_desc:0 "£job_matter_synthesizer£ $job_matter_synthesizer_plural$ produce £minerals£ §Y$minerals$§! from £energy£ §Y$energy$§!"
-    job_matter_synthesizer_plural:0 "Matter Synthesizing Engineers"
-    mod_job_matter_synthesizer_add:0 "Matter Synthesizing Engineering Jobs"
+    job_matter_synthesizer_plural:0 "Matter Synthesis Engineers"
+    mod_job_matter_synthesizer_add:0 "Matter Synthesis Engineering Jobs"
     mod_job_matter_synthesizer_per_pop:0 "§G+1§! $job_matter_synthesizer$ Job per $VALUE$ Pops"
     mod_job_matter_synthesizer_per_pop_short:0 "\n§G+1§! £mod_job_matter_synthesizer_add£ per $VALUE$ £pop£"
 
     # Gestalt
-    job_matter_synthesizer_drone:0 "Matter Synthesizing Drone"
+    job_matter_synthesizer_drone:0 "Matter Synthesis Drone"
     job_matter_synthesizer_drone_desc:0 "Fabricating minerals using energy."
     job_matter_synthesizer_drone_effect_desc:0 "£job_matter_synthesizer_drone£ $job_matter_synthesizer_drone_plural$ produce £minerals£ §Y$minerals$§! from £energy£ §Y$energy$§!"
-    job_matter_synthesizer_drone_plural:0 "Matter Synthesizing Drones"
-    mod_job_matter_synthesizer_drone_add:0 "Matter Synthesizing Drone Jobs"
+    job_matter_synthesizer_drone_plural:0 "Matter Synthesis Drones"
+    mod_job_matter_synthesizer_drone_add:0 "Matter Synthesis Drone Jobs"
     mod_job_matter_synthesizer_drone_per_pop:0 "§G+1§! $job_matter_synthesizer_drone$ Job per $VALUE$ Pops"
     mod_job_matter_synthesizer_drone_per_pop_short:0 "\n§G+1§! £mod_job_matter_synthesizer_drone_add£ per $VALUE$ £pop£"
 
@@ -5405,7 +5406,7 @@
 
       # Photonic Matter Utilization
       tech_photonic_m:0 "Photonic Matter Utilization"
-      tech_abstract_4_desc:0 "The transportation of information, matter and energy in non-abstract phycics is strictly bound to the speed of causality, which in itself is limited and relatively small compared to the size of the universe. Only processes in which no information gets transmitted or the bending of spacetime, can allow for appearant faster than the speed of causality travel. However, in Abstract Physics, the boundaries between what is a fixed rule and what not are fluid and shifting. There are certain ways to work around these rules, change them or even simply ignore them. As absurd as it may appear."
+      tech_photonic_m_desc:0 "Precise manipulation of electromagnetic wave interference patterns has allowed us to construct stable standing waves capable of interaction with the physical world in ways resembling mundane matter. This \"photonic\" matter shows great promise in micro-scale manipulation tasks, and will be invaluable in the field of shield harmonics."
 
       # Negative Pressure Application
       tech_negative_pressure:0 "Negative Pressure Application"
@@ -5417,35 +5418,35 @@
 
       # Hardlight Construct Utilization
       tech_hardlight_c_u:0 "Hardlight Construct Utilization"
-      tech_hardlight_c_u_desc:0 "Dominion over the electromagnetic field will grant us the ability to create pure hardlight constructs, an advanced and powerful extention of photonic matter. These constructs will be able to directly manipulate elementary particles and thus enable us even further control of matter and energy.\n§B(EHOF Development Mandatory)§!"
+      tech_hardlight_c_u_desc:0 "Dominion over the electromagnetic field will grant us the ability to create pure hardlight constructs, an advanced and powerful extention of photonic matter. These constructs will be able to directly manipulate elementary particles and thus enable us even further control of matter and energy."
 
       # Sterile Hyper-Neutrino Detection
       tech_ssn_det:0 "Sterile Hyper-Neutrino Detection"
-      tech_ssn_det_desc:0 "A unique form of exotic dark matter originating from hyperspace, called 'Sterile Hyper-Neutrinos', gets produced as a byproduct of $ehof_wormholes$ emergence. They possess unique frequencies, related to location the $ehof_wormholes$ lead to in our dimension. By analyzing these frequencies, we can foresee the $ehof_wormholes$ targets with a much higher precision, increasing the efficency of our EHOF even further. \n§B(EHOF Development Mandatory)§!"
+      tech_ssn_det_desc:0 "A unique form of exotic dark matter originating from hyperspace, called 'Sterile Hyper-Neutrinos', gets produced as a byproduct of $ehof_wormholes$ emergence. They possess unique frequencies, related to location the $ehof_wormholes$ lead to in our dimension. By analyzing these frequencies, we can foresee the $ehof_wormholes$ targets with a much higher precision, increasing the efficency of our EHOF even further."
 
       # Prototype Negative Mass Utilities
       tech_nm_utilization_1:0 "Prototype Negative Mass Utilities"
-      tech_nm_utilization_1_desc:0 "The first generation of devices, processes and methods, utilizing the uniqu and exotic Negative Mass. They are still experimental prototypes and don't utilize the full potential of Negative Mass, but are powerful nonetheless. They will grant us a huge boost to the economical and military power of our empire. From the tremendous improvement of astroengineering and planetary construction, over ftl thrusters for intrastellar travel, to the extreme manipulation of stellar bodies. Negative Mass is an incredibly powerful asset. \n§B(EHOF Development Mandatory)§!"
+      tech_nm_utilization_1_desc:0 "The first generation of devices, processes and methods, utilizing the uniqu and exotic Negative Mass. They are still experimental prototypes and don't utilize the full potential of Negative Mass, but are powerful nonetheless. They will grant us a huge boost to the economical and military power of our empire. From the tremendous improvement of astroengineering and planetary construction, over ftl thrusters for intrastellar travel, to the extreme manipulation of stellar bodies. Negative Mass is an incredibly powerful asset."
 
       # Advanced Negative Mass Utilities
       tech_nm_utilization_2:0 "Advanced Negative Mass Utilites"
-      tech_nm_utilization_2_desc:0 "The potential of Negative Mass is vast. A deeper understanding of this bizzare resource, enables us the development and creation of even more advanced and powerful negative mass assets. Advanced Negative Mass Utilities, which utilize the full potential of Negative Mass, will make our empire even more powerful. \n§B(EHOF Development Mandatory)§!"
+      tech_nm_utilization_2_desc:0 "The potential of Negative Mass is vast. A deeper understanding of this bizzare resource, enables us the development and creation of even more advanced and powerful negative mass assets. Advanced Negative Mass Utilities, which utilize the full potential of Negative Mass, will make our empire even more powerful."
 
       # Sentient Metal Utilities
       tech_nm_utilization:0 "Negative Mass Utilization"
-      tech_nm_utilization_desc:0 "The utilization of the unique and exotic 'Negative Mass' creates countless technological opportunities. From the tremendous improvement of astroengineering and planetary construction, over ftl thrusters for intrastellar travel, to the extreme manipulation of stellar bodies. Negative Mass is an incredibly powerful asset. \n§B(EHOF Development Mandatory)§!"
+      tech_nm_utilization_desc:0 "The utilization of the unique and exotic 'Negative Mass' creates countless technological opportunities. From the tremendous improvement of astroengineering and planetary construction, over ftl thrusters for intrastellar travel, to the extreme manipulation of stellar bodies. Negative Mass is an incredibly powerful asset."
 
       # Micro-wormhole Destination Precognition
       tech_prob_c:0 "$ehof_wormhole$ Destination Precognition"
-      tech_prob_c_desc:0 "Unimaginably sensitive tachyon sensors, based on and aided by the astonishing capabilities of the sentient metal hive-intellect, determine the target of a $ehof_wormhole$ before it even emerges in real space. This foreshadowing of wormhole targets, increases the security and precision of $ehof_ehof$ travel to an seemingly impossible magnitude. With this technology, our $ehof_ehof$ will be able to directly choose any destination in the galaxy, without any restrictions and dangers. \n§B(EHOF Development Mandatory)§!"
+      tech_prob_c_desc:0 "Unimaginably sensitive tachyon sensors, based on and aided by the astonishing capabilities of the sentient metal hive-intellect, determine the target of a $ehof_wormhole$ before it even emerges in real space. This foreshadowing of wormhole targets, increases the security and precision of $ehof_ehof$ travel to an seemingly impossible magnitude. With this technology, our $ehof_ehof$ will be able to directly choose any destination in the galaxy, without any restrictions and dangers."
 
       # Electroweak Quasi-Field Materialization
       tech_condensed_ews:0 "Electroweak Quasi-Field Materialization"
-      tech_condensed_ews_desc:0 "Extremely high energy states lead to the unification of the electromagnetic and the weak force into their intitial force, the 'electroweak force'. The secrets of the Everchanging revealed to us how to manifest physical 'Electroweak Quasi-Fields', which open up possibilities for tremendously precise field and spacetime manipulation, down to even the level of quantum foam itself. \n§B(EHOF Development Mandatory)§!"
+      tech_condensed_ews_desc:0 "Extremely high energy states lead to the unification of the electromagnetic and the weak force into their intitial force, the 'electroweak force'. The secrets of the Everchanging revealed to us how to manifest physical 'Electroweak Quasi-Fields', which open up possibilities for tremendously precise field and spacetime manipulation, down to even the level of quantum foam itself."
 
       # Arcane Rift Generator Restoration
       tech_arcane_g_r:0 "Arcane Rift Generator Restoration"
-      tech_arcane_g_r_desc:0 "The secrets of the Everchanging enabled us control over the enigmatic Sentient Metal. With the help of it and the mindbending Negative Mass, we are now able to entirely restore the Arcane Rift Generator to its former glory, allowing us to utilize it to its fullest potential. \n§B(EHOF Development Mandatory)§!"
+      tech_arcane_g_r_desc:0 "The secrets of the Everchanging enabled us control over the enigmatic Sentient Metal. With the help of it and the mindbending Negative Mass, we are now able to entirely restore the Arcane Rift Generator to its former glory, allowing us to utilize it to its fullest potential."
 
       # Event Horizon Offset Facility Alpha
       allow_ehof_p1:0 "§HUnlocks Megastructure:§! $ehof_ehofp1$"
@@ -7475,6 +7476,10 @@
     war_moon_2:0 "$name_war_moon$"
     war_moon_2_DESC:0 "A fully operational $name_war_moon$, equipped with a massive and particularly devastating particle cannon."
 
+    war_moon_ship_name:0 "[event_target:celestial_name.GetName]"
+    war_moon_restored_ship_name:0 "Restored Moon"
+    war_moon_printed_ship_name:0 "Lunar Aggregate"
+
     war_moon_debris:0 "Wrecked $name_war_moon$"
     war_moon_debris_DESC:0 "The remnants of a colossal moon-sized spaceship built by an advanced civilization, which miraculously hasn't completely collapsed under its own gravitational pull. The moon's massive weapons array and gigantic thrusters have received immense damage during some violent conflict, but they could theoretically be brought back to working order, provided we have the technology."
     war_moon_debris_MEGASTRUCTURE_DETAILS:0 "$war_moon_0_MEGASTRUCTURE_DETAILS$"
@@ -7568,6 +7573,10 @@
     war_planet_3:0 "Planetcraft Weaponry"
     war_planet_3_DESC:0 "Hundreds of thousands of weapon batteries installed within the planet's crust, and a gigantic cannon that can shred anything into pieces."
 
+    war_planet_ship_name:0 "[event_target:giga_planet.GetName]"
+    war_planet_restored_ship_name:0 "Restored Planet"
+    war_planet_printed_ship_name:0 "Planetary Aggregate"
+
     war_planet_debris:0 "Wrecked $name_war_planet$"
     war_planet_debris_DESC:0 "The remnants of a ridiculously gigantic planet spaceship built by an advanced civilization, which somehow hasn't collapsed under its own gravitational pull back into a regular planet. It once possessed some of the largest weaponry known to the galaxy, and although it has taken quite the beating, it might be possible to restore this fearsome craft to its former glory, provided we have plenty of resources and the technology to do so."
     war_planet_debris_MEGASTRUCTURE_DETAILS:0 "$war_planet_0_MEGASTRUCTURE_DETAILS$"
@@ -7596,6 +7605,8 @@
 
     giga_tech_war_system_6:0 "The $name_war_system$"
     giga_tech_war_system_6_desc:0 "At last, we have mastered the technologies necessary to assemble our wonderful masterpiece, the $name_war_system$. All that remains now is to figure out how to manage the logistics involved in supporting such a vast vessel and its population, and this gargantuan construct shall finally set sail through the stars!"
+
+    war_system_ship_name:0 "[event_target:giga_planet.GetName] Ascendant"
 
     giga_tech_war_system_hull_booster:0 "Hyperdimensional Hull Stabilization"
     giga_tech_war_system_hull_booster_desc:0 "The $name_war_system$ is a mighty vessel, and as such, adding dedicated structures anchored within higher dimensions can ensure its colossal hull doesn't collapse under its own gravity."
@@ -8492,6 +8503,9 @@
     giga_dialog.1705.title:0 "Star ignited"
     giga_dialog.1705.desc:0 "In a marvelous feat of engineering and technology, our $name_sub_compressor$ has heated the Brown Dwarf's core to the point that hydrogen has started fusing into helium, generating energy and starting a chain reaction, causing the core of the Brown Dwarf to ignite, eventually setting ablaze the whole celestial body and transforming it into a new star. We can claim to have done what few empires dared to imagine: birthing a new star.\n\nThe $name_sub_compressor$ is now collecting the star's energy and studying its fusion processes, and it also stabilizes the newly-born star. Our scientists report that the former Brown Dwarf's moon system has been drastically altered, and at least one moon has become habitable. We estimate that every single one of those moons (Or are they technically planets now?) is now terraformable."
     giga_dialog.1705.a:0 "A star shines."
+
+    # Jupiter -> Lucifer, a reference to 2010: Odyssey Two
+    NAME_giga_Lucifer:0 "Lucifer"
 
     substellar_compressor_0:0 "$gc_mega$$name_sub_compressor$ Site"
     substellar_compressor_0_DESC:0 "The construction site for a $name_sub_compressor$, hosting the necessary personnel to construct a $name_sub_compressor$ around a Brown Dwarf."
@@ -14161,8 +14175,8 @@
     giga_accelerator.160.a.tooltip:0 "All planets in the §Y[accelerator_quasistar.GetName]§! system become hotter.\n\nThe §YStellar Particle Accelerator§! is §Rdestroyed§!.\n\n"
 
 
-    giga_celestial_printing_disabled:0 "£menu_disabled£Attack Moon Fabricators\nShould Attack Moons be able to be "printed" out with the Lunar Macro-Fabricator and its associated mechanics or not. Disabling both this and Planetcraft Printing removes the §YCelestial Warship Assembly§! Ascension Perk."
-    giga_celestial_printing_enabled:0 "£menu_enabled£Attack Moon Fabricators\nShould Attack Moons be able to be "printed" out with the Lunar Macro-Fabricator and its associated mechanics or not. Disabling both this and Planetcraft Printing removes the §YCelestial Warship Assembly§! Ascension Perk."
+    giga_celestial_printing_disabled:0 "£menu_disabled£Attack Moon Fabricators\nShould Attack Moons be able to be \"printed\" out with the Lunar Macro-Fabricator and its associated mechanics or not. Disabling both this and Planetcraft Printing removes the §YCelestial Warship Assembly§! Ascension Perk."
+    giga_celestial_printing_enabled:0 "£menu_enabled£Attack Moon Fabricators\nShould Attack Moons be able to be \"printed\" out with the Lunar Macro-Fabricator and its associated mechanics or not. Disabling both this and Planetcraft Printing removes the §YCelestial Warship Assembly§! Ascension Perk."
 
     district_giga_alderson_industrial:0 "Industrial Hypersegment"
     district_giga_alderson_industrial_plural:0 "Industrial Hypersegments"
@@ -14210,16 +14224,31 @@
     lunar_macroreplicator_0_DESC:0 "The construction site for a colossal assembly yard capable of fabricating an entire Attack Moon out of raw planetary material and alloys."
     lunar_macroreplicator_0_MEGASTRUCTURE_DETAILS:0 "$giga_list_category_gigastructure$ - $giga_list_category_celestial_warship$\nUses £sr_solar_energy£ §YPlanetary Mass§! and £alloys£ §YAlloys§! to fabricate §YAttack Moons§! from scratch\n§LA large orbital assembly yard which literally "prints" out an entire Attack Moon from raw mass.§!" #megalistentry LUNAR MACROFABRICATOR
 
+    lunar_macroreplicator_0_real:0 "$lunar_macroreplicator_0$"
+    lunar_macroreplicator_0_real_DESC:0 "$lunar_macroreplicator_0_DESC$"
+
     lunar_macroreplicator_1:0 "Lunar Macro-Fabricator Matter Assembler"
     lunar_macroreplicator_1_DESC:0 "This large device is capable of receiving and organizing large quantities of planetary matter, preparing them for transfer towards the yard which will use them to fabricate an Attack Moon"
 
+    lunar_macroreplicator_1_fake:0 "$lunar_macroreplicator_1$"
+    lunar_macroreplicator_1_fake_DESC:0 "$lunar_macroreplicator_1_DESC$"
+
     lunar_macroreplicator_2:0 "Lunar Macro-Fabricator"
     lunar_macroreplicator_2_DESC:0 "This large orbital installation boasts a humongous assembly plant several hundred kilometers in diameter. It is capable of reorganizing large quantities of crude planetary matter into operational Attack Moons."
+
+    lunar_macroreplicator_2_fake:0 "$lunar_macroreplicator_2$"
+    lunar_macroreplicator_2_fake_DESC:0 "$lunar_macroreplicator_2_DESC$"
+
+    lunar_macroreplicator_ready:0 "$lunar_macroreplicator_2$"
+    lunar_macroreplicator_ready_DESC:0 "$lunar_macroreplicator_2_DESC$"
 
     lunar_macroreplicator_make_moon:0 "Fabricate Attack Moon"
     lunar_macroreplicator_make_moon_desc:0 "Use §YPlanetary Mass§! and §YAlloys§! to create a fully-functional §YAttack Moon§! without the need for an existing moon."
 
     lunar_macroreplicator_make_moon_DESC:0 "An operational fabricated Attack Moon, boasting §G15%§! additional §YHull HP§!, §YArmor HP§! and §YShield HP§! as well as §G10%§! additional §YShip Fire Rate§! compared to a regular Attack Moon."
+
+    lunar_macroreplicator_make_moon_fake:0 "$lunar_macroreplicator_make_moon$"
+    lunar_macroreplicator_make_moon_fake_DESC:0 "$lunar_macroreplicator_make_moon_DESC$"
 
     giga_printer.1000.name:0 "Attack Moon Fabricated!"
     giga_printer.1000.desc:0 "The Lunar Macro-Fabricator above §Y[moon_printer_location.GetName]§! reports that it has successfully assembled a fully-functional §YAttack Moon§! from raw §YPlanetary Mass§! and large amounts of alloys!\n\nBuilt according to our designs, the celestial warship, which is several hundred kilometers in length, has subsequently been released from the megastructure, and is now ready to bolster the ranks of our interstellar armadas.\n\nWe may begin the construction of another one immediately, given we possess sufficient planetary matter and alloys."
@@ -16695,18 +16724,36 @@
     planetcraft_printer_0_DESC:0 "The construction site for a colossal assembly yard capable of fabricating an entire Behemoth Planetcraft out of raw planetary material and alloys."
     planetcraft_printer_0_MEGASTRUCTURE_DETAILS:0 "$giga_list_category_gigastructure$ - $giga_list_category_celestial_warship$\nUses £sr_solar_energy£ §YPlanetary Mass§! and £alloys£ §YAlloys§! to fabricate §YBehemoth Planetcrafts§! from scratch\n§LQuite literally an upscaled version of the Lunar Macro-Fabricator, this mighty machine is capable of assembling a full Behemoth Planetcraft.§!" #gigalistentry BEHEMOTH ASSEMBLY PLANT
 
+    planetcraft_printer_0_real:0 "$planetcraft_printer_0$"
+    planetcraft_printer_0_real_DESC:0 "$planetcraft_printer_0_DESC$"
+
     planetcraft_printer_1:0 "Behemoth Assembly Plant Supports"
     planetcraft_printer_1_DESC:0 "The preliminary support structures which will house much of the critical infrastructure required for the Behemoth Assembly Plant to function."
+
+    planetcraft_printer_1_fake:0 "$planetcraft_printer_1$"
+    planetcraft_printer_1_fake_DESC:0 "$planetcraft_printer_1_DESC$"
 
     planetcraft_printer_2:0 "Behemoth Assembly Plant Stabilizers"
     planetcraft_printer_2_DESC:0 "These two colossal rings are tasked with stabilizing unfinished Behemoth Planetcrafts and ensuring planetary matter gets where it needs to be with no delay."
 
+    planetcraft_printer_2_fake:0 "$planetcraft_printer_2$"
+    planetcraft_printer_2_fake_DESC:0 "$planetcraft_printer_2_DESC$"
+
     planetcraft_printer_3:0 "Behemoth Assembly Plant"
     planetcraft_printer_3_DESC:0 "A complete Behemoth Assembly Plant. Thanks to its two colossal matter assemblers, this wondrous device can rearrange tremendous quantities of raw planetary matter into operational Behemoth Planetcrafts."
+
+    planetcraft_printer_3_fake:0 "$planetcraft_printer_3$"
+    planetcraft_printer_3_fake_DESC:0 "$planetcraft_printer_3_DESC$"
+
+    planetcraft_printer_ready:0 "$planetcraft_printer_3$"
+    planetcraft_printer_ready_DESC:0 "$planetcraft_printer_3_DESC$"
 
     planetcraft_printer_make_planet:0 "Fabricate Behemoth Planetcraft"
 
     planetcraft_printer_make_planet_DESC:0 "An operational fabricated Behemoth Planetcraft, boasting §G15%§! additional §YHull HP§!, §YArmor HP§! and §YShield HP§! as well as §G10%§! additional §YShip Fire Rate§! compared to a regular Behemoth Planetcraft."
+
+    planetcraft_printer_make_planet_fake:0 "$planetcraft_printer_make_planet$"
+    planetcraft_printer_make_planet_fake_DESC:0 "$planetcraft_printer_make_planet_DESC$"
 
     giga_printer.2010.name:0 "Behemoth Assembly Plant Construction Site Built!"
     giga_printer.2010.desc:0 "The construction site for a §YBehemoth Assembly Plant§! has been completed in the §Y[giga_system.GetName]§! system. This orbital platform will serve as a staging depot to assemble a colossal assembly yard capable of fabricating a Behemoth Planetcraft.\n\nMuch like its smaller brethren, this marvelous construct will be able to rapidly receive large quantities of planetary matter to be assembled into fabricated celestial warships, thanks to a combination of ambitious engineering techniques such as hyperdimensional storage and intelligent nanites.\n\nFabricated Behemoth Planetcrafts will take longer to build and are slightly more expensive than regular Behemoth Planetcrafts, but will benefit from increased defensive and offensive capabilities."
@@ -19288,6 +19335,32 @@
     megastructure_build:0 "debug"
     megastructure:0 "debug"
     must_have_user_preset_mod:0 "debug"
+
+    giga_generic_asteroid_1:0 "XXN-2079"
+    giga_generic_asteroid_2:0 "YZ9-3452"
+    giga_generic_asteroid_3:0 "ZA-19-3547"
+    giga_generic_asteroid_4:0 "ZI3-354-F"
+    giga_generic_asteroid_5:0 "ZL-1-111"
+    giga_generic_asteroid_6:0 "ZR-138"
+    giga_generic_asteroid_7:0 "TFL-140"
+    giga_generic_asteroid_8:0 "TD-1-21-dec"
+    giga_generic_asteroid_9:0 "LM-935"
+    giga_generic_asteroid_10:0 "RF-328"
+    giga_generic_asteroid_11:0 "J999-94"
+    giga_generic_asteroid_12:0 "QT1-109-D"
+    giga_generic_asteroid_13:0 "9192-1000"
+    giga_generic_asteroid_14:0 "B4-3-35-D"
+    giga_generic_asteroid_15:0 "ONA-1138"
+    giga_generic_asteroid_16:0 "VA99-2646"
+    giga_generic_asteroid_17:0 "B9-3427"
+    giga_generic_asteroid_18:0 "CR9-909"
+    giga_generic_asteroid_19:0 "LA4-3254"
+    giga_generic_asteroid_20:0 "WT9-34-T1"
+    giga_generic_asteroid_21:0 "IU11-2340"
+    giga_generic_asteroid_22:0 "944-112"
+    giga_generic_asteroid_23:0 "8Y-I-11B1"
+    giga_generic_asteroid_24:0 "VK1-234"
+    giga_generic_asteroid_25:0 "N01-4-36367"
 
     gigaLabel_01:0 "§EPress confirm settings button to play with default options.§!"
     gigaLabel_02:0 "§EMegastructure caps can only be set at game start.§!"
