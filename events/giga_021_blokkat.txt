@@ -307,7 +307,7 @@ country_event = {
 }
 
 #Now, the Blokkats will arrive. We must locate a system that's as far away as possible from a player capital.
-event = {
+country_event = {
 	id = giga_blokkat.1010
 	hide_window = yes
 	is_triggered_only = yes
@@ -322,71 +322,12 @@ event = {
 				}
 			}
 		}
-		#This will create "rings" of distance around the player capital, the blokkats will spawn in the furthest one that is a rim
-		blokkat_determine_distances = yes
-		#Now we find a rim system that is in the furthest "ring"
-		if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 700 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 700 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 650 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 650 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 600 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 600 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 550 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 550 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 500 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 500 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 450 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 450 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 400 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 400 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 350 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 350 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 300 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 300 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 250 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 250 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 200 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 200 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 150 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 150 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 100 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 100 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		else_if = {
-			limit = { any_rim_system = { check_variable = { which = blokkat_capital_distance value = 50 } } }
-			random_rim_system = { limit = { check_variable = { which = blokkat_capital_distance value = 50 } } save_global_event_target_as = blokkat_spawn_system }
-		}
-		event_target:blokkat_spawn_system = {
-			set_star_flag = blokkat_spawn_system
-			#set_name = "Elowiny"
-			star = {
-				save_global_event_target_as = blokkat_spawn_star
-			}
+		# find the furthest rim system to be our spawn location
+		ordered_rim_system = {
+			position = 0
+			order_by = value:blokkat_spawn_distance
+			save_global_event_target_as = blokkat_spawn_system
+			star = { save_global_event_target_as = blokkat_spawn_star }
 		}
 	}
 }
@@ -414,7 +355,14 @@ country_event = {
 country_event = {
 	id = giga_blokkat.1007
 	title = "giga_blokkat.1007.name"
-	desc = "giga_blokkat.1007.desc"
+	desc = {
+		text = "giga_blokkat.1007.desc"
+		trigger = { NOT = { has_global_flag = giga_blokkats_deathmode } }
+	}
+	desc = {
+		text = "giga_blokkat.1007.desc.deathmode"
+		trigger = { has_global_flag = giga_blokkats_deathmode }
+	}
 	location = event_target:blokkat_spawn_system
 	is_triggered_only = yes
 	diplomatic = yes
@@ -426,6 +374,15 @@ country_event = {
 
 	option = { #Uh oh
 		name = "giga_blokkat.1007.a"
+		trigger = { NOT = { has_global_flag = giga_blokkats_deathmode } }
+		hidden_effect = {
+			country_event = { id = giga_blokkat.1008 }
+		}
+	}
+
+	option = { #Uh oh
+		name = "giga_blokkat.1007.b"
+		trigger = { has_global_flag = giga_blokkats_deathmode }
 		hidden_effect = {
 			country_event = { id = giga_blokkat.1008 }
 		}
@@ -433,7 +390,7 @@ country_event = {
 }
 
 #Spawn them
-event = {
+country_event = {
 	id = giga_blokkat.1011
 	hide_window = yes
 	is_triggered_only = yes
@@ -731,9 +688,18 @@ event = {
 			effect = {
 				set_country_flag = custom_difficulty_no_bonuses_flag #dynamic difficulty compat for no overflow
 				#Base cost for the shieldkiller : 800k
+				#On Very Easy --> 200k
 				#On Baby --> 400k
 				#On Bismuth --> 1.5M
 				#On Endtech --> 10M (cuz screw you lol)
+				#On Deathmod --> 20M (cuz double screw you lol)
+				if = {
+					limit = { has_global_flag = giga_blokkats_very_easy }
+					set_variable = {
+						which = blokkat_shieldkiller_activation_cost
+						value = 200000
+					}
+				}
 				if = {
 					limit = { has_global_flag = giga_blokkats_easy }
 					set_variable = {
@@ -760,6 +726,13 @@ event = {
 					set_variable = {
 						which = blokkat_shieldkiller_activation_cost
 						value = 5000000
+					}
+				}
+				if = {
+					limit = { has_global_flag = giga_blokkats_deathmode }
+					set_variable = {
+						which = blokkat_shieldkiller_activation_cost
+						value = 20000000
 					}
 				}
 				save_global_event_target_as = blokkat_country
@@ -823,8 +796,15 @@ country_event = {
 		country_event = { id = giga_blokkat.7000 days = 30 } #Start the stripmining process
 		country_event = { id = giga_blokkat.5000 days = 30 } #Inquietude stuff
 
-		#MOTHERHSHIP REVIVES
+		#MOTHERSHIP REVIVES
 		if = {
+			limit = { has_global_flag = giga_blokkats_deathmode }
+			set_variable = { #40 billion HP
+				which = blokkat_mothership_life_count
+				value = 100
+			}
+		}
+		else_if = {
 			limit = { has_global_flag = giga_blokkats_endtech }
 			set_variable = {
 				which = blokkat_mothership_life_count
@@ -845,6 +825,13 @@ country_event = {
 				value = 1
 			}
 		}
+		else_if = {
+			limit = { has_global_flag = giga_blokkats_very_easy }
+			set_variable = {
+				which = blokkat_mothership_life_count
+				value = 1
+			}
+		}
 		else = {
 			set_variable = {
 				which = blokkat_mothership_life_count
@@ -852,13 +839,67 @@ country_event = {
 			}
 		}
 
-		set_variable = {
-			which = blokkat_harvester_life_count
-			value = 2
+		#Harvester life count
+		if = {
+			limit = { has_global_flag = giga_blokkats_deathmode }
+			set_variable = { #40 billion HP
+				which = blokkat_harvester_life_count
+				value = 20
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = giga_blokkats_endtech }
+			set_variable = {
+				which = blokkat_harvester_life_count
+				value = 6
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = giga_blokkats_bismuth }
+			set_variable = {
+				which = blokkat_harvester_life_count
+				value = 3
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = giga_blokkats_easy }
+			set_variable = {
+				which = blokkat_harvester_life_count
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { has_global_flag = giga_blokkats_very_easy }
+			set_variable = {
+				which = blokkat_harvester_life_count
+				value = 1
+			}
+		}
+		else = {
+			set_variable = {
+				which = blokkat_harvester_life_count
+				value = 2
+			}
+		}
+
+		#OBLITERATOR REVIVES
+		if = {
+			limit = { has_global_flag = giga_blokkats_deathmode }
+			set_variable = { #100 billion HP (lol?)
+				which = blokkat_obliterator_life_count
+				value = 200
+			}
 		}
 
 		#TERMINATOR REVIVES
 		if = {
+			limit = { has_global_flag = giga_blokkats_deathmode }
+			set_variable = {
+				which = blokkat_terminator_life_count
+				value = 10
+			}
+		}
+		else_if = {
 			limit = { has_global_flag = giga_blokkats_endtech }
 			set_variable = {
 				which = blokkat_terminator_life_count
@@ -873,6 +914,14 @@ country_event = {
 		}
 
 		#SET DIFFICULTY
+		if = {
+			limit = { has_global_flag = giga_blokkats_deathmode }
+			add_modifier = {
+				modifier = blokkat_deathmode_country_buff
+				days = -1
+			}
+		}
+
 		if = {
 			limit = { has_global_flag = giga_blokkats_endtech }
 			add_modifier = {
@@ -893,6 +942,14 @@ country_event = {
 			limit = { has_global_flag = giga_blokkats_easy }
 			add_modifier = {
 				modifier = blokkat_easy_country_buff
+				days = -1
+			}
+		}
+
+		if = {
+			limit = { has_global_flag = giga_blokkats_very_easy }
+			add_modifier = {
+				modifier = blokkat_very_easy_country_buff
 				days = -1
 			}
 		}
@@ -940,6 +997,14 @@ country_event = {
 		}
 
 		if = {
+			limit = { has_global_flag = giga_blokkats_deathmode }
+			set_variable = {
+				which = blokkat_dismantler_max_count
+				value = 20
+			}
+		}
+
+		if = {
 			limit = { has_global_flag = giga_blokkats_endtech }
 			multiply_variable = {
 				which = blokkat_dismantler_max_count
@@ -960,6 +1025,14 @@ country_event = {
 			multiply_variable = {
 				which = blokkat_dismantler_max_count
 				value = 0.70
+			}
+		}
+
+		if = {
+			limit = { has_global_flag = giga_blokkats_very_easy }
+			multiply_variable = {
+				which = blokkat_dismantler_max_count
+				value = 0.60
 			}
 		}
 
@@ -1118,7 +1191,7 @@ country_event = {
 				set_name = "Empty Void"
 				set_asteroid_belt = { radius = 0 }
 			}
-			every_system = { every_neighbor_system = { remove_hyperlane = { from = prev to = this } } }
+			every_system = { every_neighbor_system = { remove_hyperlane_safe = { from = prev to = this } } }
 			every_country = {
 				limit = {
 					NOR = {
@@ -1168,7 +1241,7 @@ country_event = {
 			set_name = "Empty Void"
 			set_asteroid_belt = { radius = 0 }
 		}
-		every_system = { every_neighbor_system = { remove_hyperlane = { from = prev to = this } } }
+		every_system = { every_neighbor_system = { remove_hyperlane_safe = { from = prev to = this } } }
 		every_country = {
 			limit = {
 				NOR = {
@@ -1338,6 +1411,13 @@ country_event = {
 			limit = { NOT = { has_country_flag = blokkat_difficulty_modifiers_applied } }
 			set_country_flag = blokkat_difficulty_modifiers_applied
 			if = {
+				limit = { has_global_flag = giga_blokkats_very_easy }
+				add_modifier = {
+					modifier = blokkat_very_easy_research_penalty
+					days = -1
+				}
+			}
+			if = {
 				limit = { has_global_flag = giga_blokkats_easy }
 				add_modifier = {
 					modifier = blokkat_easy_research_penalty
@@ -1355,6 +1435,13 @@ country_event = {
 				limit = { has_global_flag = giga_blokkats_endtech }
 				add_modifier = {
 					modifier = blokkat_endtech_research_penalty
+					days = -1
+				}
+			}
+			if = {
+				limit = { has_global_flag = giga_blokkats_deathmode }
+				add_modifier = {
+					modifier = blokkat_deathmode_research_penalty
 					days = -1
 				}
 			}
@@ -1555,6 +1642,7 @@ country_event = {
 			every_owned_fleet = { #Clear "stuck" scout fleets
 				limit = { 
 					has_fleet_flag = blokkat_scout_fleet
+					exists = solar_system
 					solar_system = { 
 						is_star_class = sc_blokkat_stripmined
 						NOR = {
@@ -1600,6 +1688,7 @@ country_event = {
 			limit = {
 				NOT = { has_global_flag = blokkat_mothership_shield_down }
 				event_target:blokkat_mothership_fleet = {
+					exists = solar_system
 					solar_system = { NOT = { has_modifier = blokkat_mothership_shield } }
 				}
 			}
@@ -2867,6 +2956,7 @@ ship_event = {
 		OR = {
 			is_ship_size = giga_blokkat_harvester
 			is_ship_size = giga_blokkat_terminator
+			is_ship_size = giga_blokkat_obliterator
 		}
 	}
 
@@ -2897,21 +2987,31 @@ ship_event = {
 					which = blokkat_ship_life_count
 					value <= 1
 				}
+				is_ship_size = giga_blokkat_obliterator
+			}
+			destroy_ship = ROOT
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = blokkat_ship_life_count
+					value <= 1
+				}
 				is_ship_size = giga_blokkat_harvester
-				solar_system = { NOT = { any_system_ambient_object = { has_ambient_object_flag = blokkat_star_collapse } } }
+				fleet = { solar_system = { NOT = { any_system_ambient_object = { has_ambient_object_flag = blokkat_star_collapse } } } }
 			}
 			save_event_target_as = recently_destroyed_blokkat_harvester
 			From.controller = {
 				country_event = { id = giga_blokkat.1040 }
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				check_variable = {
 					which = blokkat_ship_life_count
 					value > 1
 				}
-				solar_system = { NOT = { any_system_ambient_object = { has_ambient_object_flag = blokkat_star_collapse } } }
+				fleet = { solar_system = { NOT = { any_system_ambient_object = { has_ambient_object_flag = blokkat_star_collapse } } } }
 			}
 			subtract_variable = {
 				which = blokkat_ship_life_count
@@ -2920,10 +3020,8 @@ ship_event = {
 			repair_ship = yes
 			set_disabled = no
 		}
-		else_if = {
-			limit = {
-				solar_system = { NOT = { any_system_ambient_object = { has_ambient_object_flag = blokkat_star_collapse } } }
-			}
+		if = {
+			limit = { fleet = { solar_system = { any_system_ambient_object = { has_ambient_object_flag = blokkat_star_collapse } } } }
 			repair_ship = yes
 			set_disabled = no
 		}
@@ -3117,7 +3215,10 @@ country_event = {
 					NOT = {
 						has_country_flag = giga_achievement_blokkats1
 					}
-					has_global_flag = giga_blokkats_easy
+					OR = {
+						has_global_flag = giga_blokkats_easy
+						has_global_flag = giga_blokkats_very_easy
+					}
 				}
 				set_country_flag = giga_achievement_blokkats1
 				set_timed_country_flag = { flag = giga_achievement_blokkats1_notification days = 30 }
@@ -3156,7 +3257,10 @@ country_event = {
 					NOT = {
 						has_country_flag = giga_achievement_blokkats4
 					}
-					has_global_flag = giga_blokkats_endtech
+					OR = {
+						has_global_flag = giga_blokkats_endtech
+						has_global_flag = giga_blokkats_deathmode
+					}
 				}
 				set_country_flag = giga_achievement_blokkats1
 				set_country_flag = giga_achievement_blokkats2
@@ -3485,7 +3589,7 @@ country_event = {
 	id = giga_blokkat.1041
 	title = "giga_blokkat.1041.name"
 	desc = "giga_blokkat.1041.desc"
-	is_triggered_only = yes
+	
 
 	location = event_target:destroyed_blokkat_dismantler_location
 	is_triggered_only = yes
@@ -5153,10 +5257,12 @@ fleet_event = {
 		from = {
 			any_system_megastructure = {
 				OR = {
+					is_megastructure_type = ehof_pgate_gateway
 					is_megastructure_type = gateway_final
 					is_megastructure_type = gateway_restored
 					is_megastructure_type = lgate_base
-					is_megastructure_type = ehof_pgate_gateway
+					is_megastructure_type = hyper_relay
+					is_megastructure_type = hyper_relay_restored
 				}
 			}
 		}
@@ -5166,30 +5272,17 @@ fleet_event = {
 		from = {
 			every_system_megastructure = {
 				limit = {
-					is_megastructure_type = ehof_pgate_gateway
+					or = {
+						is_megastructure_type = ehof_pgate_gateway
+						is_megastructure_type = gateway_final
+						is_megastructure_type = gateway_restored
+						is_megastructure_type = lgate_base
+						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_restored
+					}
 				}
-				upgrade_megastructure_to = blokkat_dummy_pillar
-				remove_megastructure = THIS
-			}
-			every_system_megastructure = {
-				limit = {
-					is_megastructure_type = gateway_final
-				}
-				upgrade_megastructure_to = blokkat_dummy_gateway
-				remove_megastructure = THIS
-			}
-			every_system_megastructure = {
-				limit = {
-					is_megastructure_type = gateway_restored
-				}
-				upgrade_megastructure_to = blokkat_dummy_gateway_repair
-				remove_megastructure = THIS
-			}
-			every_system_megastructure = {
-				limit = {
-					is_megastructure_type = lgate_base
-				}
-				upgrade_megastructure_to = blokkat_dummy_lgate
+				upgrade_megastructure_to = blokkat_dummy_mega
+				finish_upgrade = yes
 				remove_megastructure = THIS
 			}
 		}
@@ -9832,7 +9925,7 @@ country_event = {
 		name = "giga_blokkat.3020.b"
 		hidden_effect = {
 			country_event = { id = giga_blokkat.3000 }
-			remove_country_flag = giga_tech_blokkat_mega_stage_2
+			remove_country_flag = destabiliser_stage_2_possible
 		}
 	}
 }
@@ -11188,7 +11281,7 @@ system_event = {
 												has_hyperlane_to = event_target:current_blokkat_mothership_system
 											}
 										}
-										add_hyperlane = {
+										add_hyperlane_safe = {
 											from = event_target:current_blokkat_mothership_system
 											to = THIS
 										}
@@ -11298,7 +11391,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 									limit = {
 										NOT = { has_hyperlane_to = event_target:current_blokkat_mothership_system } 
 									}
-									add_hyperlane = {
+									add_hyperlane_safe = {
 										from = event_target:current_blokkat_mothership_system
 										to = THIS
 									}
@@ -11318,6 +11411,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 			limit = { #is vibing in the mothership system and hasn't stripmined anything, has found a target system
 				NOT = { has_fleet_flag = blokkat_fleet_just_stripmined_system }
 				has_fleet_flag = blokkat_stripmine_fleet_moving
+				exists = solar_system
 				solar_system = {
 					any_fleet_in_system = {
 						has_fleet_flag = blokkat_mothership_fleet
@@ -11346,7 +11440,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 									limit = {
 										NOT = { has_hyperlane_to = event_target:current_blokkat_mothership_system } 
 									}
-									add_hyperlane = {
+									add_hyperlane_safe = {
 										from = event_target:current_blokkat_mothership_system
 										to = THIS
 									}
@@ -11361,6 +11455,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 		if = {
 			limit = {
 				NOT = { has_fleet_flag = blokkat_stripmine_fleet_goes_to_star } #doesnt care about going to the star anymore
+				exists = solar_system
 				solar_system = {
 					has_star_flag = blokkat_system_being_stripmined #system being stripmined but isnt actually being harvested yet
 					NOT = { has_star_flag = blokkat_stripmined_system }
@@ -11405,6 +11500,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 		if = {
 			limit = {
 				has_fleet_flag = blokkat_fleet_just_stripmined_system #just broke a system lol
+				exists = solar_system
 				solar_system = {
 					has_star_flag = blokkat_stripmined_system #system being stripmined but isnt actually being harvested yet
 					NOT = { #not in the mothership system
@@ -11433,7 +11529,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 											has_hyperlane_to = PREVPREV.solar_system
 										}
 									}
-									add_hyperlane = {
+									add_hyperlane_safe = {
 										from = PREVPREV.solar_system
 										to = THIS
 									}
@@ -11449,6 +11545,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 			limit = {
 				has_fleet_flag = blokkat_fleet_just_stripmined_system #can return home
 				has_fleet_flag = blokkat_found_destination
+				exists = solar_system
 				solar_system = {
 					has_star_flag = blokkat_stripmined_system
 				}
@@ -11481,7 +11578,7 @@ fleet_event = { #this event is ran monthly on the harvesting fleets
 											has_hyperlane_to = event_target:current_blokkat_mothership_system
 										}
 									}
-									add_hyperlane = {
+									add_hyperlane_safe = {
 										from = event_target:current_blokkat_mothership_system
 										to = THIS
 									}
@@ -11576,6 +11673,7 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 	immediate = {
 		if = {
 			limit = {
+				exists = solar_system
 				solar_system = {
 					exists = THIS
 					is_same_value = event_target:future_blokkat_mothership_system
@@ -11598,6 +11696,7 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 		}
 		if = { 
 			limit = {
+				exists = solar_system
 				solar_system = {
 					exists = this
 					has_star_flag = blokkat_system_being_stripmined
@@ -11611,6 +11710,7 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 			remove_fleet_flag = blokkat_mothership_fleet_goes_to_star
 		} else_if = {
 			limit = {
+				exists = solar_system
 				solar_system = {
 					has_star_flag = blokkat_system_being_stripmined_true
 					NOT = { has_star_flag = blokkat_system_being_stripmined }
@@ -11687,6 +11787,7 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 		}
 		if = {
 			limit = { #if all harvesters just stripmined stuff and are in the mothership system, move to new system
+				exists = solar_system
 				solar_system = {
 					has_star_flag = blokkat_stripmined_system
 				}
@@ -11694,10 +11795,13 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 					NOT = {
 						any_owned_fleet = { #all blokkat stripmine fleets are vibing in the mothership system and just stripmined stuff
 							has_fleet_flag = blokkat_stripmine_fleet
-							NOT = {
-								solar_system = {
-									any_fleet_in_system = {
-										has_fleet_flag = blokkat_mothership_fleet
+							or = {
+								not = { exists = solar_system }
+								NOT = {
+									solar_system = {
+										any_fleet_in_system = {
+											has_fleet_flag = blokkat_mothership_fleet
+										}
 									}
 								}
 							}
@@ -11716,61 +11820,141 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 					NOT = { has_fleet_flag = blokkat_found_destination } 
 				}
 				event_target:current_blokkat_mothership_system = {
-					every_neighbor_system = { remove_hyperlane = { from = prev to = this } }
+					every_neighbor_system = {
+						remove_hyperlane_safe = { from = prev to = this } 
+					}
 				}
 				clear_orders = yes
 				clear_fleet_actions = this
-				queue_actions = {
-					find_closest_system = {
-						trigger = {
-							id = giga_blokkat.7003.trigger.1
-							NOR = {
-								systems_blokkats_wont_stripmine = yes
-								is_same_value = event_target:current_blokkat_mothership_system
-								has_star_flag = blokkat_stripmined_system
+
+				# An attempt to make the blokkats choose harvesting targets in a fairer way
+				# always choosing closest viable system has the unfortunate side-effects of both being random,
+				# and beelining the core because the stars are denser there, meaning the distances shrink towards the core
+				# - TTFTCUTS, 2022-10-24
+
+				# attempt to intelligently pick a system to move to
+				# hopefully this isn't really slow
+				ordered_system = {
+					position = 0
+					limit = {
+						NOR = {
+							systems_blokkats_wont_stripmine = yes
+							is_same_value = event_target:current_blokkat_mothership_system
+							has_star_flag = blokkat_stripmined_system
+						}
+					}
+					# distance metric based on several factors including actual distance, distance to player, core-rim position
+					order_by = value:blokkat_system_score
+					# smallest value is best
+					inverse = yes
+
+					save_event_target_as = blokkat_found_system
+				}
+
+				if = {
+					# if a target was found, go to that
+					limit = {
+						exists = event_target:blokkat_found_system
+					}
+
+					event_target:blokkat_found_system = {
+						set_star_flag = future_blokkat_mothership_system
+						clear_global_event_target = future_blokkat_mothership_system
+						save_global_event_target_as = future_blokkat_mothership_system
+						if = {
+							limit = {
+								NOT = {
+									has_hyperlane_to = event_target:current_blokkat_mothership_system
+								}
+							}
+							add_hyperlane_safe = {
+								from = event_target:current_blokkat_mothership_system
+								to = THIS
 							}
 						}
-						found_system = {
-							effect = {
-								id = giga_blokkat.7003.trigger.2
-								THIS = {
-									set_star_flag = future_blokkat_mothership_system
-									clear_global_event_target = future_blokkat_mothership_system
-									save_global_event_target_as = future_blokkat_mothership_system
-									if = {
-										limit = {
-											NOT = {
-												has_hyperlane_to = event_target:current_blokkat_mothership_system
-											}
-										}
-										add_hyperlane = {
-											from = event_target:current_blokkat_mothership_system
-											to = THIS
-										}
-									}
-								}
-								event_target:blokkat_country = {
-									every_owned_fleet = {
-										limit = {
-											OR = {
-												has_fleet_flag = blokkat_stripmine_fleet
-												has_fleet_flag = blokkat_mothership_fleet
-											}
-										}
-										set_fleet_flag = blokkat_found_destination
-									}
-									random_owned_fleet = {
-										limit = {
-											has_fleet_flag = blokkat_mothership_fleet
-										}
-										set_timed_fleet_flag = {
-											flag = blokkat_mothership_fleet_goes_to_star
-											days = 30
-										}
-									}
+					}
+
+					event_target:blokkat_country = {
+						every_owned_fleet = {
+							limit = {
+								OR = {
+									has_fleet_flag = blokkat_stripmine_fleet
+									has_fleet_flag = blokkat_mothership_fleet
 								}
 							}
-							move_to = this
+							set_fleet_flag = blokkat_found_destination
+						}
+						random_owned_fleet = {
+							limit = {
+								has_fleet_flag = blokkat_mothership_fleet
+							}
+							set_timed_fleet_flag = {
+								flag = blokkat_mothership_fleet_goes_to_star
+								days = 30
+							}
+						}
+					}
+
+					queue_actions = {
+						move_to = event_target:blokkat_found_system
+					}
+				}
+				else = {
+
+					# just going to nearest system as fallback
+					queue_actions = {
+						find_closest_system = {
+							trigger = {
+								id = giga_blokkat.7003.trigger.1
+								NOR = {
+									systems_blokkats_wont_stripmine = yes
+									is_same_value = event_target:current_blokkat_mothership_system
+									has_star_flag = blokkat_stripmined_system
+								}
+							}
+							found_system = {
+								effect = {
+									id = giga_blokkat.7003.trigger.2
+									THIS = {
+										set_star_flag = future_blokkat_mothership_system
+										clear_global_event_target = future_blokkat_mothership_system
+										save_global_event_target_as = future_blokkat_mothership_system
+										if = {
+											limit = {
+												NOT = {
+													has_hyperlane_to = event_target:current_blokkat_mothership_system
+												}
+											}
+											add_hyperlane_safe = {
+												from = event_target:current_blokkat_mothership_system
+												to = THIS
+											}
+										}
+									}
+									event_target:blokkat_country = {
+										every_owned_fleet = {
+											limit = {
+												OR = {
+													has_fleet_flag = blokkat_stripmine_fleet
+													has_fleet_flag = blokkat_mothership_fleet
+												}
+											}
+											set_fleet_flag = blokkat_found_destination
+										}
+										random_owned_fleet = {
+											limit = {
+												has_fleet_flag = blokkat_mothership_fleet
+											}
+											set_timed_fleet_flag = {
+												flag = blokkat_mothership_fleet_goes_to_star
+												days = 30
+											}
+										}
+									}
+									save_event_target_as = blokkat_found_system
+								}
+								move_to = this
+							}
 						}
 					}
 				}
@@ -11778,8 +11962,8 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 			if = {
 				limit = {
 					has_fleet_flag = blokkat_found_destination
+					exists = solar_system
 					solar_system = {
-						exists = THIS
 						NOT = { is_same_value = event_target:future_blokkat_mothership_system }
 					}
 				}
@@ -11799,12 +11983,13 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 												has_hyperlane_to = event_target:current_blokkat_mothership_system
 											}
 										}
-										add_hyperlane = {
+										add_hyperlane_safe = {
 											from = event_target:current_blokkat_mothership_system
 											to = THIS
 										}
 									}
 								}
+								save_event_target_as = blokkat_found_system
 							}
 							move_to = this
 						}
@@ -11812,6 +11997,26 @@ fleet_event = { #this event is ran monthly on the mothership fleet
 				}
 			}
 		}
+
+		# set a trail of flags so we can draw out the route with a debug command
+		if = {
+			limit = {
+				exists = event_target:blokkat_found_system
+				not = {
+					event_target:current_blokkat_mothership_system = {
+						is_same_value = event_target:blokkat_found_system
+					}
+				}
+			}
+			event_target:current_blokkat_mothership_system = { 
+				set_star_flag = blokkat_vester_path 
+				event_target:blokkat_found_system = { 
+					set_star_flag = blokkat_vester_path_destination@prev 
+				}
+			}
+		}
+
+		# set flag
 		random_system = { 
 			limit = {
 				any_fleet_in_system = { has_fleet_flag = blokkat_mothership_fleet }
@@ -11946,7 +12151,7 @@ country_event = {
 										limit = {
 											NOT = { has_hyperlane_to = event_target:current_blokkat_mothership_system } 
 										}
-										add_hyperlane = {
+										add_hyperlane_safe = {
 											from = event_target:current_blokkat_mothership_system
 											to = THIS
 										}
@@ -11986,7 +12191,7 @@ country_event = {
 										limit = {
 											NOT = { has_hyperlane_to = event_target:current_blokkat_mothership_system } 
 										}
-										add_hyperlane = {
+										add_hyperlane_safe = {
 											from = event_target:current_blokkat_mothership_system
 											to = THIS
 										}
@@ -12113,7 +12318,7 @@ country_event = {
 												has_hyperlane_to = PREVPREV.solar_system
 											}
 										}
-										add_hyperlane = {
+										add_hyperlane_safe = {
 											from = PREVPREV.solar_system
 											to = THIS
 										}
@@ -12155,7 +12360,7 @@ country_event = {
 					}
 				}
 				event_target:current_blokkat_mothership_system = {
-					every_neighbor_system = { remove_hyperlane = { from = prev to = this } }
+					every_neighbor_system = { remove_hyperlane_safe = { from = prev to = this } }
 					set_star_flag = blokkats_wiped_hyperlanes
 				}
 			}
@@ -12185,7 +12390,7 @@ country_event = {
 													has_hyperlane_to = event_target:current_blokkat_mothership_system
 												}
 											}
-											add_hyperlane = {
+											add_hyperlane_safe = {
 												from = event_target:current_blokkat_mothership_system
 												to = THIS
 											}
@@ -12303,7 +12508,7 @@ country_event = {
 							effect = {
 								id = giga_blokkat.9000.trigger.2
 								THIS = {
-									add_hyperlane = {
+									add_hyperlane_safe = {
 										from = event_target:current_blokkat_mothership_system
 										to = THIS
 									}
@@ -12389,13 +12594,12 @@ planet_event = {
 			every_system_megastructure = {
 				limit = {
 					NOR = {
-						is_megastructure_type = gateway_0
-						is_megastructure_type = gateway_0
-						is_megastructure_type = gateway_restored
-						is_megastructure_type = gateway_ruined
-						is_megastructure_type = lgate_base
-						is_megastructure_type = ehof_pgate_unknown
 						is_megastructure_type = ehof_pgate_gateway
+						is_megastructure_type = gateway_final
+						is_megastructure_type = gateway_restored
+						is_megastructure_type = lgate_base
+						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_restored
 					}
 				}
 				remove_megastructure = THIS
@@ -12436,13 +12640,12 @@ planet_event = {
 			every_system_megastructure = {
 				limit = {
 					NOR = {
-						is_megastructure_type = gateway_0
-						is_megastructure_type = gateway_0
-						is_megastructure_type = gateway_restored
-						is_megastructure_type = gateway_ruined
-						is_megastructure_type = lgate_base
-						is_megastructure_type = ehof_pgate_unknown
 						is_megastructure_type = ehof_pgate_gateway
+						is_megastructure_type = gateway_final
+						is_megastructure_type = gateway_restored
+						is_megastructure_type = lgate_base
+						is_megastructure_type = hyper_relay
+						is_megastructure_type = hyper_relay_restored
 					}
 				}
 				remove_megastructure = THIS
@@ -12486,7 +12689,7 @@ fleet_event = {
 		remove_global_flag = blokkat_stripmining_underway
 		remove_global_flag = blokkat_return_fleet
 		event_target:current_blokkat_mothership_system = {
-			every_neighbor_system = { remove_hyperlane = { from = prev to = this } }
+			every_neighbor_system = { remove_hyperlane_safe = { from = prev to = this } }
 		}
 		event_target:blokkat_country = {
 			random_owned_fleet = {
@@ -12512,7 +12715,7 @@ fleet_event = {
 												has_hyperlane_to = event_target:current_blokkat_mothership_system
 											}
 										}
-										add_hyperlane = {
+										add_hyperlane_safe = {
 											from = event_target:current_blokkat_mothership_system
 											to = THIS
 										}
@@ -12776,7 +12979,7 @@ country_event = {
 		name = "giga_blokkat.5500.a"
 		custom_tooltip = "giga_blokkat.5500.a.tooltip"
 		hidden_effect = {
-			event_target:blokkat_sbtg_warning_country = { destroy_country = THIS }
+			event_target:blokkat_sbtg_warning_country = { destroy_country = YES }
 		}
 	}
 }
@@ -13078,3 +13281,4 @@ country_event = {
 		}
 	}
 }
+

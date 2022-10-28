@@ -1,131 +1,131 @@
-blokkat_determine_distances = {
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 0 max_distance <= 50 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 50 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_m
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 50 max_distance <= 100 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 100 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_k
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 100 max_distance <= 150 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 150 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_g
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 150 max_distance <= 200 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 200 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_f
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 200 max_distance <= 250 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 250 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_a
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 250 max_distance <= 300 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 300 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_b
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 300 max_distance <= 350 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 350 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_neutron_star
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 350 max_distance <= 400 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 400 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_pulsar
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 400 max_distance <= 450 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 450 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_black_hole
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 450 max_distance <= 500 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 500 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_giga_o_star
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 500 max_distance <= 550 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 550 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_dyson_star
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 550 max_distance <= 600 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 600 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_ehof_black_hole
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 600 max_distance <= 650 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 650 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_m_giant
-	}
-	every_system = {
-		limit = { 
-			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 650 max_distance <= 99999 }
-			NOT = { has_star_flag = blokkat_distance_measured } 
-		}
-		set_variable = { which = blokkat_capital_distance value = 700 }
-		set_star_flag = blokkat_distance_measured
-		#set_star_class = sc_habitat
-	}
-}
+# blokkat_determine_distances = {
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 0 max_distance <= 50 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 50 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_m
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 50 max_distance <= 100 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 100 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_k
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 100 max_distance <= 150 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 150 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_g
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 150 max_distance <= 200 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 200 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_f
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 200 max_distance <= 250 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 250 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_a
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 250 max_distance <= 300 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 300 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_b
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 300 max_distance <= 350 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 350 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_neutron_star
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 350 max_distance <= 400 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 400 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_pulsar
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 400 max_distance <= 450 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 450 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_black_hole
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 450 max_distance <= 500 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 500 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_giga_o_star
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 500 max_distance <= 550 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 550 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_dyson_star
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 550 max_distance <= 600 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 600 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_ehof_black_hole
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 600 max_distance <= 650 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 650 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_m_giant
+# 	}
+# 	every_system = {
+# 		limit = { 
+# 			distance = { source = event_target:blokkat_capital_star type = euclidean min_distance >= 650 max_distance <= 99999 }
+# 			NOT = { has_star_flag = blokkat_distance_measured } 
+# 		}
+# 		set_variable = { which = blokkat_capital_distance value = 700 }
+# 		set_star_flag = blokkat_distance_measured
+# 		#set_star_class = sc_habitat
+# 	}
+# }
 
 blokkat_harvest_system = {
 	event_target:blokkat_country = {
@@ -300,7 +300,9 @@ blokkat_harvest_system = {
 		}
 		destroy_fleet = THIS
 	}
-	every_neighbor_system = { remove_hyperlane = { from = prev to = this } }
+	every_neighbor_system = { 
+		remove_hyperlane_safe = { from = prev to = this } 
+	}
 }
 
 blokkat_increment_system_ships = {
@@ -476,7 +478,7 @@ blokkat_harvest_system_mothership = {
 		}
 		destroy_fleet = THIS
 	}
-	every_neighbor_system = { remove_hyperlane = { from = prev to = this } }
+	every_neighbor_system = { remove_hyperlane_safe = { from = prev to = this } }
 }
 
 update_blokkat_inquietude_display = {
@@ -551,6 +553,7 @@ set_blokkat_leader_data = {
 		1 = { set_name = "Blokkbei" }
 		1 = { set_name = "Blokkiler" }
 		1 = { set_name = "Blokholl" }
+		1 = { set_name = "Blokkimous" }
 		1 = { set_name = "Philokk" }
 		1 = { set_name = "Blokkepard" }
 		1 = { set_name = "Blokkarat" }
@@ -808,7 +811,7 @@ set_blokkat_leader_data = {
 			}
 		}
 		#Breadkat (Patreon)
-		4000 = {
+		4 = {
 			set_name = "Breadkat"
 			if = {
 				limit = { NOT = { has_leader_flag = breadkat_leader } }
@@ -1004,6 +1007,7 @@ spawn_blokkat_mothership_fleet = {
 			OR = {
 				has_global_flag = giga_blokkats_bismuth
 				has_global_flag = giga_blokkats_endtech
+				has_global_flag = giga_blokkats_deathmode
 			}
 		}
 		event_target:blokkat_country = {
@@ -1074,12 +1078,48 @@ spawn_blokkat_mothership_fleet = {
 						}
 					}
 				}
+				if = {
+					limit = { has_global_flag = giga_blokkats_deathmode }
+					while = {
+						count = 50
+						create_ship = {
+							name = "Blokk-Terminator"
+							design = "Blokk-Terminator"
+							prefix = no
+							effect = {
+								set_disable_at_health = 0.01
+								set_variable = {
+									which = blokkat_ship_life_count
+									value = event_target:blokkat_country.blokkat_terminator_life_count
+								}
+							}
+						}
+					}
+					create_ship = {
+						name = "Blokk-Obliterator"
+						design = "Blokk-Obliterator"
+						prefix = no
+						effect = {
+							set_disable_at_health = 0.01
+							set_variable = {
+								which = blokkat_ship_life_count
+								value = event_target:blokkat_country.blokkat_obliterator_life_count
+							}
+						}
+					}
+				}
 				set_location = {
 					target = event_target:future_blokkat_mothership_system.star
 					distance = 5
 					angle = random
 				}
-				set_formation_scale = 10
+				if = {
+					limit = { has_global_flag = giga_blokkats_deathmode }
+					set_formation_scale = 50
+				}
+				else = {
+					set_formation_scale = 10
+				}
 				assign_leader = last_created_leader
 				set_fleet_flag = blokkat_mothership_escort_fleet
 				set_fleet_flag = blokkat_fleet
@@ -1332,7 +1372,7 @@ blokkat_movement_queue = {
 
 spawn_blokkat_scout_fleet = {
 	if = {
-		limit = { NOT = { has_global_flag = giga_blokkats_endtech } }
+		limit = { NOR = { has_global_flag = giga_blokkats_endtech has_global_flag = giga_blokkats_deathmode } }
 		event_target:blokkat_country = {
 			create_blokkat_admiral = yes
 		}
@@ -1434,12 +1474,34 @@ spawn_blokkat_scout_fleet = {
 						}
 					}
 				}
+				if = {
+					limit = { has_global_flag = giga_blokkats_deathmode }
+					while = {
+						count = 9
+						create_ship = {
+							name = "Blokk-Terminator"
+							design = "Blokk-Terminator"
+							prefix = no
+							effect = {
+								set_disable_at_health = 0.01
+								set_variable = {
+									which = blokkat_ship_life_count
+									value = event_target:blokkat_country.blokkat_terminator_life_count
+								}
+								if = {
+									limit = { has_global_flag = giga_blokkats_endtech }
+									add_modifier = { modifier = blokkat_bismuth_ship_damage_buff days = -1 }
+								}
+							}
+						}
+					}
+				}
 				set_location = {
 					target = event_target:blokkat_scout_fleet_location.star
 					distance = 400
 					angle = random
 				}
-				set_formation_scale = 25
+				set_formation_scale = 20
 				set_fleet_flag = blokkat_scout_fleet
 				set_fleet_flag = blokkat_terminator_fleet
 				set_fleet_flag = blokkat_fleet
@@ -1454,7 +1516,12 @@ spawn_blokkat_scout_fleet = {
 spawn_blokkat_escort_fleet = {
 	event_target:blokkat_country = {
 		if = {
-			limit = { NOT = { has_global_flag = giga_blokkats_endtech } }
+			limit = {
+				NOR = {
+					has_global_flag = giga_blokkats_endtech
+					has_global_flag = giga_blokkats_deathmode
+				}
+			}
 			create_blokkat_admiral = yes
 		}
 		else = { create_strong_blokkat_admiral = yes }
@@ -1471,22 +1538,25 @@ spawn_blokkat_escort_fleet = {
 		}
 		effect = {
 			set_owner = ROOT
-			while = {
-				count = 5
-				create_ship = {
-					name = "Blokk-Custodian"
-					design = "Blokk-Custodian"
-					prefix = no
-					effect = { apply_blokkat_difficulty_modifier = yes apply_blokkat_difficulty_modifier_damage = yes }
+			if = {
+				limit = { NOT = { has_global_flag = giga_blokkats_deathmode } }
+				while = {
+					count = 5
+					create_ship = {
+						name = "Blokk-Custodian"
+						design = "Blokk-Custodian"
+						prefix = no
+						effect = { apply_blokkat_difficulty_modifier = yes apply_blokkat_difficulty_modifier_damage = yes }
+					}
 				}
-			}
-			while = {
-				count = 25
-				create_ship = {
-					name = "Blokk-Evictor"
-					design = "Blokk-Evictor"
-					prefix = no
-					effect = { apply_blokkat_difficulty_modifier = yes apply_blokkat_difficulty_modifier_damage = yes }
+				while = {
+					count = 25
+					create_ship = {
+						name = "Blokk-Evictor"
+						design = "Blokk-Evictor"
+						prefix = no
+						effect = { apply_blokkat_difficulty_modifier = yes apply_blokkat_difficulty_modifier_damage = yes }
+					}
 				}
 			}
 			if = {
@@ -1546,12 +1616,34 @@ spawn_blokkat_escort_fleet = {
 					}
 				}
 			}
+			if = {
+				limit = { has_global_flag = giga_blokkats_deathmode }
+				while = {
+					count = 10
+					create_ship = {
+						name = "Blokk-Terminator"
+						design = "Blokk-Terminator"
+						prefix = no
+						effect = {
+							set_disable_at_health = 0.01
+							set_variable = {
+								which = blokkat_ship_life_count
+								value = event_target:blokkat_country.blokkat_terminator_life_count
+							}
+						}
+					}
+				}
+			}
 			set_location = {
 				target = event_target:future_blokkat_mothership_system.star
 				distance = 400
 				angle = random
 			}
 			if = {
+				limit = { has_global_flag = giga_blokkats_deathmode }
+				set_formation_scale = 40
+			}
+			else_if = {
 				limit = { has_global_flag = giga_blokkats_endtech }
 				set_formation_scale = 7
 			}
@@ -1568,6 +1660,10 @@ spawn_blokkat_escort_fleet = {
 #Difficulty
 apply_blokkat_difficulty_modifier_bigship_damage = {
 	if = {
+		limit = { has_global_flag = giga_blokkats_deathmode }
+		add_modifier = { modifier = blokkat_deathmode_ship_damage_buff_bigship days = -1 }
+	}
+	if = {
 		limit = { has_global_flag = giga_blokkats_endtech }
 		add_modifier = { modifier = blokkat_endtech_ship_damage_buff_bigship days = -1 }
 	}
@@ -1578,6 +1674,10 @@ apply_blokkat_difficulty_modifier_bigship_damage = {
 }
 
 apply_blokkat_difficulty_modifier = {
+	if = {
+		limit = { has_global_flag = giga_blokkats_deathmode }
+		add_modifier = { modifier = blokkat_deathmode_ship_buff days = -1 }
+	}
 	if = {
 		limit = { has_global_flag = giga_blokkats_endtech }
 		add_modifier = { modifier = blokkat_endtech_ship_buff days = -1 }
@@ -1590,6 +1690,10 @@ apply_blokkat_difficulty_modifier = {
 
 apply_blokkat_difficulty_modifier_damage = {
 	if = {
+		limit = { has_global_flag = giga_blokkats_deathmode }
+		add_modifier = { modifier = blokkat_deathmode_ship_damage_buff days = -1 }
+	}
+	if = {
 		limit = { has_global_flag = giga_blokkats_endtech }
 		add_modifier = { modifier = blokkat_endtech_ship_damage_buff days = -1 }
 	}
@@ -1600,6 +1704,10 @@ apply_blokkat_difficulty_modifier_damage = {
 }
 
 remove_flags_blokkat_difficulty = {
+	if = {
+		limit = { has_global_flag = giga_blokkats_very_easy }
+		remove_global_flag = giga_blokkats_very_easy
+	}
 	if = {
 		limit = { has_global_flag = giga_blokkats_easy }
 		remove_global_flag = giga_blokkats_easy
@@ -1615,6 +1723,10 @@ remove_flags_blokkat_difficulty = {
 	if = {
 		limit = { has_global_flag = giga_blokkats_endtech }
 		remove_global_flag = giga_blokkats_endtech
+	}
+	if = {
+		limit = { has_global_flag = giga_blokkats_deathmode }
+		remove_global_flag = giga_blokkats_deathmode
 	}
 }
 
@@ -2345,6 +2457,48 @@ spawn_blokkat_blokkazoi = {
 			set_fleet_flag = blokkat_scout_fleet
 			assign_leader = event_target:blokkazoi_leader
 			blokkat_movement_queue = yes
+		}
+	}
+}
+
+# clear all hyperlanes and connect up the path the vester has taken
+# for debug purposes, to draw out where the vester went after harvesting a galaxy
+draw_blokkat_vester_path = {
+	# clear all lanes
+	every_system = {
+		every_system = {
+			remove_hyperlane_safe = {
+				from = this
+				to = prev
+			}
+		}
+	}
+
+	# connect route
+	every_system = {
+		limit = {
+			has_star_flag = blokkat_vester_path
+		}
+		every_system = {
+			limit = {
+				has_star_flag = blokkat_vester_path_destination@prev
+			}
+			add_hyperlane_safe = {
+				from = prev
+				to = this
+			}
+		}
+	}
+
+	# mark the start and capital
+	event_target:blokkat_spawn_star = {
+		solar_system = {
+			set_name = "BLOKKAT START"
+		}
+	}
+	event_target:blokkat_capital_star = {
+		solar_system = {
+			set_name = "PLAYER CAPITAL"
 		}
 	}
 }
