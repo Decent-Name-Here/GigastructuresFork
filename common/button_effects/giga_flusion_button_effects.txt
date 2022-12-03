@@ -1072,16 +1072,15 @@ giga_contact_ezic = {
 
 giga_contact_laurn = { 
 	potential = {
-		# exists = from 
-		# from = { 
-		# 	has_global_flag = laurn_resistance_active
-		# 	has_country_flag = contacted_laurn_rebels
-		# 	NOT = { 
-		# 		has_country_flag = katzen_vassal #can still be contaced after the kaiser is dead, can be disabled though
-		# 	}
-		# 	any_country = { is_country_type = katzenartig_imperium }
-		# }
-		always = yes
+		exists = from 
+		from = { 
+		 	has_global_flag = laurn_resistance_active
+		 	has_country_flag = contacted_laurn_rebels
+		 	NOT = { 
+		 		has_country_flag = katzen_vassal
+		 	}
+		 	has_global_flag = katzenartig_imperium_happened` #can still be contaced after the kaiser is dead, can be disabled though
+		}
 	}
 	allow = {
 		hidden_trigger = {
