@@ -23,7 +23,7 @@
 
     mod_planet_buildings_hab_capital_alloys_upkeep_mult:0 "£alloys£ $alloys$ Upkeep of £building£ Habitat Capital Buildings"
 
-
+    mod_giga_planet_unemployment_coverage:0 "Jobs for Unemployed Pops"
 
     ############################################################################################################
     # ECONOMIC CATEGORIES
@@ -34,6 +34,8 @@
     planet_giga_virtual_trainers:0 "Virtual Training Jobs"
     planet_giga_virtual_training_job_icon:0 "£job_giga_virtual_training_coordinator£"
     planet_giga_virtual_training_job_icon_gestalt:0 "£job_evaluator£"
+
+    planet_giga_dark_matter_weavers:0 "Dark Matter Weaver Jobs"
 
     #######################################################################################################
     # JOBS
@@ -47,7 +49,12 @@
     mod_planet_culture_workers_society_research_produces_add:0 "£society_research£ $society_research$ from £job_culture_worker£ $job_culture_worker_plural$"
     mod_planet_culture_workers_unity_produces_add:0 "£unity£ $unity$ from £job_culture_worker£ $job_culture_worker_plural$"
 
+    mod_planet_evaluators_energy_upkeep_add:0 "£energy£ $energy$ Upkeep of £job_evaluator£ $job_evaluator_plural$"
+    mod_planet_evaluators_food_upkeep_add:0 "£food£ $food$ Upkeep of £job_evaluator£ $job_evaluator_plural$"
+    mod_planet_evaluators_unity_produces_add:0 "£unity£ $unity$ from £job_evaluator£ $job_evaluator_plural$"
+
     mod_planet_administrators_energy_upkeep_add:0 "£energy£ $energy$ Upkeep of £job_bureaucrat£ Administrators"
+    mod_planet_administrators_food_upkeep_add:0 "£food£ $food$ Upkeep of £job_bureaucrat£ Administrators"
     mod_planet_administrators_consumer_goods_upkeep_add:0 "£consumer_goods£ $consumer_goods$ Upkeep of £job_bureaucrat£ Administrators"
     mod_planet_administrators_unity_produces_add:0 "£unity£ $unity$ from £job_bureaucrat£ Administrators"
 
@@ -85,6 +92,7 @@
 
     mod_planet_researchers_energy_upkeep_add:0 "£energy£ $energy$ Upkeep of £job_researcher£ [GetResearcherPlural]"
     mod_planet_researchers_sr_iodizium_upkeep_add:0 "£sr_iodizium£ $sr_iodizium$ Upkeep of £job_researcher£ [GetResearcherPlural]" 
+    mod_planet_researchers_minerals_upkeep_add:0 "£minerals£ $minerals$ Upkeep of £job_researcher£ [GetResearcherPlural]"
 
     mod_planet_pop_assemblers_alloys_upkeep_add:0 "£alloys£ $alloys$ Upkeep of £job_replicator£ $job_replicator_plural$"
 
@@ -129,6 +137,10 @@
 
     job_artisan_icon:0 "£job_artisan£"
     job_artificer_icon:0 "£job_artificer£"
+
+    mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_add:0 "£sr_dark_matter£ $sr_dark_matter$ from £job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$"
+    mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_mult:0 "$mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_add$"
+    mod_planet_giga_dark_matter_weavers_acot_sr_dark_energy_produces_add:0 "£acot_sr_dark_energy£ $acot_sr_dark_energy$ from £job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$"
 
     #######################################################################################################
     # POPS

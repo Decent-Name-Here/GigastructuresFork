@@ -9,6 +9,7 @@
 district_maginot_world_barracks = {
 	base_buildtime = @maginot_district_buildtime
 	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
 
 	show_on_uncolonized = {
 		uses_district_set = maginot_world_districts
@@ -568,6 +569,7 @@ district_maginot_world_bunkers = {
 district_maginot_ringworld_barracks = {
 	base_buildtime = @maginot_district_buildtime_ringworld
 	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
 
 	show_on_uncolonized = {
 		uses_district_set = maginot_ringworld_districts
@@ -585,7 +587,7 @@ district_maginot_ringworld_barracks = {
 		cost = {
 			minerals = @maginot_district_cost_minerals_ringworld
 			alloys = @maginot_district_cost_alloys_cheap_ringworld
-			rare_crystals = @maginot_district_cost_sr
+			rare_crystals = @maginot_district_cost_sr_ringworld
 		}
 		upkeep = {
 			energy = @maginot_district_upkeep_energy_barracks_ringworld
@@ -833,7 +835,7 @@ district_maginot_ringworld_shield_generators = {
 		cost = {
 			minerals = @maginot_district_cost_minerals_ringworld
 			alloys = @maginot_district_cost_alloys_medium_ringworld
-			exotic_gases = @maginot_district_cost_sr
+			exotic_gases = @maginot_district_cost_sr_ringworld
 		}
 		upkeep = {
 			energy = @maginot_district_upkeep_energy_shields_ringworld
@@ -1009,7 +1011,7 @@ district_maginot_ringworld_bunkers = {
 		cost = {
 			minerals = @maginot_district_cost_minerals_ringworld
 			alloys = @maginot_district_cost_alloys_medium_ringworld
-			volatile_motes = @maginot_district_cost_sr
+			volatile_motes = @maginot_district_cost_sr_ringworld
 		}
 		upkeep = {
 			energy = @maginot_district_upkeep_energy_medium_ringworld
