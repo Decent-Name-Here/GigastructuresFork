@@ -23,7 +23,7 @@
   
   mod_planet_buildings_hab_capital_alloys_upkeep_mult:0 "£building£居住站首都建筑£alloys£$alloys$维护费"
   
-  
+  mod_giga_planet_unemployment_coverage:99 "Jobs for Unemployed Pops"
   
   ############################################################################################################
   # ECONOMIC CATEGORIES
@@ -34,6 +34,8 @@
   planet_giga_virtual_trainers:0 "虚拟训练岗位"
   planet_giga_virtual_training_job_icon:0 "£job_giga_virtual_training_coordinator£"
   planet_giga_virtual_training_job_icon_gestalt:0 "£job_evaluator£"
+  
+  planet_giga_dark_matter_weavers:99 "Dark Matter Weaver Jobs"
   
   #######################################################################################################
   # JOBS
@@ -47,7 +49,12 @@
   mod_planet_culture_workers_society_research_produces_add:0 "来自£job_culture_worker£$job_culture_worker_plural$的£society_research£$society_research$"
   mod_planet_culture_workers_unity_produces_add:0 "来自£job_culture_worker£$job_culture_worker_plural$的£unity£$unity$"
   
+  mod_planet_evaluators_energy_upkeep_add:99 "£energy£ $energy$ Upkeep of £job_evaluator£ $job_evaluator_plural$"
+  mod_planet_evaluators_food_upkeep_add:99 "£food£ $food$ Upkeep of £job_evaluator£ $job_evaluator_plural$"
+  mod_planet_evaluators_unity_produces_add:99 "£unity£ $unity$ from £job_evaluator£ $job_evaluator_plural$"
+  
   mod_planet_administrators_energy_upkeep_add:0 "£job_bureaucrat£管理者£energy£$energy$维护费"
+  mod_planet_administrators_food_upkeep_add:99 "£food£ $food$ Upkeep of £job_bureaucrat£ Administrators"
   mod_planet_administrators_consumer_goods_upkeep_add:0 "£job_bureaucrat£管理者的£consumer_goods£$consumer_goods$维护费"
   mod_planet_administrators_unity_produces_add:0 "来自£job_bureaucrat£管理者的£unity£$unity$"
   
@@ -85,6 +92,7 @@
   
   mod_planet_researchers_energy_upkeep_add:0 "£job_researcher£[GetResearcherPlural]£energy£$energy$维护费"
   mod_planet_researchers_sr_iodizium_upkeep_add:0 "£job_researcher£[GetResearcherPlural]£sr_iodizium£$sr_iodizium$维护费"
+  mod_planet_researchers_minerals_upkeep_add:99 "£minerals£ $minerals$ Upkeep of £job_researcher£ [GetResearcherPlural]"
   
   mod_planet_pop_assemblers_alloys_upkeep_add:0 "£job_replicator£$job_replicator_plural$£alloys£$alloys$维护费"
   
@@ -129,6 +137,10 @@
   
   job_artisan_icon:0 "£job_artisan£"
   job_artificer_icon:0 "£job_artificer£"
+  
+  mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_add:99 "£sr_dark_matter£ $sr_dark_matter$ from £job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$"
+  mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_mult:99 "$mod_planet_giga_dark_matter_weavers_sr_dark_matter_produces_add$"
+  mod_planet_giga_dark_matter_weavers_acot_sr_dark_energy_produces_add:99 "£acot_sr_dark_energy£ $acot_sr_dark_energy$ from £job_giga_dark_matter_weaver£ $job_giga_dark_matter_weaver_plural$"
   
   #######################################################################################################
   # POPS

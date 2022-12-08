@@ -46,7 +46,7 @@ building_giga_elysium_host_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = no
 				}
 			}
@@ -56,7 +56,7 @@ building_giga_elysium_host_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = yes
 				}
 			}
@@ -80,7 +80,7 @@ building_giga_elysium_host_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_mind_over_matter
+				has_tradition = tr_psionics_psi_corps
 			}
 		}
 		modifier = {
@@ -93,7 +93,7 @@ building_giga_elysium_host_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				is_mechanical_empire = yes
+				has_active_tradition = tr_synthetics_finish
 			}
 		}
 		modifier = {
@@ -110,7 +110,7 @@ building_giga_elysium_host_capital = {
 		trigger = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_mind_over_matter
+				has_tradition = tr_psionics_psi_corps
 			}
 		}
 		text = job_telepath_effect_desc
@@ -121,9 +121,9 @@ building_giga_elysium_host_capital = {
 			exists = owner
 			owner = {
 				or = {
-					is_mechanical_empire = yes
+					has_active_tradition = tr_synthetics_finish
 					and = {
-						not = { has_ascension_perk = ap_engineered_evolution }
+						not = { has_tradition = tr_genetics_adopt }
 						has_technology = tech_robotic_workers
 						has_policy_flag = robots_allowed
 					}
@@ -209,7 +209,7 @@ building_giga_elysium_host_capital = {
 			exists = owner
 			owner = {
 				nor = { 
-					has_ascension_perk = ap_engineered_evolution 
+					has_tradition = tr_genetics_adopt
 					has_valid_civic = civic_permanent_employment
 				}
 				has_technology = tech_robotic_workers
@@ -254,10 +254,19 @@ building_giga_elysium_host_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_engineered_evolution
+				has_tradition = tr_genetics_adopt
 			}
 		}
 		planet_pop_assembly_organic_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_genetics_efficient_cloning
+			}
+		}
+		planet_pop_assembly_organic_add = 1.5
 	}
 
 	######################################################
@@ -418,7 +427,7 @@ building_giga_elysium_host_major_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = no
 				}
 			}
@@ -428,7 +437,7 @@ building_giga_elysium_host_major_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = yes
 				}
 			}
@@ -452,7 +461,7 @@ building_giga_elysium_host_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_mind_over_matter
+				has_tradition = tr_psionics_psi_corps
 			}
 		}
 		modifier = {
@@ -465,12 +474,12 @@ building_giga_elysium_host_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				is_mechanical_empire = yes
+				has_active_tradition = tr_synthetics_finish
 			}
 		}
 		modifier = {
-			job_clerk_add = -2
-			job_roboticist_add = 2
+			job_clerk_add = -1
+			job_roboticist_add = 1
 		}
 	}
 
@@ -482,7 +491,7 @@ building_giga_elysium_host_major_capital = {
 		trigger = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_mind_over_matter
+				has_tradition = tr_psionics_psi_corps
 			}
 		}
 		text = job_telepath_effect_desc
@@ -493,9 +502,9 @@ building_giga_elysium_host_major_capital = {
 			exists = owner
 			owner = {
 				or = {
-					is_mechanical_empire = yes
+					has_active_tradition = tr_synthetics_finish
 					and = {
-						not = { has_ascension_perk = ap_engineered_evolution }
+						not = { has_tradition = tr_genetics_adopt }
 						has_technology = tech_robotic_workers
 						has_policy_flag = robots_allowed
 					}
@@ -558,7 +567,7 @@ building_giga_elysium_host_major_capital = {
 			exists = owner
 			owner = {
 				nor = { 
-					has_ascension_perk = ap_engineered_evolution 
+					has_tradition = tr_genetics_adopt
 					has_valid_civic = civic_permanent_employment
 				}
 				has_technology = tech_robotic_workers
@@ -603,10 +612,19 @@ building_giga_elysium_host_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_engineered_evolution
+				has_tradition = tr_genetics_adopt
 			}
 		}
 		planet_pop_assembly_organic_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_genetics_efficient_cloning
+			}
+		}
+		planet_pop_assembly_organic_add = 1.5
 	}
 
 	######################################################
@@ -752,7 +770,7 @@ building_giga_elysium_host_hive_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = no
 				}
 			}
@@ -762,7 +780,7 @@ building_giga_elysium_host_hive_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = yes
 				}
 			}
@@ -876,10 +894,19 @@ building_giga_elysium_host_hive_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_engineered_evolution
+				has_tradition = tr_genetics_adopt
 			}
 		}
 		planet_pop_assembly_organic_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_genetics_efficient_cloning
+			}
+		}
+		planet_pop_assembly_organic_add = 1.5
 	}
 
 	######################################################
@@ -1025,7 +1052,7 @@ building_giga_elysium_host_hive_major_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = no
 				}
 			}
@@ -1035,7 +1062,7 @@ building_giga_elysium_host_hive_major_capital = {
 			trigger = {
 				exists = owner
 				owner = {
-					has_ascension_perk = ap_engineered_evolution
+					has_tradition = tr_genetics_adopt
 					is_lithoid_empire = yes
 				}
 			}
@@ -1167,10 +1194,19 @@ building_giga_elysium_host_hive_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
-				has_ascension_perk = ap_engineered_evolution
+				has_tradition = tr_genetics_adopt
 			}
 		}
 		planet_pop_assembly_organic_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = tr_genetics_efficient_cloning
+			}
+		}
+		planet_pop_assembly_organic_add = 1.5
 	}
 
 	######################################################
@@ -1329,13 +1365,44 @@ building_giga_elysium_host_machine_capital = {
 	}
 
 	######################################################
+	# Crucible world
+
+	triggered_planet_modifier = {
+		potential = {
+			has_designation = col_crucible
+		}
+		job_replicator_add = -1
+		job_crucible_drone_add = 2
+	}
+	triggered_desc = {
+		trigger = {
+			has_designation = col_crucible
+		}
+		text = job_crucible_drone_effect_desc
+	}
+
+	######################################################
 	# Upgraded assembly plant tech
+
+	triggered_planet_modifier = {
+		potential = {
+			not = { has_designation = col_crucible }
+			exists = owner
+			owner = {
+				has_technology = tech_mega_assembly
+			}
+		}
+		job_replicator_add = 1
+	}
+
+	######################################################
+	# Synth finisher
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
-				has_technology = tech_mega_assembly
+				has_active_tradition = tr_synthetics_finish_machine
 			}
 		}
 		job_replicator_add = 1
@@ -1508,13 +1575,44 @@ building_giga_elysium_host_machine_major_capital = {
 	}
 
 	######################################################
+	# Crucible world
+
+	triggered_planet_modifier = {
+		potential = {
+			has_designation = col_crucible
+		}
+		job_replicator_add = -1
+		job_crucible_drone_add = 2
+	}
+	triggered_desc = {
+		trigger = {
+			has_designation = col_crucible
+		}
+		text = job_crucible_drone_effect_desc
+	}
+
+	######################################################
 	# Upgraded assembly plant tech
+
+	triggered_planet_modifier = {
+		potential = {
+			not = { has_designation = col_crucible }
+			exists = owner
+			owner = {
+				has_technology = tech_mega_assembly
+			}
+		}
+		job_replicator_add = 1
+	}
+
+	######################################################
+	# Synth finisher
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
-				has_technology = tech_mega_assembly
+				has_active_tradition = tr_synthetics_finish_machine
 			}
 		}
 		job_replicator_add = 1
