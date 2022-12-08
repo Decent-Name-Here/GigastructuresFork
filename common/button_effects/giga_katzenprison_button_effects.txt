@@ -19,7 +19,7 @@ giga_douclaw_real_active = {
 giga_loris_real_active = { 
     potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = loris_dead has_global_flag = loris_kidnapped has_global_flag = loris_converted } }
     allow = { hidden_trigger = { always = yes } }
-    effect = { hidden_effect = { from = {  } } }
+    effect = { hidden_effect = { country_event = { id = giga_katzenprison.1001 } } }
 }
 #Loris
 giga_meolson_real_active = { 
@@ -153,6 +153,60 @@ giga_stron_real_active = {
 }
 giga_ungers_real_active = { 
     potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_global_flag = ungers_dead has_global_flag = ungers_kidnapped has_global_flag = ungers_converted } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+
+
+#Dossier Stuff
+
+giga_dossier_admiral_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_meorwin_active has_country_flag = katzenprison_dossier_koko_active has_country_flag = katzenprison_dossier_kimitz_active has_country_flag = katzenprison_dossier_flopparnold_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_engineering_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_ungers_active has_country_flag = katzenprison_dossier_stron_active has_country_flag = katzenprison_dossier_birch_active has_country_flag = katzenprison_dossier_katzhaum_active has_country_flag = katzenprison_dossier_pawlbert_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_envoy_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_wolfgang_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_general_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_itch_active has_country_flag = katzenprison_dossier_pawtton_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_governor_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_katzsauffe_active has_country_flag = katzenprison_dossier_pawllas_active has_country_flag = katzenprison_dossier_garf_active has_country_flag = katzenprison_dossier_rex_active has_country_flag = katzenprison_dossier_strobel_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_physic_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_novasum_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_ruler_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_kaiser_active has_country_flag = katzenprison_dossier_douclaw_active has_country_flag = katzenprison_dossier_meolson_active has_country_flag = katzenprison_dossier_steve_active has_country_flag = katzenprison_dossier_loris_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_scientist_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_tarynn_active has_country_flag = katzenprison_dossier_lilith_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_society_bg = { 
+    potential = { from = { OR = { has_country_flag = katzenprison_dossier_katzmann_active } } }
+    allow = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { from = {  } } }
+}
+giga_dossier_spy_bg = { 
+    potential = { from = { OR = { has_country_flag =  katzenprison_dossier_dietrich_active } } }
     allow = { hidden_trigger = { always = yes } }
     effect = { hidden_effect = { from = {  } } }
 }

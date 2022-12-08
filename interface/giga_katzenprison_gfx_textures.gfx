@@ -50,4 +50,20 @@ spriteTypes = {
 
 	#Silly characters
 	spriteType = { name = "GFX_katzen_prison_kaiser_cattail_active"			textureFile = "gfx/interface/katzenprison_ui/characters/kaiser_cattail_active.dds" 						}
+
+
+
+	### DOSSIER ITEMS
+
+	spriteType = { name = "GFX_katzen_dossier_bg"							textureFile = "gfx/interface/katzenprison_ui/dossier/katzendossier_bg.dds" 								}
+	spriteType = { name = "GFX_admiral_bg" 									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_admiral_bg.dds"					}
+	spriteType = { name = "GFX_engineer_bg" 								textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_engineer_bg.dds"				}
+	spriteType = { name = "GFX_envoy_bg" 									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_envoy_bg.dds"					}
+	spriteType = { name = "GFX_general_bg" 									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_general_bg.dds"					}
+	spriteType = { name = "GFX_governor_bg"									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_governor_bg.dds" 				}
+	spriteType = { name = "GFX_physics_bg" 									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_physics_bg.dds"					}
+	spriteType = { name = "GFX_ruler_bg" 									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_ruler_bg.dds"					}
+	spriteType = { name = "GFX_scientist_bg" 								textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_scientist_bg.dds"				}
+	spriteType = { name = "GFX_society_bg" 									textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_society_bg.dds"					}
+	spriteType = { name = "GFX_spy_bg" 										textureFile = "gfx/interface/katzenprison_ui/dossier/backgrounds/leader_spy_bg.dds"						}
 }

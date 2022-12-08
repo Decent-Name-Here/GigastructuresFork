@@ -1,11 +1,18 @@
 namespace = giga_katzenprison
-# Loris = 1000
+#TODO 
+#Spawning for characters
+#Character traits
+#Biographies
+
+
+
+# Loris = 2001+
 
 #########################
 ### Katzen Prison GUI ###
 #########################
 country_event = { 
-	id = giga_katzenprison.0001
+	id = giga_katzenprison.1
 	title = giga_katzenprison.0001.name
 	desc = giga_katzenprison.0001.desc
 	is_triggered_only = yes
@@ -35,8 +42,16 @@ country_event = {
 
 #Loris main - LET ME OUT GROBCREMOR
 country_event = {
-	id = giga_katzenprison.1000
+	id = giga_katzenprison.2001
 	title = "Katzgouverneur Loris"
 	is_triggered_only = yes
-
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:flusion_loris
+		room = "dossier_background"
+	}
+	immediate = { 
+		set_country_flag = katzenprison_dossier_loris_active
+	}
+	custom_gui = "giga_katzen_dossier"
 }
