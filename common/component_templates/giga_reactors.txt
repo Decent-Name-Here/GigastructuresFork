@@ -71,8 +71,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -102,8 +102,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -133,11 +133,11 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
-			}
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 		}
 	}
+}
 	resources = {
 		category = ship_components
 		cost = { ehof_sr_negative_mass = @ehof_cruiser_reactor_cost_1 }
@@ -164,8 +164,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -195,8 +195,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -226,8 +226,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -266,8 +266,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -298,8 +298,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -329,8 +329,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = ehof_sr_negative_mass value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = ehof_sr_negative_mass }
 			}
 		}
 	}
@@ -360,8 +360,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -390,8 +390,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -420,8 +420,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -450,8 +450,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -480,8 +480,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -510,8 +510,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -549,8 +549,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -580,8 +580,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
@@ -610,8 +610,8 @@ utility_component_template = {
 			factor = 0.0
 			ehof_default_country = yes
 			OR =  {
-				has_monthly_income = { resource = ehof_sr_sentient_metal value <= 0 }
-				has_monthly_income = { resource = sr_dark_matter value <= 0 }
+				no_resource_for_component = { RESOURCE = ehof_sr_sentient_metal }
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
 			}
 		}
 	}
