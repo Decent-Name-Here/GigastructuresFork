@@ -1079,7 +1079,7 @@ giga_contact_laurn = {
 		 	NOT = { 
 		 		has_country_flag = katzen_vassal
 		 	}
-		 	has_global_flag = katzenartig_imperium_happened` #can still be contaced after the kaiser is dead, can be disabled though
+		 	has_global_flag = katzenartig_imperium_happened #can still be contaced after the kaiser is dead, can be disabled though
 		}
 	}
 	allow = {
@@ -1089,6 +1089,7 @@ giga_contact_laurn = {
 					has_country_flag = katzenprison_map_active
 				}
 			}
+			exists = from 
 		}
 	}
 	effect = { custom_tooltip = "giga_contact_laurn_tooltip" hidden_effect = { from = { country_event = { id = giga_katzenprison.0001 } } } }
