@@ -265,6 +265,22 @@ generate_flusion_primitives_on_planet = {
 			save_global_event_target_as = flusionians
 		}
 	}
+	create_species = { 
+		name = "Bribblish Ezicania"
+		plural = "Bribblish Ezicanias"
+		class = POUCHKINN
+		portrait = aaron
+		homeworld = event_target:gigaflusion
+		traits = {
+			trait = trait_pc_continental_preference
+			trait = trait_industrious
+			trait = trait_agrarian
+			trait = trait_quarrelsome
+		}
+		effect = {
+			save_global_event_target_as = aaron_portrait
+		}
+	}
 	create_species = {
 		name = "Katzen"
 		plural = "Katzens"

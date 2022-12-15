@@ -1757,15 +1757,33 @@ create_laurandar = {
 		}
 		type = default
 		effect = {
-			create_leader = {
-				class = ruler
-				species = event_target:bribblish_ezics
-				name = "Aaron N. Bleu"
-				gender = male
-				effect = {
-					save_event_target_as = laurandar_ruler
-					set_aaron_real_portrait = yes
+			if = { 
+				limit = { 
+					event_target:flusion_primitives_country = {
+						NOT = { 
+							any_owned_leader = { 
+								has_leader_flag = aaron
+							}
+						}
+					}
 				}
+				create_leader = {
+					class = ruler
+					species = event_target:bribblish_ezics
+					name = "Aaron N. Bleu"
+					gender = male
+					effect = {
+						save_event_target_as = laurandar_ruler
+						set_aaron_real_portrait = yes
+					}
+				}
+			}
+			else = {
+				event_target:aaron = {
+					exile_leader_as = aaronmoving
+				}
+				set_leader = aaronmoving
+				event_target:aaron = { set_aaron_real_portrait = yes save_global_event_target_as = laurandar_ruler }
 			}
 			set_leader = event_target:laurandar_ruler
 			set_country_flag = laurandar
