@@ -4,7 +4,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 1400 height = 1100 }
+		size = { width = 1400 height = 1200 }
 
 		background = { 
 			name = "background"
@@ -76,7 +76,7 @@ guiTypes = {
 		### PORTRAIT ###
 		containerWindowType = { #Hidden?
 			name = "portrait_background"
-			position = { x = 300 y = 45 }
+			position = { x = 300 y = 1146 }
 			size = { width = 482 height = 175 }
 			clipping = yes
 
@@ -94,9 +94,9 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "portrait"
-			position = { x = 1134 y = 225 }
-			size = { width = 224 height = 338 }
-			clipping = yes
+			position = { x = 62 y = 946 }
+			size = { width = 482 height = 175 }
+			clipping = no
 			
 			
 			iconType = {
@@ -104,457 +104,444 @@ guiTypes = {
 				spriteType = "GFX_portrait_gamesetup_mask"
 				clipping = yes
 				alwaysTransparent = yes
-				position = { x = -122 y = 0 }
-				scale = 0.7
+				position = { x = -3 y = -3 }
+				scale = 0.5
 			}
-			
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_flusion_portrait_shadow_frame"
+				position = { x = -6 y = -6 }
+				alwaysTransparent = yes
+				scale = 0.5
+			}
+
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				alwaysTransparent = yes
+				position = { x = -3 y = -3 }
+				scale = 0.5
+			}
+	
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = -6 y = -5 }
+				alwaysTransparent = yes
+				scale = 0.5
+			}
+			iconType = {
+				name = "aaron_name"
+				spriteType = "GFX_aaron_name"
+				position = { x = 45 y = 160 }
+				alwaysTransparent = yes
+				scale = 0.75
+			}
 
 		}
-		containerWindowType = { 
-			name = "portrait_overlay"
-			position = { x = 1123 y = 212.5 }
-			iconType = { 
-				name = "portrait_overlay_frame"
-				spriteType = "GFX_katzen_prison_leader_overlay"
-				clipping = no
-				alwaysTransparent = no
-				position = { x = 0 y = 0 }
-				scale = 0.705
-			}
-			
-		}
+
 		instantTextBoxType = { #Description
 			name = "alien_message"
 			font = "cg_16b"
-			position = { x = 1135 y = 468 }		
-			maxWidth = 224
+			position = { x = 320 y = 1038 }	
+			maxWidth = 210
 			maxHeight = 100
-			format = center
+			format = left
 			scrollbartype = "standardtext_slider"
 		}
 		### CHARACTERS ###
 		#Boxes
-		iconType = { 
-			name = "state_management_box"
-			spriteType = "GFX_katzen_prison_state_management_box"
-			alwaysTransparent = yes
-			position = { x = 394 y = 346 }
-		}
-		iconType = { 
-			name = "military_high_command_box"
-			spriteType = "GFX_katzen_prison_military_high_command_box"
-			alwaysTransparent = yes
-			position = { x = 35 y = 286 }
-		}
-		iconType = { 
-			name = "economy_box"
-			spriteType = "GFX_katzen_prison_economy_box"
-			alwaysTransparent = yes
-			position = { x = 728 y = 246 }
-		}
-		iconType = { 
-			name = "scientific_research_box"
-			spriteType = "GFX_katzen_prison_scientific_researcch_box"
-			alwaysTransparent = yes
-			position = { x = 728 y = 582 }
-		}
-		containerWindowType = { 
-			name = "kaiser_box"
-			position = { x = 511 y = 383 }
-			effectButtonType = { #Kaiser
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "kaiser_active"
-				no_clicksound = yes
-				effect = "giga_kaiser_active"
-				spriteType = "GFX_katzen_prison_kaiser_active"
-				position = { x = 0 y = 0 }
-			}
-			effectButtonType = { #Funny kaiser
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "kaiser_silly_active"
-				no_clicksound = yes
-				effect = "giga_kaiser_cattail_active"
-				spriteType = "GFX_katzen_prison_kaiser_cattail_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "douclaw_box"
-			position = { x = 415 y = 519 }
-			effectButtonType = { #Douclaw
-				size = { x = 77 y = 184 }
-				scale = 1
-				name = "douclaw_active"
-				no_clicksound = yes
-				effect = "giga_douclaw_active"
-				spriteType = "GFX_katzen_prison_douclaw_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = {  
-			name = "loris_box"
-			position = { x = 607 y = 519 }
-			effectButtonType = { #Loris
-				size = { x = 100 y = 104 }
-				scale = 1
-				name = "loris_active"
-				no_clicksound = yes
-				effect = "giga_loris_active"
-				spriteType = "GFX_katzen_prison_loris_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "meolson_box"
-			position = { x = 463 y = 655 }
-			effectButtonType = { #Meolson
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "meolson_active"
-				no_clicksound = yes
-				effect = "giga_meolson_active"
-				spriteType = "GFX_katzen_prison_meolson_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "steve_box"
-			position = { x = 511 y = 519 }
-			effectButtonType = { #Steve
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "steve_active"
-				no_clicksound = yes
-				effect = "giga_steve_active"
-				spriteType = "GFX_katzen_prison_steve_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "wolfgang_box"
-			position = { x = 559 y = 655 }
-			effectButtonType = { #Wolfgang
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "wolfgang_active"
-				no_clicksound = yes
-				effect = "giga_wolfgang_active"
-				spriteType = "GFX_katzen_prison_wolfgang_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "dietrich_box"
-			position = { x = 267 y = 317 }
-			effectButtonType = { #Dietrich
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "dietrich_active"
-				no_clicksound = yes
-				effect = "giga_dietrich_active"
-				spriteType = "GFX_katzen_prison_dietrich_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "flopparnold_box"
-			position = { x = 178 y = 650 }
-			effectButtonType = { #Flopparnold
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "flopparnold_active"
-				no_clicksound = yes
-				effect = "giga_flopparnold_active"
-				spriteType = "GFX_katzen_prison_flopparnold_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "itch_box"
-			position = { x = 165 y = 383 } 
-			effectButtonType = { #Itch
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "itch_active"
-				no_clicksound = yes
-				effect = "giga_itch_active"
-				spriteType = "GFX_katzen_prison_itch_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "katzsauffe_box"
-			position = { x = 63 y =  317 }
-			effectButtonType = { #Katzsauffe
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "katzsauffe_active"
-				no_clicksound = yes
-				effect = "giga_katzsauffe_active"
-				spriteType = "GFX_katzen_prison_katzsauffe_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "kimitz_box"
-			position = { x = 255 y = 650 }
-			effectButtonType = { #Kimitz
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "kimitz_active"
-				no_clicksound = yes
-				effect = "giga_kimitz_active"
-				spriteType = "GFX_katzen_prison_kimitz_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "koko_box"
-			position = { x = 63 y = 716 }
-			effectButtonType = { #Koko
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "koko_active"
-				no_clicksound = yes
-				effect = "giga_koko_active"
-				spriteType = "GFX_katzen_prison_koko_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "meorwin_box"
-			position = { x = 63 y = 584 }
-			effectButtonType = { #Meorwin
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "meorwin_active"
-				no_clicksound = yes
-				effect = "giga_meorwin_active"
-				spriteType = "GFX_katzen_prison_meorwin_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = {
-			name = "pawllas_box"
-			position = { x = 63 y = 449 }
-			effectButtonType = { #Pawllas
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "pawllas_active"
-				no_clicksound = yes
-				effect = "giga_pawllas_active"
-				spriteType = "GFX_katzen_prison_pawllas_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "pawtton_box"
-			position = { x = 267 y = 449 }
-			effectButtonType = { #Pawtton
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "pawtton_active"
-				no_clicksound = yes
-				effect = "giga_pawtton_active"
-				spriteType = "GFX_katzen_prison_pawtton_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = {
-			name = "katzmann_box"
-			position = { x = 760 y = 755 }
-			effectButtonType = { #Katzmann
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "katzmann_active"
-				no_clicksound = yes
-				effect = "giga_katzmann_active"
-				spriteType = "GFX_katzen_prison_katzmann_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "lilith_box"
-			position = { x = 970 y = 755 }
-			effectButtonType = { #Lilith
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "lilith_active"
-				no_clicksound = yes
-				effect = "giga_lilith_active"
-				spriteType = "GFX_katzen_prison_lilith_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "novasum_box"
-			position = { x = 970 y = 618 }
-			effectButtonType = { #Novasum
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "novasum_active"
-				no_clicksound = yes
-				effect = "giga_novasum_active"
-				spriteType = "GFX_katzen_prison_novasum_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "pawlbert_box"
-			position = { x = 865 y = 687 }
-			effectButtonType = { #Pawlbert
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "pawlbert_active"
-				no_clicksound = yes
-				effect = "giga_pawlbert_active"
-				spriteType = "GFX_katzen_prison_pawlbert_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "tarynn_box"
-			position = { x = 760 y = 618 }
-			effectButtonType = { #Tarynn
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "tarynn_active"
-				no_clicksound = yes
-				effect = "giga_tarynn_active"
-				spriteType = "GFX_katzen_prison_tarynn_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "birch_box"
-			position = { x = 907 y = 282 }
-			effectButtonType = { #Birch
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "birch_active"
-				no_clicksound = yes
-				effect = "giga_birch_active"
-				spriteType = "GFX_katzen_prison_birch_active"
-				position = { x = 0 y = 0 }
-			}
-		} 
-		containerWindowType = { 
-			name = "garf_box"
-			position = { x = 760 y = 419 }
-			effectButtonType = { #Garf
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "garf_active"
-				no_clicksound = yes
-				effect = "giga_garf_active"
-				spriteType = "GFX_katzen_prison_garf_active"
-				position = { x = 0 y = 0 }
-			}
-		} 
-		containerWindowType = { 
-			name = "katzhaum_box"
-			position = { x = 991 y = 282 }
-			effectButtonType = { #Katzhaum
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "katzhaum_active"
-				no_clicksound = yes
-				effect = "giga_katzhaum_active"
-				spriteType = "GFX_katzen_prison_katzhaum_active"
-				position = { x = 0 y = 0 }
-			}
-		} 
-		containerWindowType = { 
-			name = "rex_box"
-			position = { x = 865 y = 419 }
-			effectButtonType = { #Rex
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "rex_active"
-				no_clicksound = yes
-				effect = "giga_rex_active"
-				spriteType = "GFX_katzen_prison_rex_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "strobel_box"
-			position = { x = 970 y = 419 }
-			effectButtonType = { #Strobel
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "strobel_active"
-				no_clicksound = yes
-				effect = "giga_strobel_active"
-				spriteType = "GFX_katzen_prison_strobel_active"
-				position = { x = 0 y = 0 }
-			}
-		} 
-		containerWindowType = { 
-			name = "stron_box"
-			position = { x = 823 y = 282 }
-			effectButtonType = { #Stron
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "stron_active"
-				no_clicksound = yes
-				effect = "giga_stron_active"
-				spriteType = "GFX_katzen_prison_stron_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		containerWindowType = { 
-			name = "ungers_box"
-			position = { x = 739 y = 282 }
-			effectButtonType = { #Ungers
-				size = { x = 77 y = 104 }
-				scale = 1
-				name = "ungers_active"
-				no_clicksound = yes
-				effect = "giga_ungers_active"
-				spriteType = "GFX_katzen_prison_ungers_active"
-				position = { x = 0 y = 0 }
-			}
-		}
-		##Kaiser
-		# containerWindowType = { 
-		# 	name = "kaiser"
-		# 	position = { x = 517 y = 222.5 }
+		containerWindowType = { #So i dont have to manually adjust each one again
+			name = "Characters"
+			position = { x = 0 y = 46 }
+			size = { width = 1091 height = 735 }
+			clipping = no
 
-		# 	effectButtonType = {
-		# 		size = { x = 78 y = 105 }
-		# 		scale = 1
-		# 		name = "kaiser_active"
-		# 		no_clicksound = yes
-		# 		effect = "giga_kaiser_active"
-		# 		alwaysTransparent = yes
-		# 		spriteType = "GFX_katzen_prison_kaiser_active"
-		# 		position = { x = 0 y = 0 }
-		# 	}
-		# 	# Kaiser Cattail (Realer)
-		# 	effectButtonType = { 
-		# 		size = { x = 78 y = 105` }
-		# 		scale = 1
-		# 		name = "kaiser_cattail_active"
-		# 		no_clicksound = yes
-		# 		effect = "giga_kaiser_cattail_active"
-		# 		alwaysTransparent = yes
-		# 		spriteType = "GFX_katzen_prison_kaiser_cattail_active"
-		# 		position = { x = 0 y = 0 }
-		# 	}
-		# 	# Border
-		# 	iconType = { 
-		# 		size = { x = 90 y = 117 }
-		# 		scale = 1
-		# 		name = "kaiser_border"
-		# 		spriteType = "GFX_katzen_prison_state_management_border"
-		# 		position = { x = -6 y = -6 }
-		# 	}
-		# }
-		# Kaiser Real
-		
+			iconType = { 
+				name = "state_management_box"
+				spriteType = "GFX_katzen_prison_state_management_box"
+				alwaysTransparent = yes
+				position = { x = 394 y = 276 }
+			}
+			iconType = { 
+				name = "military_high_command_box"
+				spriteType = "GFX_katzen_prison_military_high_command_box"
+				alwaysTransparent = yes
+				position = { x = 35 y = 216 }
+			}
+			iconType = { 
+				name = "economy_box"
+				spriteType = "GFX_katzen_prison_economy_box"
+				alwaysTransparent = yes
+				position = { x = 728 y = 176 }
+			}
+			iconType = { 
+				name = "scientific_research_box"
+				spriteType = "GFX_katzen_prison_scientific_researcch_box"
+				alwaysTransparent = yes
+				position = { x = 728 y = 512 }
+			}
+			containerWindowType = { 
+				name = "kaiser_box"
+				position = { x = 511 y = 313 }
+				effectButtonType = { #Kaiser
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "kaiser_active"
+					no_clicksound = yes
+					effect = "giga_kaiser_active"
+					spriteType = "GFX_katzen_prison_kaiser_active"
+					position = { x = 0 y = 0 }
+				}
+				effectButtonType = { #Funny kaiser
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "kaiser_silly_active"
+					no_clicksound = yes
+					effect = "giga_kaiser_cattail_active"
+					spriteType = "GFX_katzen_prison_kaiser_cattail_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "douclaw_box"
+				position = { x = 415 y = 449 }
+				effectButtonType = { #Douclaw
+					size = { x = 77 y = 184 }
+					scale = 1
+					name = "douclaw_active"
+					no_clicksound = yes
+					effect = "giga_douclaw_active"
+					spriteType = "GFX_katzen_prison_douclaw_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = {  
+				name = "loris_box"
+				position = { x = 607 y = 449 }
+				effectButtonType = { #Loris
+					size = { x = 100 y = 104 }
+					scale = 1
+					name = "loris_active"
+					no_clicksound = yes
+					effect = "giga_loris_active"
+					spriteType = "GFX_katzen_prison_loris_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "meolson_box"
+				position = { x = 463 y = 585 }
+				effectButtonType = { #Meolson
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "meolson_active"
+					no_clicksound = yes
+					effect = "giga_meolson_active"
+					spriteType = "GFX_katzen_prison_meolson_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "steve_box"
+				position = { x = 511 y = 449 }
+				effectButtonType = { #Steve
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "steve_active"
+					no_clicksound = yes
+					effect = "giga_steve_active"
+					spriteType = "GFX_katzen_prison_steve_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "wolfgang_box"
+				position = { x = 559 y = 585 }
+				effectButtonType = { #Wolfgang
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "wolfgang_active"
+					no_clicksound = yes
+					effect = "giga_wolfgang_active"
+					spriteType = "GFX_katzen_prison_wolfgang_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "dietrich_box"
+				position = { x = 267 y = 247 }
+				effectButtonType = { #Dietrich
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "dietrich_active"
+					no_clicksound = yes
+					effect = "giga_dietrich_active"
+					spriteType = "GFX_katzen_prison_dietrich_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "flopparnold_box"
+				position = { x = 178 y = 580 }
+				effectButtonType = { #Flopparnold
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "flopparnold_active"
+					no_clicksound = yes
+					effect = "giga_flopparnold_active"
+					spriteType = "GFX_katzen_prison_flopparnold_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "itch_box"
+				position = { x = 165 y = 313 } 
+				effectButtonType = { #Itch
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "itch_active"
+					no_clicksound = yes
+					effect = "giga_itch_active"
+					spriteType = "GFX_katzen_prison_itch_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "katzsauffe_box"
+				position = { x = 63 y =  247 }
+				effectButtonType = { #Katzsauffe
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "katzsauffe_active"
+					no_clicksound = yes
+					effect = "giga_katzsauffe_active"
+					spriteType = "GFX_katzen_prison_katzsauffe_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "kimitz_box"
+				position = { x = 255 y = 580 }
+				effectButtonType = { #Kimitz
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "kimitz_active"
+					no_clicksound = yes
+					effect = "giga_kimitz_active"
+					spriteType = "GFX_katzen_prison_kimitz_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "koko_box"
+				position = { x = 63 y = 646 }
+				effectButtonType = { #Koko
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "koko_active"
+					no_clicksound = yes
+					effect = "giga_koko_active"
+					spriteType = "GFX_katzen_prison_koko_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "meorwin_box"
+				position = { x = 63 y = 514 }
+				effectButtonType = { #Meorwin
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "meorwin_active"
+					no_clicksound = yes
+					effect = "giga_meorwin_active"
+					spriteType = "GFX_katzen_prison_meorwin_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = {
+				name = "pawllas_box"
+				position = { x = 63 y = 389 }
+				effectButtonType = { #Pawllas
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "pawllas_active"
+					no_clicksound = yes
+					effect = "giga_pawllas_active"
+					spriteType = "GFX_katzen_prison_pawllas_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "pawtton_box"
+				position = { x = 267 y = 389 }
+				effectButtonType = { #Pawtton
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "pawtton_active"
+					no_clicksound = yes
+					effect = "giga_pawtton_active"
+					spriteType = "GFX_katzen_prison_pawtton_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = {
+				name = "katzmann_box"
+				position = { x = 760 y = 695 }
+				effectButtonType = { #Katzmann
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "katzmann_active"
+					no_clicksound = yes
+					effect = "giga_katzmann_active"
+					spriteType = "GFX_katzen_prison_katzmann_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "lilith_box"
+				position = { x = 970 y = 685 }
+				effectButtonType = { #Lilith
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "lilith_active"
+					no_clicksound = yes
+					effect = "giga_lilith_active"
+					spriteType = "GFX_katzen_prison_lilith_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "novasum_box"
+				position = { x = 970 y = 548 }
+				effectButtonType = { #Novasum
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "novasum_active"
+					no_clicksound = yes
+					effect = "giga_novasum_active"
+					spriteType = "GFX_katzen_prison_novasum_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "pawlbert_box"
+				position = { x = 865 y = 617 }
+				effectButtonType = { #Pawlbert
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "pawlbert_active"
+					no_clicksound = yes
+					effect = "giga_pawlbert_active"
+					spriteType = "GFX_katzen_prison_pawlbert_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "tarynn_box"
+				position = { x = 760 y = 548 }
+				effectButtonType = { #Tarynn
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "tarynn_active"
+					no_clicksound = yes
+					effect = "giga_tarynn_active"
+					spriteType = "GFX_katzen_prison_tarynn_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "birch_box"
+				position = { x = 907 y = 212 }
+				effectButtonType = { #Birch
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "birch_active"
+					no_clicksound = yes
+					effect = "giga_birch_active"
+					spriteType = "GFX_katzen_prison_birch_active"
+					position = { x = 0 y = 0 }
+				}
+			} 
+			containerWindowType = { 
+				name = "garf_box"
+				position = { x = 760 y = 349 }
+				effectButtonType = { #Garf
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "garf_active"
+					no_clicksound = yes
+					effect = "giga_garf_active"
+					spriteType = "GFX_katzen_prison_garf_active"
+					position = { x = 0 y = 0 }
+				}
+			} 
+			containerWindowType = { 
+				name = "katzhaum_box"
+				position = { x = 991 y = 212 }
+				effectButtonType = { #Katzhaum
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "katzhaum_active"
+					no_clicksound = yes
+					effect = "giga_katzhaum_active"
+					spriteType = "GFX_katzen_prison_katzhaum_active"
+					position = { x = 0 y = 0 }
+				}
+			} 
+			containerWindowType = { 
+				name = "rex_box"
+				position = { x = 865 y = 349 }
+				effectButtonType = { #Rex
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "rex_active"
+					no_clicksound = yes
+					effect = "giga_rex_active"
+					spriteType = "GFX_katzen_prison_rex_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "strobel_box"
+				position = { x = 970 y = 349 }
+				effectButtonType = { #Strobel
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "strobel_active"
+					no_clicksound = yes
+					effect = "giga_strobel_active"
+					spriteType = "GFX_katzen_prison_strobel_active"
+					position = { x = 0 y = 0 }
+				}	
+			}
+			containerWindowType = { 
+				name = "stron_box"
+				position = { x = 823 y = 212 }
+				effectButtonType = { #Stron
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "stron_active"
+					no_clicksound = yes
+					effect = "giga_stron_active"
+					spriteType = "GFX_katzen_prison_stron_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+			containerWindowType = { 
+				name = "ungers_box"
+				position = { x = 739 y = 212 }
+				effectButtonType = { #Ungers
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "ungers_active"
+					no_clicksound = yes
+					effect = "giga_ungers_active"
+					spriteType = "GFX_katzen_prison_ungers_active"
+					position = { x = 0 y = 0 }
+				}
+			}
+		}
 		### EMPIRE INFO ###
 		iconType = {
 			name = "empire_info_bg"
@@ -723,16 +710,14 @@ guiTypes = {
 
 			listboxType = {
 				name = "option_list"
-				position = { x = 460 y = -260 }
+				position = { x = 450 y = -270 }
 				size = { x = 250 y = 60 }
+				scale = 0.5
 				spacing = 1
 				scrollbartype = ""
 				borderSize = { x = 0 y = 0 }
 				Orientation = "UPPER_LEFT"
 			}
 		}
-		
-		#info
-		
 	}
 }
