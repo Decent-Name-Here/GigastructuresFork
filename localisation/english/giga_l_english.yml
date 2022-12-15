@@ -18463,6 +18463,14 @@ mod_damage_vs_country_type_dormant_aeternum_mult:0 "Damage to Aeternum"
   giga_flusionoperations.5000.c:0 "Blow him up! - 6 §BResistance Resources§! ([flusion_primitives_country.flusion_success_chance_total_3]% chance of success)"
   giga_flusionoperations.5000.c.tooltip:0 "If successful, resistance in §YGeschwollen§! will §Rdecrease§! by §Y2§! as destroying the §YBundeshalle§! will cause significant collateral damage and administrative troubles."
 
+  giga_flusionoperations.5000.d:0 "Kidnap him - 8 §BResistance Resource§! ([flusion_primitives_country.flusion_success_chance_total_2]% chance of success)"
+
+  requires_2_zousa_res:0 "Requires §HSignificant Partisan Activity in Zousa§!"
+
+  cant_if_terminator_loris:0 "We are §YDetermined Exterminators§!! Calculations suggest it is more efficient to use thermonuclear weapons to terminate §YLoris§!"
+  cant_if_purifier_loris:0 "We are §YFanatic Purifiers§!! We will not disgrace our ships with a filthy xeno like §YLoris§!"
+  cant_if_devouring_loris:0 "We are a §YDevouring Swarm§!! We have no need to kidnap him when we can feast on §YLoris's§! corpse" #you can still eat him lol, this is for consistency
+
   cant_if_loris_soulbot:0 "Loris' new Soulbot chassis is immune to such crude methods."
 
   giga_flusionoperations.5001.name:0 "Loris Assassination Attempt Foiled"
@@ -18750,7 +18758,11 @@ mod_damage_vs_country_type_dormant_aeternum_mult:0 "Damage to Aeternum"
   
   needs_5_solak_res:0 "We need at least 5 §BResistance Resources§!."
   needs_6_solak_res:0 "We need at least 6 §BResistance Resources§!."
-  needs_10_solak_res:0 "We need 10 §BResistance Resources§!, 3 §BRiesigerkatzenpanzer Armies§! on our homeworld as well as the required resources."
+  needs_7_solak_res:0 "We need at least 7 §BResistance Resources§!."
+  needs_8_solak_res:0 "We need at least 8 §BResistance Resources§!."
+  needs_9_solak_res:0 "We need at least 9 §BResistance Resources§!."
+  needs_10_solak_res:0 "We need at 10 §BResistance Resources§!."
+  needs_10_solak_res_katown:0 "We need 10 §BResistance Resources§!, 3 §BRiesigerkatzenpanzer Armies§! on our homeworld as well as the required resources."
 
   giga_flusionoperations.3001.name:0 "§YSolaktropa Dam§! Blown"
   giga_flusionoperations.3001.desc:0 "As the last warheads are put in place, the various partisan groups who accepted to sacrifice themselves for this vast operation take one last breath and press the triggers.\n\nIt only takes mere seconds for several nuclear explosions to engulf the kilometers-long dam. As the dam undergoes catastrophic collapse, these explosions are quickly followed by a tidal wave the likes of which Flusion has likely never seen before.\n\nEngulfing everything in its path, it obliterates whatever infrastructure the Katzens had built around the dam and most boats within a hundred kilometers. Only mere hours later, the wave slams into the dried-up coasts of the Solakarean sea, destroying the numerous factories and settlements built by the Katzens following the dam's completion and going even further than where the sea originally was, flooding significant Solakian and Ravkanian cities in the process.\n\nThis is a blow which the Katzens will feel for years to come as their industries are now deprived of the dam's power and their agriculture will no longer be able to use the evaporated water from the Solakarean sea to irrigate the vast farmlands the Kaiser had established.\n\nBut the native populations of Solakien and Ravkanien might not be too happy about the damage we just inflicted to their homelands, with Dofus himself expressing some regrets, even though in time, the whole galaxy will obviously thank us.\n\nThe success chance was §Y[flusion_primitives_country.flusion_operation_odds]%§!"
