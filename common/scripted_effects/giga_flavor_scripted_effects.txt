@@ -729,6 +729,7 @@ create_katzen_loris = {
 						limit = { has_global_flag = giga_loris_is_now_soulbot }
 						add_trait = leader_trait_ruler_synthetic
 					}
+					set_leader_flag = loris
 					set_loris_real_portrait = yes
 				}
 			}

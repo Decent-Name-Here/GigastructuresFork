@@ -1548,7 +1548,8 @@ country_event = {
 		name = giga_flusionoperations.5000.c #BLOW THE BUNDESHALLE - Can't revive him but hella expensive + lowers resistance
 		custom_tooltip = "giga_flusionoperations.5000.c.tooltip"
 		allow = {
-			custom_tooltip = "needs_6_solak_res"
+			custom_tooltip = {
+				fail_text = "needs_6_solak_res"
 			hidden_trigger = {
 				event_target:flusion_primitives_country = {
 					check_variable = {
@@ -1557,6 +1558,7 @@ country_event = {
 					}
 				}
 			}
+		}
 		}
 		hidden_effect = {
 			decrease_solak_resources = yes
