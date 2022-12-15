@@ -17,10 +17,31 @@ giga_douclaw_active = {
 #Vulnerable 
 #Loris
 giga_loris_active = { 
-    potential = { exists = from  NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_planet_flag = loris_dead has_planet_flag = loris_kidnapped has_planet_flag = loris_converted } }
+    potential = { exists = from  NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_active } 
     allow = { always = yes } 
     effect = { custom_tooltip = "giga_loris_active" }
 }
+giga_loris_dead = { 
+    potential = { exists = from  NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_dead }
+    allow = { always = yes }
+    effect = {  }
+}
+giga_loris_kidnapped = { 
+    potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_kidnapped } 
+    allow = { always = yes }
+    effect = {  }
+}
+giga_loris_convert = { 
+    potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_converted } 
+    allow = { always = yes }
+    effect = {  }
+}
+giga_loris_missing = { #use? idk yet
+    potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_missing } 
+    allow = { always = yes }
+    effect = {  }
+}
+
 #meolson
 giga_meolson_active = { 
     potential = { exists = from   NOT = { has_global_flag = katzenartig_imperium_defeated } NOR = { has_planet_flag = meolson_dead has_planet_flag = meolson_kidnapped has_planet_flag = meolson_converted } }

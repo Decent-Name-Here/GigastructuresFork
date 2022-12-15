@@ -1550,15 +1550,15 @@ country_event = {
 		allow = {
 			custom_tooltip = {
 				fail_text = "needs_6_solak_res"
-			hidden_trigger = {
-				event_target:flusion_primitives_country = {
-					check_variable = {
-						which = solak_resources
-						value >= 6
+				hidden_trigger = {
+					event_target:flusion_primitives_country = {
+						check_variable = {
+							which = solak_resources
+							value >= 6
+						}
 					}
 				}
 			}
-		}
 		}
 		hidden_effect = {
 			decrease_solak_resources = yes
@@ -1589,7 +1589,7 @@ country_event = {
 		custom_tooltip = "giga_flusionoperations.5000.d.tooltip"
 		allow = {
 			custom_tooltip = { 
-				fail_text = "loris_kidnap_condition"
+				fail_text = "needs_8_solak_res"
 				hidden_trigger = {
 					event_target:flusion_primitives_country = {
 						check_variable = {
@@ -1629,6 +1629,9 @@ country_event = {
 			decrease_solak_resources = yes
 			decrease_solak_resources = yes
 			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+
 			event_target:flusion_primitives_country = {
 				set_variable = {
 					which = flusion_operation_odds
@@ -1659,7 +1662,7 @@ country_event = {
 	id = giga_flusionoperations.5001
 	title = "giga_flusionoperations.5001.name"
 	desc = { 
-		trigger = { NOT = { has_global_flag = giga_kidnapping_loris} }
+		trigger = { NOT = { has_global_flag = giga_kidnapping_loris } }
 		text = "giga_flusionoperations.5001.desc"
 	}
 	desc = { 
@@ -1745,11 +1748,13 @@ country_event = {
 		event_target:flusion_loris = { kill_leader = { show_notification = yes } }
 		hidden_effect = {
 			country_event = { id = giga_flusionoperations.5007 days = 90 random = 90 } #Loris Mourning
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1813,11 +1818,13 @@ country_event = {
 		event_target:flusion_loris = { kill_leader = { show_notification = yes } }
 		hidden_effect = {
 			country_event = { id = giga_flusionoperations.5007 days = 90 random = 90 } #Loris Mourning
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1859,8 +1866,10 @@ country_event = {
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1931,9 +1940,10 @@ country_event = {
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_kidnapped remove_planet_flag = loris_active }
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
 			set_global_flag = loris_kidnapped
+			remove_global_flag = loris_active
 		}
 
 	}
