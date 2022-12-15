@@ -1599,10 +1599,10 @@ country_event = {
 			}
 			custom_tooltip = { 
 				fail_text = "requires_2_zousa_res"
-						check_variable = {
-							which = zousa_res
-							value >= 2
-						}
+				hidden_trigger = { 
+					check_variable = {
+						which = zousa_res
+						value >= 2
 					}
 				}
 			}
