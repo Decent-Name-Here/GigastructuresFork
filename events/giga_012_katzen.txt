@@ -724,6 +724,7 @@ country_event = {
 			}
 			effect = {
 				save_global_event_target_as = flusion_loris
+				set_loris_real_portrait = yes
 			}
 		}
 		create_ship_design = { design = "Pawris" }
