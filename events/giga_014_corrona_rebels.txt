@@ -1929,6 +1929,7 @@ country_event = {
 			last_created_country = {
 				save_global_event_target_as = giga_katzen_prison
 			}
+			country_event = { id = giga_flusionoperations.5009 days = 30 }
 			event_target:flusion_loris = { set_owner = event_target:giga_katzen_prison }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
@@ -1939,6 +1940,48 @@ country_event = {
 			remove_global_flag = loris_active
 		}
 
+	}
+}
+#Flusionians want loris back (I am LOVED unlike you SMELL GROBCREMOR)
+country_event = {
+	id = giga_flusionoperations.5009
+	title = "giga_flusionoperations.5009.name"
+	desc = "giga_flusionoperations.5009.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_worrying_signal
+	show_sound = event_ghost_town 
+
+	immediate = {
+		hidden_effect = {country_event = { id = giga_flusionoperations.5010 days = 14 } }
+		decrease_puffy_partisans = yes
+		decrease_katzen_partisans = yes
+		decrease_symby_partisans = yes
+	}
+
+	option = {
+		name = "giga_flusionoperations.5009.a"
+		custom_tooltip = "giga_flusionoperations.5009.a.tooltip"
+	}
+}
+#Zousa Crackdown
+country_event = {
+	id = giga_flusionoperations.5010
+	title = "giga_flusionoperations.5010.name"
+	desc = "giga_flusionoperations.5010.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_surrender	
+	show_sound = event_planetary_riot
+
+	immediate = {
+		set_global_flag = zousa_cracked_down_loris
+		decrease_zousa_partisans = yes
+		decrease_zousa_partisans = yes
+		decrease_ravka_partisans = yes
+		decrease_solak_partisans = yes
+	}
+	option = {
+		name = "giga_flusionoperations.5010.a"
+		custom_tooltip = "giga_flusionoperations.5010.a.tooltip"
 	}
 }
 
