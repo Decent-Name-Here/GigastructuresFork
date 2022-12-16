@@ -1914,19 +1914,12 @@ country_event = {
 
 	option = {
 		name = "giga_flusionoperations.5008.a"
-		if = { 
-			limit = { NOT = { has_authority = auth_machine_intelligence has_valid_civic = civic_machine_assimilator } } 
-			custom_tooltip = "giga_flusionoperations.5008.a.tooltip" 
-		}
+		custom_tooltip = "giga_flusionoperations.5008.a.tooltip"
 		event_target:flusion_primitives_country = {
 			add_modifier = {
 				modifier = giga_loris_removed_modifier
 				days = -1
 			}
-		}
-		country_event = {
-			id = giga_katzenprison.1000
-			days = 0
 		}
 		hidden_effect = {
 			create_country = { #Le Katzen High Command Prison
