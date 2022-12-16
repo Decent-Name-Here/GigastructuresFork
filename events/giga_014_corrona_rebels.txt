@@ -1942,7 +1942,7 @@ country_event = {
 
 	}
 }
-#Flusionians want loris back (I am LOVED unlike you SMELL GROBCREMOR)
+#Flusionians want loris back (I am LOVED unlike you SMELLY GROBCREMOR)
 country_event = {
 	id = giga_flusionoperations.5009
 	title = "giga_flusionoperations.5009.name"
@@ -1963,7 +1963,7 @@ country_event = {
 		custom_tooltip = "giga_flusionoperations.5009.a.tooltip"
 	}
 }
-#Zousa Crackdown
+#Zousa Crackdow (Novasum: YOURE DOING WHAT TO THE ZOUSANIANS)
 country_event = {
 	id = giga_flusionoperations.5010
 	title = "giga_flusionoperations.5010.name"
