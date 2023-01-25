@@ -20,7 +20,13 @@ spriteTypes = {
 	#State Management
 	spriteType = { name = "GFX_katzen_prison_douclaw_active" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/douclaw_active.dds"			}
 	spriteType = { name = "GFX_katzen_prison_kaiser_active" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/kaiser_active.dds" 			}
+
 	spriteType = { name = "GFX_katzen_prison_loris_active" 					textureFile = "gfx/interface/katzenprison_ui/characters/state_management/loris_active.dds" 				}
+	spriteType = { name = "GFX_katzen_prison_loris_dead" 					textureFile = "gfx/interface/katzenprison_ui/characters/state_management/loris_dead.dds" 				}
+	spriteType = { name = "GFX_katzen_prison_loris_kidnapped" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/loris_kidnapped.dds" 			}
+	spriteType = { name = "GFX_katzen_prison_loris_converted" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/loris_converted.dds" 			}
+	spriteType = { name = "GFX_katzen_prison_loris_missing" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/loris_missing.dds" 				}
+
 	spriteType = { name = "GFX_katzen_prison_meolson_active" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/meolson_active.dds" 			}
 	spriteType = { name = "GFX_katzen_prison_steve_active" 					textureFile = "gfx/interface/katzenprison_ui/characters/state_management/steve_active.dds" 				}
 	spriteType = { name = "GFX_katzen_prison_wolfgang_active" 				textureFile = "gfx/interface/katzenprison_ui/characters/state_management/wolfgang_active.dds"			}

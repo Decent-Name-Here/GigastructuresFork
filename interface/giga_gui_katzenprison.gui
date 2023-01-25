@@ -219,13 +219,52 @@ guiTypes = {
 			containerWindowType = {  
 				name = "loris_box"
 				position = { x = 607 y = 449 }
-				effectButtonType = { #Loris
-					size = { x = 100 y = 104 }
+				size = { x = 77 y = 104 }
+				clipping = no
+
+				effectButtonType = { #Loris active
+					size = { x = 77 y = 104 }
 					scale = 1
 					name = "loris_active"
 					no_clicksound = yes
 					effect = "giga_loris_active"
 					spriteType = "GFX_katzen_prison_loris_active"
+					position = { x = 0 y = 0 }
+				}
+				effectButtonType = { #Loris dead
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "loris_dead"
+					no_clicksound = yes
+					effect = "giga_loris_dead"
+					spriteType = "GFX_katzen_prison_loris_dead"
+					position = { x = 0 y = 0 }
+				}
+				effectButtonType = { #Loris kidnapped
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "loris_kidnapped"
+					no_clicksound = yes
+					effect = "giga_loris_kidnapped"
+					spriteType = "GFX_katzen_prison_loris_kidnapped"
+					position = { x = 0 y = 0 }
+				}
+				effectButtonType = { #Loris converted
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "loris_converted"
+					no_clicksound = yes
+					effect = "giga_loris_converted"
+					spriteType = "GFX_katzen_prison_loris_converted"
+					position = { x = 0 y = 0 }
+				}
+				effectButtonType = { #Loris missing
+					size = { x = 77 y = 104 }
+					scale = 1
+					name = "loris_missing"
+					no_clicksound = yes
+					effect = "giga_loris_missing"
+					spriteType = "GFX_katzen_prison_loris_missing"
 					position = { x = 0 y = 0 }
 				}
 			}

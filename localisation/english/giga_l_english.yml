@@ -18479,6 +18479,7 @@ mod_damage_vs_country_type_dormant_aeternum_mult:0 "Damage to Aeternum"
   giga_flusionoperations.5000.c.tooltip:0 "If successful, resistance in §YGeschwollen§! will §Rdecrease§! by §Y2§! as destroying the §YBundeshalle§! will cause significant collateral damage and administrative troubles."
 
   giga_flusionoperations.5000.d:0 "Kidnap him! - 8 §BResistance Resource§! ([flusion_primitives_country.flusion_success_chance_total_2]% chance of success)"
+  giga_flusionoperations.5000.d.tooltip:0 "If Successful, §YLoris§! and his family will be captured and moved to a blacksite location in our empire where we can interrogate him further."
 
   requires_2_zousa_res:0 "Requires §HSignificant Partisan Activity in Zousa§!"
 
