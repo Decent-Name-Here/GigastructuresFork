@@ -353,7 +353,7 @@
   must_build_around_toxic:0 "$TRIGGER_FAIL$必须建造在$pc_toxic$周围。"
   must_build_around_core_quasar:0 "$TRIGGER_FAIL$$name_quasistellar$必须在超大质量类星体周围建造。"
   must_build_around_star:0 "$TRIGGER_FAIL$必须围绕着一颗恒星建造。"
-  must_build_size_25:0 "$TRIGGER_FAIL$必须建造在一个25地块大小的不毛之地或寒冷贫瘠星球。"
+  must_build_size_25:0 "$TRIGGER_FAIL$必须围绕一个24、25或26规模的行星建造。"
   must_build_size_567:0 "$TRIGGER_FAIL$必须在星球大小为5，6或7的星球周围建造。"
   must_build_around_developed_planet:0 "$TRIGGER_FAIL$必须在有已升级的行星首府的殖民地上建造。"
   must_not_have_settings_window_open:0 "在检查设置时，无法进行此操作。"
@@ -409,7 +409,7 @@
   giga_menu.2.refresh.tooltip:0 "你可再次确认你的有效设置。"
   
   giga_menu.1.name:0 ""
-  giga_menu.1.desc:0 "版本：3.25.5"
+  giga_menu.1.desc:0 "版本：3.26.1"
   
   giga_menu_1:0 "巨构容量：§H1§!"
   giga_menu_2:0 "巨构容量：§Y2§!"
@@ -499,8 +499,8 @@
   giga_menu.virtual_reality:0 "[root.giga_chk_virtual_reality]"
   giga_menu.orchid:0 "[root.giga_chk_orchid]"
   giga_menu.the_vat:0 "[root.giga_chk_the_vat]"
-  giga_menu.maginot:99 "[root.giga_chk_maginot]"
-  giga_menu.planetaryshipyard:99 "[root.giga_chk_planetshipyard]"
+  giga_menu.maginot:0 "[root.giga_chk_maginot]"
+  giga_menu.planetaryshipyard:0 "[root.giga_chk_planetshipyard]"
   
   giga_menu.ehof:0 "[root.giga_chk_ehof]"
   giga_menu.ehof_ai:0 "[root.giga_chk_ehof_ai]"
@@ -513,21 +513,21 @@
   giga_menu.influence_upkeep:0 "[root.giga_chk_influence_upkeep]"
   
   giga_menu.2.name:0 "这些是当前选定的设置。如果一切正常，请点击确认设置按钮。"
-  giga_menu.2.desc:0 "$giga_menu.2.name$\n\n§E游戏开局选项§!\n[root.giga_setting_fe_planetcrafts]\n[root.giga_setting_fed]\n[root.giga_setting_paluushia]\n[root.giga_setting_achievements]\n\n§E银河核心选项§!\n[root.giga_setting_aeternum]\n[root.giga_setting_core]\n\n§E事件视界偏移设施§!\n$giga_menu.ehof$\n[root.giga_setting_ehof_ai]\n\n§E混合者§!\n[root.giga_setting_compound]\n\n§E喵星人帝国§!\n$giga_menu.katzen$\n\n§E巨构选项§!\n[root.giga_setting_build_cap]\n[root.giga_setting_scaling_dyson]\n[root.giga_setting_scaling_lifter]\n[root.giga_setting_scaling_brain]\n[root.giga_setting_influence]\n[root.giga_setting_habitats]"
+  giga_menu.2.desc:0 "$giga_menu.2.name$\n\n§E游戏开局选项§!\n[root.giga_setting_fe_planetcrafts]\n[root.giga_setting_fed]\n[root.giga_setting_achievements]\n\n§E银河核心选项§!\n[root.giga_setting_aeternum]\n[root.giga_setting_core]\n\n§E事件视界偏移设施§!\n$giga_menu.ehof$\n[root.giga_setting_ehof_ai]\n\n§E混合者§!\n[root.giga_setting_compound]\n\n§E喵星人帝国§!\n$giga_menu.katzen$\n\n§E巨构选项§!\n[root.giga_setting_build_cap]\n[root.giga_setting_scaling_dyson]\n[root.giga_setting_scaling_lifter]\n[root.giga_setting_scaling_brain]\n[root.giga_setting_influence]\n[root.giga_setting_habitats]"
   
   giga_menu.3.desc:0 "§E普通巨构§!\n$giga_menu.vanilla_dyson$\n$giga_menu.vanilla_interstellar$\n$giga_menu.vanilla_matter$\n$giga_menu.vanilla_art$\n$giga_menu.vanilla_shipyard$\n$giga_menu.vanilla_ringworld$\n$giga_menu.vanilla_nexus$\n$giga_menu.vanilla_array$\n$giga_menu.vanilla_strategic$\n\n§E环世界选项§!\n$giga_menu.ringworlds$\n$giga_menu.cityring$\n$giga_menu.hivering$\n$giga_menu.machinering$\n$giga_menu.upgrade$\n\n§E更多巨构§!\n$giga_menu.alderson$\n$giga_menu.asteroid_manufactory$\n$giga_menu.terraform_toxic$\n$giga_menu.drill$\n$giga_menu.warmoon$\n$giga_menu.warplanet$\n$giga_menu.birch$\n$giga_menu.crystal$\n$giga_menu.terraform_barren$\n$giga_menu.shipyard$\n$giga_menu.suppressor$\n$giga_menu.geothermal$\n$giga_menu.glue$\n$giga_menu.hraemc$\n$giga_menu.hyperstructural_ass$\n$giga_menu.stellarhabitat$\n$giga_menu.kugel$\n$giga_menu.disco_moon$\n$giga_menu.terraform_gasgiant$"
   
-  giga_menu.4.desc:0 "$giga_menu.megabase$\n$giga_menu.matrioshka_brain$\n$giga_menu.gigaforge$\n$giga_menu.ndb$\n$giga_menu.nidavellir$\n$giga_menu.orbital_arcologies$\n$giga_menu.orbital_artificial_eco$\n$giga_menu.academy$\n$giga_menu.penrose_sphere$\n$giga_menu.planetary_computer$\n$giga_menu.psychic_beacon$\n$giga_menu.siphon$\n$giga_menu.quasistellar$\n$giga_menu.lifters$\n$giga_menu.accelerator$\n$giga_menu.systemcraft$\n$giga_menu.compressor$\n$giga_menu.succ$\n$giga_menu.virtual_reality$\n$giga_menu.the_vat$\n$giga_menu.orchid$"
+  giga_menu.4.desc:0 "$giga_menu.megabase$\n$giga_menu.matrioshka_brain$\n$giga_menu.gigaforge$\n$giga_menu.ndb$\n$giga_menu.nidavellir$\n$giga_menu.orbital_arcologies$\n$giga_menu.orbital_artificial_eco$\n$giga_menu.academy$\n$giga_menu.penrose_sphere$\n$giga_menu.planetary_computer$\n$giga_menu.psychic_beacon$\n$giga_menu.siphon$\n$giga_menu.quasistellar$\n$giga_menu.lifters$\n$giga_menu.accelerator$\n$giga_menu.systemcraft$\n$giga_menu.compressor$\n$giga_menu.succ$\n$giga_menu.virtual_reality$\n$giga_menu.the_vat$\n$giga_menu.orchid$\n$giga_menu.maginot$\n$giga_menu.planetaryshipyard$"
   
   #########################################
   ### Individual Options ##################
   #########################################
   
-  giga_chk_fe_planetcrafts_0:99 "£menu_fe_planetcrafts_0£§RFallen Empire Celestialcrafts: § §BNONE§!"
-  giga_chk_fe_planetcrafts_1:99 "£menu_fe_planetcrafts_1£§GFallen Empire Celestialcrafts: § §GREGULAR§!"
-  giga_chk_fe_planetcrafts_2:99 "£menu_fe_planetcrafts_2£§GFallen Empire Celestialcrafts: § §YHIGH§!"
-  giga_chk_fe_planetcrafts_3:99 "£menu_fe_planetcrafts_3£§GFallen Empire Celestialcrafts: § §HEXTREME§!"
-  giga_chk_fe_planetcrafts_4:99 "£menu_fe_planetcrafts_4£§GFallen Empire Celestialcrafts: § §RHELL!§!"
+  giga_chk_fe_planetcrafts_0:0 "£menu_fe_planetcrafts_0£§R失落帝国天体战舰：§!§B无§!"
+  giga_chk_fe_planetcrafts_1:0 "£menu_fe_planetcrafts_1£§G失落帝国天体战舰：§!§G常规§!"
+  giga_chk_fe_planetcrafts_2:0 "£menu_fe_planetcrafts_2£§G失落帝国天体战舰：§!§Y高§!"
+  giga_chk_fe_planetcrafts_3:0 "£menu_fe_planetcrafts_3£§G失落帝国天体战舰：§!§H极高§!"
+  giga_chk_fe_planetcrafts_4:0 "£menu_fe_planetcrafts_4£§G失落帝国天体战舰：§!§R地狱§!"
   
   
   giga_chk_achievements_disabled:0 "£menu_disabled£ §R成就§!"
@@ -956,19 +956,19 @@
   giga_the_vat_u:0 "£menu_u£§M$name_the_vat$§!"
   giga_the_vat_disabled:0 "£menu_disabled£§R$name_the_vat$§!"
   
-  giga_maginot_1:99 "£menu_1£§H$name_maginot$§!"
-  giga_maginot_2:99 "£menu_2£§Y$name_maginot$§!"
-  giga_maginot_3:99 "£menu_3£§G$name_maginot$§!"
-  giga_maginot_r:99 "£menu_r£§B$name_maginot$§!"
-  giga_maginot_u:99 "£menu_u£§M$name_maginot$§!"
-  giga_maginot_disabled:99 "£menu_disabled£§R$name_maginot$§!"
+  giga_maginot_1:0 "£menu_1£§H$name_maginot$§!"
+  giga_maginot_2:0 "£menu_2£§Y$name_maginot$§!"
+  giga_maginot_3:0 "£menu_3£§G$name_maginot$§!"
+  giga_maginot_r:0 "£menu_r£§B$name_maginot$§!"
+  giga_maginot_u:0 "£menu_u£§M$name_maginot$§!"
+  giga_maginot_disabled:0 "£menu_disabled£§R$name_maginot$§!"
   
-  giga_planetshipyard_1:99 "£menu_1£§H$name_planetshipyard$§!"
-  giga_planetshipyard_2:99 "£menu_2£§Y$name_planetshipyard$§!"
-  giga_planetshipyard_3:99 "£menu_3£§G$name_planetshipyard$§!"
-  giga_planetshipyard_r:99 "£menu_r£§B$name_planetshipyard$§!"
-  giga_planetshipyard_u:99 "£menu_u£§M$name_planetshipyard$§!"
-  giga_planetshipyard_disabled:99 "£menu_disabled£§R$name_planetshipyard$§!"
+  giga_planetshipyard_1:0 "£menu_1£§H$name_planetshipyard$§!"
+  giga_planetshipyard_2:0 "£menu_2£§Y$name_planetshipyard$§!"
+  giga_planetshipyard_3:0 "£menu_3£§G$name_planetshipyard$§!"
+  giga_planetshipyard_r:0 "£menu_r£§B$name_planetshipyard$§!"
+  giga_planetshipyard_u:0 "£menu_u£§M$name_planetshipyard$§!"
+  giga_planetshipyard_disabled:0 "£menu_disabled£§R$name_planetshipyard$§!"
   giga_achievements_disabled:0 "£menu_disabled£成就\n通过完成一系列任务来获得细小增益。"
   giga_achievements_enabled:0 "£menu_enabled£成就\n通过完成一系列任务来获得细小增益。"
   
@@ -1065,7 +1065,7 @@
   giga_katzen_2:0 "§R£menu_katzen_d£喵星人帝国（狂飙）§!"
   giga_katzen_3:0 "§Y£menu_katzen_s£喵星人帝国（星之大帝）§!"
   giga_katzen_4:0 "§B£menu_katzen_i£喵星人帝国（不可战胜的大帝）§!"
-  giga_katzen_5:99 "§E£menu_katzen_a£Katzen Imperium (relaxed)§!"
+  giga_katzen_5:0 "§E£menu_katzen_a£喵星人帝国（松懈的）§!"
   giga_katzen_0:0 "§G£menu_enabled£喵星人帝国（40%概率生成）§!"
   
   giga_dyson_scaling_on:0 "§G£menu_enabled£戴森球规模§!"
@@ -1101,6 +1101,7 @@
   giga_menu_presets_10:0 "贡献者：§LCoruptedUsername§!"
   giga_menu_presets_12:0 "贡献者：§LNicolas§!"
   giga_menu_presets_13:0 "贡献者：§LDarkyPwnz§!"
+  giga_menu_presets_14:99 "Contributor: §LMegumin§!"
   
   giga_menu_presets_patreon_01:0 "Patreon：§MASpec§!"
   giga_menu_presets_patreon_02:0 "Patreon：§MArnieKuma§!"
@@ -1131,8 +1132,9 @@
   giga_menu_presets_patreon_27:0 "Patreon: §MBread§!"
   giga_menu_presets_patreon_28:0 "Patreon: §MNINjad912§!"
   giga_menu_presets_patreon_29:0 "Patreon: §MThe GamingRaven§!"
-  giga_menu_presets_patreon_30:99 "Patreon: §MZut0s§!"
-  
+  giga_menu_presets_patreon_30:0 "Patreon：§MZut0s§!"
+  giga_menu_presets_patreon_31:99 "Patreon: §MMeolson§!"
+  giga_menu_presets_patreon_32:99 "Patreon: §MDusk§!"
   giga_menu_presets_other_01:0 "竞赛获胜者：§HThe_Strateg1st§!"
   
   #############################################################################################################################################
@@ -1832,7 +1834,7 @@
   #########################################
   origin_elysium:0 "乐土监管者"
   origin_elysium_desc:0 "该文明认为统治大众的最好办法就是在一个安全制高点上这么做。"
-  origin_elysium_effects:0 "-开局时你的母星轨道上有一个§H$name_orb_elysium$§!作为首都，并获得建造科技\n-新占领的殖民地将会立刻开始$name_orb_elysium$的建造，只要其轨道允许\n-能建造$name_orb_elysium$但没有的殖民地将会§R受到减益效果§!\n-无法停用$name_orb_elysium$空间站\n\n§P注：有着$name_orb_elysium$的行星和常规星球大相径庭，其绝大多数岗位来自行星规划。该起源会极大改变常规玩法。§!\n"
+  origin_elysium_effects:0 "-开局时你的母星轨道上有一个§H$name_orb_elysium$§!作为首都，并获得建造科技\n-新占领的殖民地将会立刻开始$name_orb_elysium$的建造，只要其轨道允许\n-能建造$name_orb_elysium$但没有的殖民地将会§R受到减益效果§!\n-无法停用$name_orb_elysium$空间站\n-£job_giga_elysium_controller£$job_giga_elysium_controller$岗位还会提升资源产出\n-极大减少$name_orb_elysium$首都建筑的£alloys£$alloys$维护费\n-有$name_orb_elysium$的星球升级首都建筑需要的人口更少\n\n§P注：有着$name_orb_elysium$的行星和常规星球大相径庭，其绝大多数岗位来自行星规划。该起源会极大改变常规玩法。§!\n"
   #giga_elysium_start_NAME:99 "Orbital Elysium"
   #giga_elysium_start_DESC:99 "Start on an Orbital Elysium."
   
@@ -2124,6 +2126,7 @@
   QSO_COMPUTER_DESC:0 "类星能校准舰会尽可能地远离敌人。"
   compound_combat_computers:0 "$tech_compound_computers$"
   COMPOUND_COMPUTER_SWARM:0 "$tech_compound_computers$（蜂拥）"
+  COMPOUND_COMPUTER_TORPEDO:0 "$tech_compound_computers$（鱼雷）"
   COMPOUND_COMPUTER_PICKET:0 "$tech_compound_computers$（哨戒）"
   COMPOUND_COMPUTER_LINE:0 "$tech_compound_computers$（线列）"
   COMPOUND_COMPUTER_ARTILLERY:0 "$tech_compound_computers$（炮击）"
@@ -2137,13 +2140,14 @@
   SENTIENT_COMPUTER:0 "$tech_sm_computers$"
   SENTIENT_COMPUTER_DESC:0 "$tech_sm_computers_desc$"
   SENTIENT_COMPUTER_SWARM:0 "$tech_sm_computers$（蜂拥）"
+  SENTIENT_COMPUTER_TORPEDO:0 "$tech_sm_computers$（鱼雷）"
   SENTIENT_COMPUTER_PICKET:0 "$tech_sm_computers$（哨戒）"
   SENTIENT_COMPUTER_LINE:0 "$tech_sm_computers$（线列）"
   SENTIENT_COMPUTER_CARRIER:0 "$tech_sm_computers$（航母）"
   SENTIENT_COMPUTER_ARTILLERY:0 "$tech_sm_computers$（炮击）"
   SENTIENT_COMPUTER_PLATFORM:0 "$tech_sm_computers$（平台）"
   SENTIENT_COMPUTER_COLOSSUS:0 "$tech_sm_computers$（巨像）"
-  SENTIENT_COMPUTER_STARBASE:0 "$tech_sm_computers$（基地）"
+  SENTIENT_COMPUTER_STARBASE:0 "$tech_sm_computers$（恒星基地）"
   
   ### Auras
   SHIP_AURA_PLANET:0 "行星存在"
@@ -2355,12 +2359,11 @@
   LARGE_SENTIENT_RAILGUN:0 "$tech_sm_mass_drivers$"
   SENTIENT_ARTILLERY:0 "$tech_sm_kinetic_artillery$"
   SENTIENT_ARTILLERY_DESC:0 "$tech_sm_kinetic_artillery_desc$"
+  SENTIENT_AUTO_CANNON:0 "$tech_sm_autocannons$"
+  SENTIENT_AUTO_CANNON_DESC:0 "$tech_sm_autocannons_desc$"
   SMALL_SENTIENT_AUTO_CANNON:0 "$tech_sm_autocannons$"
-  SMALL_SENTIENT_AUTO_CANNON_DESC:0 "$tech_sm_autocannons_desc$"
   MEDIUM_SENTIENT_AUTO_CANNON:0 "$tech_sm_autocannons$"
-  MEDIUM_SENTIENT_AUTO_CANNON_DESC:0 "$tech_sm_autocannons_desc$"
   LARGE_SENTIENT_AUTO_CANNON:0 "$tech_sm_autocannons$"
-  LARGE_SENTIENT_AUTO_CANNON_DESC:0 "$tech_sm_autocannons_desc$"
   SENTIENT_GIGA_CANNON:0 "$tech_sm_mass_accelerator$"
   SENTIENT_GIGA_CANNON_DESC:0 "$tech_sm_mass_accelerator_desc$"
   SENTIENT_TITAN:0 "$tech_sm_titanic$"
@@ -2384,7 +2387,7 @@
   #######################
   # Negative Mass #
   #######################
-  ehof_energy_converter:0 "ehof_energy_converter"
+  ehof_energy_converter:0 "REPLACE_ME"
   # Name
   ehof_sr_negative_mass:0 "负质量"
   ehof_qnm:0 "£ehof_sr_negative_mass£ §H$ehof_sr_negative_mass$§!"
@@ -2964,7 +2967,7 @@
   
   giga_achievement_34:0 "§MIV§!"
   giga_achievement_34_title:0 "§M$giga_achievement_31_group_header$ $giga_achievement_34$§!"
-  giga_achievement_34_requirement:0 "殖民30个居住站。"
+  giga_achievement_34_requirement:0 "殖民35个居住站。"
   giga_achievement_34_reward:0 "帝国人口幸福度：§G+20%§!\n\n"
   giga_achievement_34_tooltip:0 "$giga_achievement_34_title$\n$giga_achievement_34_requirement$\n\n§H奖励§!\n$giga_achievement_34_reward$"
   achievement_34:0 "$giga_achievement_34_title$"
@@ -3828,28 +3831,28 @@
   district_giga_planet_sanctuary_plural:0 "有机庇护区"
   district_giga_planet_sanctuary_desc:0 "$building_organic_sanctuary_desc$"
   
-  district_giga_planet_generator:99 "$district_generator$"
-  district_giga_planet_generator_plural:99 "$district_generator_plural$"
-  district_giga_planet_generator_desc:99 "$district_generator_desc$"
-  mod_district_giga_planet_generator_max:99 "$mod_district_generator_max$"
+  district_giga_planet_generator:0 "$district_generator$"
+  district_giga_planet_generator_plural:0 "$district_generator_plural$"
+  district_giga_planet_generator_desc:0 "$district_generator_desc$"
+  mod_district_giga_planet_generator_max:0 "$mod_district_generator_max$"
   
-  district_giga_planet_mining:99 "$district_mining$"
-  district_giga_planet_mining_plural:99 "$district_mining_plural$"
-  district_giga_planet_mining_desc:99 "$district_mining_desc$"
-  mod_district_giga_planet_mining_max:99 "$mod_district_mining_max$"
+  district_giga_planet_mining:0 "$district_mining$"
+  district_giga_planet_mining_plural:0 "$district_mining_plural$"
+  district_giga_planet_mining_desc:0 "$district_mining_desc$"
+  mod_district_giga_planet_mining_max:0 "$mod_district_mining_max$"
   
-  district_giga_planet_mining_uncapped:99 "$district_mining$"
-  district_giga_planet_mining_uncapped_plural:99 "$district_mining_plural$"
-  district_giga_planet_mining_uncapped_desc:99 "$district_mining_desc$"
+  district_giga_planet_mining_uncapped:0 "$district_mining$"
+  district_giga_planet_mining_uncapped_plural:0 "$district_mining_plural$"
+  district_giga_planet_mining_uncapped_desc:0 "$district_mining_desc$"
   
-  district_giga_planet_farming:99 "$district_farming$"
-  district_giga_planet_farming_plural:99 "$district_farming_plural$"
-  district_giga_planet_farming_desc:99 "$district_farming_desc$"
-  mod_district_giga_planet_farming_max:99 "$mod_district_farming_max$"
+  district_giga_planet_farming:0 "$district_farming$"
+  district_giga_planet_farming_plural:0 "$district_farming_plural$"
+  district_giga_planet_farming_desc:0 "$district_farming_desc$"
+  mod_district_giga_planet_farming_max:0 "$mod_district_farming_max$"
   
-  district_giga_planet_farming_uncapped:99 "$district_farming$"
-  district_giga_planet_farming_uncapped_plural:99 "$district_farming_plural$"
-  district_giga_planet_farming_uncapped_desc:99 "$district_farming_desc$"
+  district_giga_planet_farming_uncapped:0 "$district_farming$"
+  district_giga_planet_farming_uncapped_plural:0 "$district_farming_plural$"
+  district_giga_planet_farming_uncapped_desc:0 "$district_farming_desc$"
   
   #########################################
   ### Orbital districts ###################
@@ -5955,11 +5958,11 @@
   giga_imprint_t:0 "§B“很好。虚境的能量会被传输到这个存在身上。”§!"
   
   giga_psychic_beacon.0151.name:0 "烙印失败！"
-  giga_psychic_beacon.0151.desc:0 "惊人消息！我们原以为灵能灯塔仅以满负荷的一小部分运转。但很不幸，它碎人心魄的无匹力量压垮了[giga_leader_imprinted.GetName]。\n\n曾是[giga_leader_imprinted.GetHerHis]强大灵能者的上将，现在几乎破碎成了[giga_leader_imprinted.GetHerHis]物质本源的碎片。"
+  giga_psychic_beacon.0151.desc:0 "惊人消息！我们原以为灵能灯塔仅以满负荷的一小部分运转。但很不幸，它碎人心魄的无匹力量压垮了[giga_leader_imprinted.GetName]。\n\n曾是强大灵能者的上将，现在几乎破碎成了物质本源的碎片。"
   giga_psychic_beacon.0151.a:0 "[giga_leader_imprinted.GetName]会被铭记。"
   
   giga_psychic_beacon.0152.name:0 "烙印成功！"
-  giga_psychic_beacon.0152.desc:0 "完成了。 虚境灯塔虽然仅以满负荷的一小部分运转，但却成功释放出一股能量被[giga_leader_imprinted.GetName]吸收。\n\n本身早已是[giga_leader_imprinted.GetHerHis]强大灵能者的[giga_leader_imprinted.GetName]，被铭印为一位更伟大的灵能师。"
+  giga_psychic_beacon.0152.desc:0 "完成了。 虚境灯塔虽然仅以满负荷的一小部分运转，但却成功释放出一股能量被[giga_leader_imprinted.GetName]吸收。\n\n本身早已是强大灵能者的[giga_leader_imprinted.GetName]，被铭印为一位更伟大的灵能师。"
   giga_psychic_beacon.0152.a:0 " 希望这些新涌现的能力尽力为帝国服务。"
   giga_psychic_beacon.0152.a.tooltip:0 "[giga_leader_imprinted.GetName]获得强大的§M灵能特质§!。"
   
@@ -7275,9 +7278,9 @@
   war_moon_2:0 "$name_war_moon$"
   war_moon_2_DESC:0 "一个完全运转的$name_war_moon$，配备了一门巨大的且极具破坏力的粒子炮。"
   
-  war_moon_ship_name:99 "[event_target:celestial_name.GetName]"
-  war_moon_restored_ship_name:99 "Restored Moon"
-  war_moon_printed_ship_name:99 "Lunar Aggregate"
+  war_moon_ship_name:0 "[event_target:celestial_name.GetName]"
+  war_moon_restored_ship_name:0 "修复的战争之月"
+  war_moon_printed_ship_name:0 "聚合之月"
   
   war_moon_debris:0 "$name_war_moon$残骸"
   war_moon_debris_DESC:0 "一具由先进文明建造的月球大小的战舰的巨大残骸，它奇迹般地并未因自己的引力而完全崩毁。虽然这架战争之月巨大的武器阵列和推进器在暴力冲突中遭受了巨大的伤害，但只要我们拥有技术，理论上它们还可以重新运转。"
@@ -7372,9 +7375,9 @@
   war_planet_3:0 "行星飞船武器"
   war_planet_3_DESC:0 "成千上万的武器阵列安装在这个星球的外壳上，同时这艘飞船还装配了一门巨大无匹的火炮，其火力可以撕碎一切。"
   
-  war_planet_ship_name:99 "[event_target:giga_planet.GetName]"
-  war_planet_restored_ship_name:99 "Restored Planet"
-  war_planet_printed_ship_name:99 "Planetary Aggregate"
+  war_planet_ship_name:0 "[event_target:giga_planet.GetName]"
+  war_planet_restored_ship_name:0 "修复的行星飞船"
+  war_planet_printed_ship_name:0 "聚合行星"
   
   war_planet_debris:0 "$name_war_planet$残骸"
   war_planet_debris_DESC:0 "一具由先进文明建造的大的离谱的行星飞船残骸，出于某种原因，它并未因自己的引力而变回一颗普通行星。它曾拥有这片星系中规模最大的武器，虽然它遭受了巨大的损伤，只要我们有足够的资源和技术储备，也许就可以恢复这艘可畏战舰的往日荣光。"
@@ -7405,7 +7408,7 @@
   giga_tech_war_system_6:0 "$name_war_system$"
   giga_tech_war_system_6_desc:0 "终于，我们终于掌握了组装我们的杰作——$name_war_system$的必要技术。现在剩下的就是如何处理好后勤工作，以支持这样一艘巨大的飞船和它的人口，这个巨大的建筑终于要在星空中起航了！"
   
-  war_system_ship_name:99 "[event_target:giga_planet.GetName] Ascendant"
+  war_system_ship_name:0 "升华[event_target:giga_planet.GetName]"
   
   giga_tech_war_system_hull_booster:0 "超维船体稳定"
   giga_tech_war_system_hull_booster_desc:0 "$name_war_system$是一种强大的舰船，因此，添加扎根于更高维度的专用结构，可以确保其巨大的船体不会因为自身重力而崩溃。"
@@ -7788,6 +7791,22 @@
   the_vat_menu_06:0 "§H5号辅助舱§!"
   the_vat_menu_07:0 "§H6号辅助舱§!"
   
+  VAT_GROW_1:99 "Grow 1"
+  VAT_GROW_10:99 "Grow 10"
+  VAT_GROW_100:99 "Grow 100"
+  
+  VAT_MINUS_1:99 "Minus 1"
+  VAT_MINUS_10:99 "Minus 10"
+  VAT_MINUS_100:99 "Minus 100"
+  
+  VAT_TIME_01:99 "£resource_time£[this.giga_the_vat_01_timer]"
+  VAT_TIME_02:99 "£resource_time£[this.giga_the_vat_02_timer]"
+  VAT_TIME_03:99 "£resource_time£[this.giga_the_vat_03_timer]"
+  VAT_TIME_04:99 "£resource_time£[this.giga_the_vat_04_timer]"
+  VAT_TIME_05:99 "£resource_time£[this.giga_the_vat_05_timer]"
+  VAT_TIME_06:99 "£resource_time£[this.giga_the_vat_06_timer]"
+  VAT_TIME_07:99 "£resource_time£[this.giga_the_vat_07_timer]"
+  
   REACTOR_LEVIATHAN:0 "生物反应堆"
   REACTOR_LEVIATHAN_DESC:0 "生物实体胃中令食物与酸和酶混合来对其进行消化，产生右旋糖。然后右旋糖被释放到血液中，可以作为能量使用。"
   
@@ -7824,6 +7843,15 @@
   giga_voidspawn_key:0 "虚空孳孽"
   giga_requires_leviathan_slain_voidspawn:0 "$TRIGGER_FAIL$需要于近期杀死一个$giga_voidspawn$。"
   
+  giga_toxic_god:99 "Toxic God"
+  giga_toxic_god_plural:99 "Toxic Gods"
+  giga_toxic_god_key:99 "Toxic God"
+  GUARDIAN_GIGA_DISINTEGRATOR_FIELD:99 "Diluted Acid Glands"
+  GUARDIAN_GIGA_DISINTEGRATOR_FIELD_DESC:99 "The potency of the entity's acid glands would be too much for even our ships to be able to handle being in its vicinity without dilution"
+  giga_requires_leviathan_toxic_god:99 "$TRIGGER_FAIL$Requires having killed a $giga_toxic_god$ previously."
+  giga_requires_vat_4:99 "$TRIGGER_FAIL$Requires a fully upgraded $name_the_vat$."
+  giga_requires_no_live_god:99 "$TRIGGER_FAIL$Cannot have more than one §Y$giga_toxic_god$§!!"
+  
   giga_queen:0 "普雷索林虫后"
   giga_queen_plural:0 "普雷索林虫后群"
   giga_queen_key:0 "普雷索林虫后"
@@ -7840,6 +7868,14 @@
   giga_small_ship_plural:0 "普雷索林幼虫群"
   giga_warship_small_key:0 "普雷索林幼虫"
   
+  giga_space_whale:99 "Tiyanki Ox"
+  giga_space_whale_plural:99 "Tiyanki Oxen"
+  giga_space_whale_key:99 "Tiyanki Ox"
+  
+  giga_space_amoeba_centenarian:99 "Space Amoeba"
+  giga_space_amoeba_centenarian_plural:99 "Space Amoebas"
+  giga_space_amoeba_centenarian_key:99 "Space Amoeba"
+  
   giga_grow_01:0 "$giga_space_dragon$\n-----------------------------"
   giga_grow_02:0 "$giga_wraith$\n-----------------------------"
   giga_grow_03:0 "$giga_elder_tiyanki$\n-----------------------------"
@@ -7849,6 +7885,7 @@
   giga_grow_07:0 "$giga_large_ship$\n-----------------------------"
   giga_grow_08:0 "$giga_large_ship_carrier$\n-----------------------------"
   giga_grow_09:0 "$giga_small_ship$\n-----------------------------"
+  giga_grow_10:99 "$giga_toxic_god$\n-----------------------------"
   
   #########################################
   ### Matrioshka Brain ####################
@@ -8246,7 +8283,7 @@
   giga_dialog.1705.a:0 "恒星闪耀。"
   
   # Jupiter -> Lucifer, a reference to 2010: Odyssey Two
-  NAME_giga_Lucifer:99 "Lucifer"
+  NAME_giga_Lucifer:0 "路西法"
   
   substellar_compressor_0:0 "$gc_mega$$name_sub_compressor$基址"
   substellar_compressor_0_DESC:0 "$name_sub_compressor$的基址，容纳了围绕褐矮星建造$name_sub_compressor$所需的的人员。"
@@ -10167,7 +10204,7 @@
   the_defragmentor_passive_1:0 "§Y机器人维护费§!：-10%"
   reality_perforator_passive_1:0 "£amenities£ §Y人口舒适度使用§!：-10%"
   pox_sample_passive_1:0 "§Y领袖寿命年数§!：+20"
-  cryo_core_passive_1:0 "£pops£ §Y人口§!：+1，在新殖民地上"
+  cryo_core_passive_1:0 "新殖民地£pops£§Y人口§!：+1"
   war_forge_passive_1:0 "£alloys£ §Y每月合金§!：+5%"
   war_forge_passive_2:0 "可以在首都招募赛博勒克斯战体陆军"
   prethoryn_queen_passive_1:0 "£society_research£§Y社会学研究§!：+30"
@@ -11495,7 +11532,7 @@
   giga_katehof.004.desc:0 "§Y喵星人帝国§!已经在§Y[From.GetName]§!星系中的§YE.H.V.E.§!建造已经完成！\n\n这个非凡的构造将赋予他们无与伦比的机动性与到达银河系内其它无法触及之地的能力。\n\n幸运的是，如果我们需要，可以夺取该星系并摧毁这个建筑。"
   giga_katehof.004.a:0 "令人担忧。"
   
-  katzenartig_chain_2:0 "喵星E.H.V.Es"
+  katzenartig_chain_2:0 "喵星E.H.V.E"
   katzenartig_chain_2_desc:0 "§YE.H.V.E.§!是喵星人建造的事件视界偏移设施，让他们能产生虫洞到达无法触及的区域。\n喵星人将定期利用它们进入银河系偏远地区，或者没有连接到超空间航道网络的区域。\n他们会将占据的§YE.H.O.F.§!在五年多后转化为§YE.H.V.E.§!。\n占领一个带有§YE.H.V.E.§!的星系可以将其摧毁，将其变为§Y毁坏的E.H.O.F.§!\n摧毁所有§YE.H.V.E.§!将§Y消灭§!所有其产生的虫洞。\n§Y喵星E.H.V.E.数量§!：§W[flusion_primitives_country.kaiser_ehof_count]§!"
   
   katzen_ehof_wormhole:0 "喵星虫洞"
@@ -11627,7 +11664,7 @@
   giga_katrebels.2022.desc:0 "我们可以帮助§Y索拉克自由战士§!去破坏大帝之月的运动系统。\n\n它们控制了§Y周飒§!与§Y西姆比兰§!，再加上足够的贿赂，它们将有能力摧毁生产维护大帝之月跃迁引擎所需先进组件的重要设施。\n\n§Y如果成功§!：\n大帝之月将在§Y3年§!内遭受§Y+500%跃迁充能时间§!的惩罚，并且将失去被§Y召回§!弗鲁森的能力，如果遭受了轰炸或入侵。\n喵星人警惕度将§R增加§R2§!点。\n\n§Y如果失败§!：\n喵星人警惕度将§R增加§R1§!点。\n\n§Y成功几率§!：\n基础值：§Y85%§!\n§H喵星人警惕度§!：§R-[flusion_primitives_country.katzen_wary_perc]%§!\n合计：§Y[flusion_primitives_country.flusion_success_chance_total]%§!"
   
   giga_katrebels.2023.name:0 "破坏大帝之月的§Y虚空飞翼§!"
-  giga_katrebels.2023.desc:0 "我们可以帮助§Y索拉克自由战士§!去破坏大帝之月的……飞翼。\n\n它们控制了§Y周飒§!与§Y西姆比兰§!，在加上足够的贿赂，它们将能够去破坏生产燃料与能源的设施，这些东西负责为飞翼的机动控制器提供能量。\n\n§Y如果成功§!：\n大帝之月将在§Y3年§!内遭受§Y-40%亚光速飞行速度§!的惩罚。\n喵星人警惕度将§R增加§R2§!点。\n\n§Y如果失败§!：\n喵星人警惕度将§R增加§R1§!点。\n\n§Y成功几率§!：\n基础值：§Y85%§!\n§H喵星人警惕度§!：§R-[flusion_primitives_country.katzen_wary_perc]%§!\n合计：§Y[flusion_primitives_country.flusion_success_chance_total]%§!"
+  giga_katrebels.2023.desc:0 "我们可以帮助§Y索拉克自由战士§!去破坏大帝之月的……飞翼。\n\n它们控制了§Y周飒§!与§Y西姆比兰§!，在加上足够的贿赂，它们将能够去破坏生产燃料与能源的设施，这些东西负责为飞翼的机动控制器提供能量。\n\n§Y如果成功§!：\n大帝之月将在§Y3年§!内遭受§Y-40%亚光速飞行速度§!的惩罚。\n喵星人警惕度将§R增加§!§R2§!点。\n\n§Y如果失败§!：\n喵星人警惕度将§R增加§!§R1§!点。\n\n§Y成功几率§!：\n基础值：§Y85%§!\n§H喵星人警惕度§!：§R-[flusion_primitives_country.katzen_wary_perc]%§!\n合计：§Y[flusion_primitives_country.flusion_success_chance_total]%§!"
   
   #map stuff
   res_total_count:0 "0/10"
@@ -11727,7 +11764,7 @@
   
   
   lyuin_name:0 "§Y吕因斯塔特§!"
-  lyuin_desc:0 "§L吕因斯塔特，或者说吕尼塔，是一片巨大的草原，大学校区与研究中心点缀其间，卓越的吕尼塔人居住于此。喵星人把绝大多数的前沿研究都集中部署在这里，特别是关于护盾的研究。§!"
+  lyuin_desc:0 "§L吕因斯塔特，或者说吕尼塔，是一片巨大的草原，大学校区与研究中心点缀其间，卓越的吕尼塔人居住于此。喵星人把绝大多数的前沿研究都集中部署在这里，特别是关于护盾的研究。奇怪的是，其名“吕因斯塔特”并不是土地上任何一个种族的名字，也没有人知道为什么大帝执意称其为此。§!"
   
   lyuin_res_low_tooltip:0 "$lyuin_name$\n\n§H主要设施§!——§B研究设施§!\n\n喵星人控制力为§R高§!\n反抗军活跃度为§G微不足道§!\n喵星人修正：§G+30%护盾值§!\n\n$lyuin_desc$"
   
@@ -11871,7 +11908,7 @@
   giga_katzen.020dneutral.desc:0 "喂？我是道爪·麦克喵瑟，代表喵尾大帝讲话。"
   giga_katzen.020eneutral.desc:0 "你们好，外星人。我军正在监控该频道，请谨言慎行。"
   
-  giga_katzen.020dhappy.desc:0 "你好，[Root.GetName]。凯撒一直乐于与尔等交流。"
+  giga_katzen.020dhappy.desc:0 "你好，[Root.GetName]。大帝一直乐于与尔等交流。"
   giga_katzen.020ehappy.desc:0 "[Root.GetSpeciesNamePlural]，大帝希望我们双方文明能够共同发展、共同繁荣。"
   
   giga_katzen.020dangry.desc:0 "大帝有一份详尽的“需从地图上抹除的帝国”名单。\n\n[Root.GetName]名列前茅。"
@@ -12140,7 +12177,7 @@
   
   giga_katrebels.0013.d:0 "取消我们的帮助。"
   
-  giga_katrebels.0013.a.response:0 "这对我们从凯撒手中解放银河系大有裨益！愿诸神护佑你。"
+  giga_katrebels.0013.a.response:0 "这对我们从大帝手中解放银河系大有裨益！愿诸神护佑你。"
   giga_katrebels.0013.d.response:0 "一种羞辱。看来只能靠我们自己了……"
   
   contributing_ezic_1:0 "稍微资助魔鱼结社"
@@ -12184,7 +12221,7 @@
   giga_katrebels.0017.reponse:0 "大帝……气数将尽。结社将迅猛果断的打击他万恶的军团！"
   
   giga_katrebels.00171.name:0 "魔鱼起义：影响"
-  giga_katrebels.00171.desc:0 "作为起义的第一步，§Y魔鱼结社§!要求我们利用7的一些对外影响力，通过播放反大帝宣传片，公开谴责凯撒，宣传魔鱼的生活方式，动摇帝国民众，使其倾向自己。\n\n虽然这无疑会§R激怒§!大帝，但一个外国公开支持魔鱼事业的影响，肯定影响整个帝国，并可能说服更多人加入他们的事业。"
+  giga_katrebels.00171.desc:0 "作为起义的第一步，§Y魔鱼结社§!要求我们利用7的一些对外影响力，通过播放反大帝宣传片，公开谴责大帝，宣传魔鱼的生活方式，动摇帝国民众，使其倾向自己。\n\n虽然这无疑会§R激怒§!大帝，但一个外国公开支持魔鱼事业的影响，肯定影响整个帝国，并可能说服更多人加入他们的事业。"
   
   giga_katrebels.00171.no:0 "我们无力承担。"
   giga_katrebels.00171.a:0 "举行一些反大帝演讲。丨§Y50§! £influence£"
@@ -12246,7 +12283,7 @@
   giga_katrebels.0018.desc:0 "我们的种族十分吸引人，我为之骄傲。我很乐意告诉你关于我物种的故事……"
   giga_katrebels.0018.ezicanias:0 "你们是个什么样的种族？"
   
-  giga_katrebels.0018.ezicanias.response:0 "我们魔鱼并非是好战的种族。我们曾经居住在§Y弗鲁森§!上的§Y魔鱼帝国§!内部——我们大多数都过着田园诗歌般的狩猎采集生活。\n\n我们通常被组织为大小不等的“巢”，分散于我们的土地上。§Y主典§!——一种特殊的魔鱼——对数十个巢的个体施加控制。我，好吧，担任了一种“大主”——对我们国家内的每个巢和主典行使一些权力。我们确实有城市和定居点，但是他们的人口从来没有超过几十万。\n\n然而我大部分时间都让主典做他们认为正确的事情，因为我相信他们应当被允许过他们想要的生活，同时他们也是最佳人选——涉及到决定对于他们的巢正确的事情的时候。\n\n这种分散的领导形式正是数千年来我们在弗鲁森上的生活方式。我们从未真正有过扩张疆界的野心，因我们绝大多数人靠土地生活就够了。那是美好的生活。\n\n直到大帝到来之前，确实如此。"
+  giga_katrebels.0018.ezicanias.response:0 "我们魔鱼并非是好战的种族。我们曾经居住在§Y弗鲁森§!上的§Y魔鱼帝国§!内部——我们大多数都过着田园诗歌般的狩猎采集生活。\n\n我们通常被组织为大小不等的“巢”，分散于我们的土地上。§Y主典§!——一种特殊的魔鱼——对数十个巢的个体施加控制。我，好吧，担任了一种“大主”——对我们国家内的每个巢和主典行使一些权力。我们确实有城市和定居点，但是他们的人口从来没有超过几十万。\n\n在这个位置上，我大部分时间都让主典做他们认为正确的事情，因为我相信他们应当被允许过他们想要的生活，同时他们也是最佳人选——涉及到决定对于他们的巢正确的事情的时候。\n\n这种分散的领导形式正是数千年来我们在弗鲁森上的生活方式。我们从未真正有过扩张疆界的野心，因我们绝大多数人靠土地生活就够了。那是美好的生活。\n\n直到大帝到来之前，确实如此。"
   
   giga_katrebels.0018.empire:0 "给我们讲讲魔鱼帝国。"
   giga_katrebels.0018.empire.response:0 "魔鱼帝国是整个弗鲁森上最美丽的地方之一！\n\n虽然它没那么大，但是它拥有一些星球上最壮丽的风景。我们伟大的土地上遍布大片的森林、广阔的沼泽与壮丽的山脉——我们称之为家园。\n\n尽管我们的生活方式看似原始，但是我们还是建立了一个庞大的铁路网络——这横跨了整个帝国并且连接了多数的主要定居点。在某种意义上，这是我们的骄傲。\n\n帝国被划分为十几个左右的主典——他们对几百万魔鱼进行统治。而我们简单地……过着我们的生活，自娱自乐，探索我们国家能提供的东西。\n\n它并不总是完美，但至少我们没有压迫任何人或者在任何地方发动战争。"
@@ -12669,7 +12706,7 @@
   giga_aeternum.4322.desc:0 "现在我们要派遣一支§Y[aet_exp_name_tool.GetName]探险队§!来对埃昂迪亚广袤的地表进行测绘。\n\n然而，由于这样的考察是存在未知风险的任务，我们可以给探险队添加至多§Y[ROOT.aet_init_attach_capacity]种§B附属队伍§!，这会提供不同的增益，并且可以在特定情况下提供帮助。探险队实际上有一些不同的统计数据，会影响它在不同情况下的效能。\n\n§H完整度§!代表着团队的总体状况。它每个月都会下降§Y1§!，如果它达到§Y0§!，考察将提前终止。\n\n§R力量§!代表着团队对于埃昂迪亚探索中可能遭遇的危险构造与实体的抵抗能力。\n\n§B实效§!衡量着团队在解密神秘装置或者对古代技术进行逆向工程时的效率。\n\n我们可以通过使用选项菜单添加附属队伍来改善这些统计数据。在考察过程中，团队很可能会报告一些有趣的发现，而这些发现的结果将取决于考察的统计数据。仔细挑选，因为事后无法移除！\n\n§B我们的探险队当前拥有：§!\n§Y[ROOT.aet_exp_hp]§H完整度§!\n§Y[ROOT.aet_exp_attack]§R力量§!\n§Y[ROOT.aet_exp_smarts]§B实效§!\n§Y[ROOT.aet_exp_decay_monthly]%§L每月完整度衰减概率§!"
   
   giga_aeternum.4322.panzer:0 "添加§R武装作战中队§!——§Y10000§! £alloys£ | 当前§Y[aet_exp_sender.aeternum_panzer_count]§!"
-  giga_aeternum.4322.panzer.tooltip:0 "数百万架可以长途跋涉的武装载具。这些战争机器会确保我们的团队在探索伯奇世界时可以处理他们最后可能面对的任何问题。\n\n§Y+10§H完整度§!\n§Y+30§R力量§!\n§Y-20§B实效§!\n\n"
+  giga_aeternum.4322.panzer.tooltip:0 "数百万架可以长途跋涉的武装载具。这些战争机器会确保我们的团队在探索伯奇世界时可以处理他们最后可能面对的任何问题。\n\n§Y+10§!§H完整度§!\n§Y+30§!§R力量§!\n§Y-20§!§B实效§!\n\n"
   
   
   giga_aeternum.4322.smart:0 "添加§B科学团队§!——§Y7500§! £alloys£ | 当前§Y[aet_exp_sender.aeternum_smarties_count]§!"
@@ -13080,7 +13117,7 @@
   giga_aeternum.4311.a:0 "令人愉快！"
   
   giga_aeternum.4312.name:0 "控制苏里基勒平"
-  giga_aeternum.4312.desc:0 "鉴于我们现在已经控制了§Y埃昂迪亚§!，一个有趣的问题出现了：如何处理用于保护巨构的§Y苏里基勒平§!。\n\n事实上，我们的情报局认为，由于我们现在控制了大部分伯奇世界，也许也能操纵此巨构的巨大能量护盾，如果其此前已被关闭，我们也能重新激活它，并根据我们当前需要打开或关闭，毕竟它相当耗费能量。\n\n我们可以通过§Y行星决策§!来实现，前提是我们至少有§G35§!份 $aeternum_tech_intel$。"
+  giga_aeternum.4312.desc:0 "鉴于我们现在已经控制了§Y埃昂迪亚§!，一个有趣的问题出现了：如何处理用于保护巨构的§Y苏里基勒平§!。\n\n事实上，我们的情报局认为，由于我们现在控制了大部分伯奇世界，也许也能操纵此巨构的巨大能量护盾，如果其此前已被关闭，我们也能重新激活它，并根据我们当前需要打开或关闭，毕竟它相当耗费能量。\n\n我们可以通过§Y行星决议§!进行操作，前提是我们至少有§G35§!$aeternum_tech_intel$。"
   giga_aeternum.4312.a:0 "已阅。"
   giga_aeternum.4312.a.tooltip:0 "如果有足够的$aeternum_tech_intel$，可以激活或关闭苏里基勒平。"
   
@@ -13337,6 +13374,7 @@
   aeternum_chain_title:0 "永世之民"
   aeternum_chain_desc:0 "永世展示出了远远超过我们自身的技术和武备。我们应该密切关注这些先驱者。"
   aeternum_ship_count:0 "§Y永世舰船总数§!"
+  aeternum_shroud_count:99 "§MWorlds Shrouded By Aeternum§!"
   aeternum_system_count:0 "§Y永世之民星系总数§!"
   aeternum_warforge_count:0 "§Y永世灵塑者总数§!"
   ships_lost_to_aeternum:0 "§R飞船已被永世帝国摧毁§!"
@@ -13833,19 +13871,19 @@
   gave_accelerator_scientists_raise:0 "增加科学家的工资"
   gave_accelerator_scientists_raise_desc:0 "我们要给恒星粒子加速器的科学家更高的工资。"
   
-  giga_accelerator.131.name:99 "Further Stellar Particle Accelerator Findings"
-  giga_accelerator.131.desc:99 "After the previous raise, our §YStellar Particle Accelerator§!'s staff have made further discoveries which will surely benefit our ongoing physics research."
+  giga_accelerator.131.name:0 "恒星粒子加速器的更多发现"
+  giga_accelerator.131.desc:0 "在上一次加薪后，我们§Y恒星粒子加速器§!的工作人员做出了更多发现，这必然会对我们正在进行的物理学研究有益。"
   
-  giga_accelerator.131.a:99 "Good."
+  giga_accelerator.131.a:0 "善。"
   
   giga_accelerator.140.name:0 "盈余暗物质"
   giga_accelerator.140.desc:0 "我们的§Y恒星粒子加速器§!工作人员报告称，最近的碰撞实验最终产生了奇异的§Y暗物质§!盈余！\n\n他们设法用专门的电磁网收集了它，然后把资源直接送进了我们的仓库。"
   giga_accelerator.140.a:0 "不可思议！"
-  giga_accelerator.140.b:99 "Give the scientists a raise!"
+  giga_accelerator.140.b:0 "给科学家加薪吧！"
   
-  giga_accelerator.141.name:99 "Further Surplus Dark Matter"
-  giga_accelerator.141.desc:99 "After the previous raise, our §YStellar Particle Accelerator§!'s staff has been working hard and managed to replicate their previous success, creating more §YDark Matter§!!\n\nThe resources have been sent directly to our stockpiles."
-  giga_accelerator.141.a:99 "Marvelous!"
+  giga_accelerator.141.name:0 "更多盈余暗物质"
+  giga_accelerator.141.desc:0 "在上一次加薪后，我们§Y恒星粒子加速器§!的工作人员加倍努力，设法再现他们先前的成功，生成了更多§Y暗物质§!！\n\n这些资源已被直接送入库存中。"
+  giga_accelerator.141.a:0 "了不起！"
   
   giga_acc_intensity_up:0 "§Y增加§!该巨构的强度。"
   giga_acc_intensity_down:0 "§Y减少§!这个巨构的强度。"
@@ -13858,10 +13896,10 @@
   
   giga_acc_qnm:0 "§Y恒星粒子加速器§!可以被特化用于产出§Y负质量§!——多亏了创造出负物质的奥秘而又非常独特的粒子碰撞。\n\n基础产出：§Y80§!£physics_research£与§Y0.7§!£ehof_sr_negative_mass£\n基础故障率：§R+10%§!"
   
-  giga_acc_intensity_5:0 "当前强度：\n§B极高§!\n\n效果：\n§G+50%巨构产出§!\n§R+100%巨构维护费§!\n\n$mega_intensity_meaning$"
-  giga_acc_intensity_4:0 "当前强度：\n§B高§!\n\n效果：\n§G+25%巨构产出§!\n§R+40%巨构维护费§!\n\n$mega_intensity_meaning$"
-  giga_acc_intensity_3:0 "当前强度：\n§B正常§!\n\n$mega_intensity_meaning$"
-  giga_acc_intensity_2:0 "当前强度：\n§B低§!\n\n效果：\n§R-40%巨构产出§!\n§G-60%巨构维护费§!\n\n$mega_intensity_meaning$"
+  giga_acc_intensity_5:0 "当前强度：\n§B极高§!\n\n效果：\n§G+75%巨构产出§!\n§R+200%巨构维护费§!\n\n$mega_intensity_meaning$"
+  giga_acc_intensity_4:0 "当前强度：\n§B高§!\n\n效果：\n§G+50%巨构产出§!\n§R+100%巨构维护费§!\n\n$mega_intensity_meaning$"
+  giga_acc_intensity_3:0 "当前强度：\n§B中等§!\n\n效果：\n§G+25%巨构产出§!\n§R+40%巨构维护费§!\n\n$mega_intensity_meaning$"
+  giga_acc_intensity_2:0 "当前强度：\n§B正常§!\n\n效果：\n§Y100%巨构产出§!\n§Y100%巨构维护费§!\n\n$mega_intensity_meaning$"
   giga_acc_intensity_1:0 "当前强度：\n§B关闭§!\n\n关闭：\n§R-100%巨构产出§!\n§G-100%巨构维护费§!\n\n$mega_intensity_meaning$"
   
   giga_accelerator.150.name:0 "逸失的黑洞"
@@ -14966,7 +15004,7 @@
   
   giga_blokkats_bismuth:0 "猫块（§R铋§!）\n猫块被§R显著加强§!。\n\n他们获得如下影响：\n§Y武器伤害+200%\n舰船开火速度+200%\n舰船的船体值/装甲值/护盾值+200%\n舰船速度+50%\n巨构建造速度+50%\n陆军伤害/生命值/士气+200%§!\n\n§Y猫块赋权者§!会再生§Y4次§!，因而总HP为§Y20亿§!\n§Y猫块拆解者§!的数量为§Y2×§!\n激活§Y超维震荡仪§!的基础花费为§Y1.5M§!£energy£\n\n猫块的护卫舰队与哨兵舰队的数量会变为2.5倍\n猫块科研速度减慢§Y75%§!\n\n§Y猫块赋权者§!受到§Y两个§!§R猫块终结者§!的护卫，每个巨型猫块舰船的HP约为十亿，它们会再生§Y一次§!。\n\n完成§Y猫网协议§!将消耗§Y2.5亿能量币§!，初始§G投猫倾向§!为§Y-50%§!\n\n§H为使用非常强力的模组——例如§YACOT§!——所设置的平衡性。§!"
   
-  giga_blokkats_endtech:0 "猫块（§M终局科技§!）\n猫块被§M极大加强§!，且会派遣合适的战舰作为采矿行动的护卫。\n\n他们获得如下影响：\n§Y武器伤害+1000%\n舰船开火速度+1000%\n舰船的船体值/装甲值/护盾值+2000%\n舰船速度+90%\n巨构建造速度+250%\n陆军伤害/生命值/士气+1000%§!\n\n§Y猫块赋权者§!会再生§Y20次§!，因而总HP为§Y80亿§!\n§Y猫块拆解者§!的数量为§Y3×§!\n激活§Y超维震荡仪§!的基础花费为§Y4M§!£energy£\n猫块的护卫舰队和侦查舰队的数量会变为六倍\n猫块科研速度减慢§Y250%§!\n\n§Y猫块赋权者§!受到§Y5个§!§R猫块终结者§!的护卫。\n§Y猫块拆解者§!受到§Y2个§!§R猫块终结者§!的护卫。\n每个§Y哨兵舰队§!都有§Y一个§!§R猫块终结者§!。\n§R猫块终结者§!总HP为§Y25亿§!，会再生§Y4次§!。\n\n§R猫块终结者§!进入星系时，会立刻§R摧毁§!星系中的每一个殖民地。不要让它们靠近你的星球！\n\n完成§Y猫网协议§!将消耗§Y10亿能量币§!，初始§G投猫倾向§!为§Y-100%§!\n\n§H为打了太多强力模组所设立的平衡性！"
+  giga_blokkats_endtech:0 "猫块（§M终局科技§!）\n猫块被§M极大加强§!，且会派遣合适的战舰作为采矿行动的护卫。\n\n他们获得如下影响：\n§Y武器伤害+1000%\n舰船开火速度+1000%\n舰船的船体值/装甲值/护盾值+2000%\n舰船速度+90%\n巨构建造速度+250%\n陆军伤害/生命值/士气+1000%§!\n\n§Y猫块赋权者§!会再生§Y20次§!，因而总HP为§Y80亿§!\n§Y猫块拆解者§!的数量为§Y3×§!\n激活§Y超维震荡仪§!的基础花费为§Y4M§!£energy£\n猫块的护卫舰队的数量会变为六倍\n猫块科研速度减慢§Y300%§!\n\n§Y猫块赋权者§!受到§Y5个§!§R猫块终结者§!的护卫。\n§Y猫块拆解者§!受到§Y2个§!§R猫块终结者§!的护卫。\n每个§Y哨兵舰队§!都有§Y一个§!§R猫块终结者§!。\n§R猫块终结者§!总HP为§Y25亿§!，会再生§Y4次§!。\n\n§R猫块终结者§!进入星系时，会立刻§R摧毁§!星系中的每一个殖民地。不要让它们靠近你的星球！\n\n完成§Y猫网协议§!将消耗§Y10亿能量币§!，初始§G投猫倾向§!为§Y-100%§!\n\n§H为打了太多强力模组所设立的平衡性！"
   
   giga_blokkats_deathmode:0 "猫块（§P猫块毁灭者§!）\n猫块会将你的帝国视为对其文明真正的威胁，部署巨量军力以图消灭你。他们将会§P无限强大§!，派出一波波合适的战舰来守卫其收割行动。\n\n他们获得如下影响：\n§Y武器伤害+1000%\n舰船开火速度+1000%\n舰船的船体值/装甲值/护盾值+2000%\n舰船速度+150%\n巨构建造速度+250%\n陆军伤害/生命值/士气+1000%§!\n\n§Y猫块赋权者§!会再生§Y100次§!，因而总HP为§Y400亿§!\n他们将总有§Y20§!个§Y猫块拆解者§!\n激活§Y超维震荡仪§!的基础花费为§Y20M§!£energy£\n猫块的护卫舰队和侦查舰队的数量会全部由§R猫块终结者§!组成\n猫块科研速度减慢§Y600%§!\n\n§Y猫块赋权者§!受到§Y50个§!§R猫块终结者§!和一个§P猫块毁灭者§!的护卫。\n§Y猫块拆解者§!受到§Y20个§!§R猫块终结者§!的护卫。\n每个§Y哨兵舰队§!都有§Y5个§!§R猫块终结者§!。\n§R猫块终结者§!总HP为§Y50亿§!，会再生§Y10次§!。\n§P猫块毁灭者§!总HP为§Y1000亿§!，会再生§Y200次§!。\n\n§R猫块终结者§!进入星系时，会立刻§R摧毁§!星系中的每一个殖民地。不要让它们靠近你的星球！\n\n§R无法§!完成§Y猫网协议§!，因为猫块只想你死！\n\n§H仅对终极魔怔模组所做的“平衡”！"
   
@@ -15438,7 +15476,7 @@
   giga_blokkat.5010.desc.sbtg1:0 "不，我们不参加这个比赛。我们也不会帮助你。没有“敌人的敌人”类型的交易。"
   
   #Mods
-  giga_blokkat.5010.desc.mods1:0 "啊对，你们已经飞升到另一个层次。这将使你们阻止我们行动的几率增加：-7.567%。"
+  giga_blokkat.5010.desc.mods1:0 "惊了，你们已经\"飞升\"到了另一个层次。这将使你们阻止我们行动的几率增加：-7.567%。"
   giga_blokkat.5010.desc.mods2:0 "你们帝国的信念已经在消失了？即使考虑到曾经的星系拆解区，这也是一个新的记录。"
   giga_blokkat.5010.desc.mods3:0 "检测到所谓的“飞升帝国”，开始检测：错误！没有发现才能。"
   giga_blokkat.5010.desc.mods4:0 "耐人寻味的武器装备，你是从动画娱乐节目中取得的它们吗？"
@@ -15452,11 +15490,11 @@
   giga_blokkat.5010.desc.mega5:0 "所以你们的文明叫它小行星火炮？我们曾经造过一个差不多的东西，我们叫它小行星超级哨兵，这个名字客观上更优秀。"
   
   #Crisises
-  giga_blokkat.5010.desc.crisis1:0 "永世是我们目前为止见到的时间开发比率效率最低的。他们到底在干什么？"
-  giga_blokkat.5010.desc.crisis2:0 "那些虫子一直在逃跑，并告诉大家我们是某种猎人。"
-  giga_blokkat.5010.desc.crisis3:0 "那些红色机器人在净化银河系方面的效率并不高。也许我们应该试着教他们怎么做？"
-  giga_blokkat.5010.desc.crisis4:0 "这些蓝色的鬼魂假装在“喂食”，留下这么多物质没动，太浪费了。"
-  giga_blokkat.5010.desc.crisis5:0 "大帝和他的喵星人看起来对我们极度恐惧，我们在过去甚至都没有遇到过他们，真搞笑。"
+  giga_blokkat.5010.desc.crisis1:0 "永世是我们目前为止见到的时间-发展比率最低的。当然，这很普通，因为我们已经观测到很多K3文明都要面临这种停滞不前的命运。"
+  giga_blokkat.5010.desc.crisis2:0 "请注意，“普雷索林”给我们的“猎人”称号并不准确，因为我们没有积极地尝试消灭它们。它们只是太慢，无法超过收割船的速度。"
+  giga_blokkat.5010.desc.crisis3:0 "“肃正协议”存在的目的是阻止30级奇点的发生。我们的存在证明它们失败了。"
+  giga_blokkat.5010.desc.crisis4:0 "“破界者”所采取的喂食方式让99.99999%的物质仍未被触及。效率低下。"
+  giga_blokkat.5010.desc.crisis5:0 "“大帝”似乎对我们有一定程度的熟悉，似乎我们以前遇到过它。但我们的数据库没有任何与它相关的具体数据。我们不清楚这是为什么。"
   
   giga_blokkat.5010.a:0 "关闭屏幕。"
   
@@ -15654,7 +15692,7 @@
   giga_blokkat.1006.a:0 "显示在屏幕上。"
   
   giga_blokkat.1007.name:0 "猫块收割者"
-  giga_blokkat.1007.desc:0 "§G（正在调查周边环境）\n（分析本地星际文明能力）\n（分析银河系能量密度）\n（评估结果：可行的收割对象）§!\n\n你们好，爱谁谁。猫块赋权者和它周围的舰队已经与你们的银河系建立了联系。\n\n我们要说清楚，因为模糊和神秘只会滋生低效。我们来到你们的银河系只为了寻找纯粹的原始能量，我们的舰队会收割其中的每一点物质，真空波动和背景辐射。\n\n如果这给你们带来不便，你们的文明可以离开银河系，我们也不会追捕你们。不要试图拖累我们，因为这只会加速你们的灭亡。\n\n§G（通讯终止）§!"
+  giga_blokkat.1007.desc:0 "§G<<正在调查周边环境>>\n<<分析本地星际文明能力>>\n<<分析银河系能量密度>>\n<<评估结果：可行的收割对象>>§!\n\n你们好，爱谁谁。猫块赋权者和它周围的舰队已经与你们的银河系建立了联系。\n\n我们要说清楚，因为模糊和神秘只会滋生低效。我们来到你们的银河系只为了寻找纯粹的原始能量，我们的舰队会收割其中的每一点物质，真空波动和背景辐射。\n\n如果这给你们带来不便，你们的文明可以离开银河系，我们也不会追捕你们。不要试图拖累我们，因为这只会加速你们的灭亡。\n\n§G<<通讯终止>>§!"
   giga_blokkat.1007.a:0 "这可不太好…"
   
   giga_blokkat.1007.desc.deathmode:0 "§G<<正在调查周边环境>>\n<<分析本地星际文明能力>>\n<<分析银河系能量密度>>\n<<评估结果：确认为危险本地文明>>\n<<军备就绪>>§!\n\n你们好，爱谁谁。猫块赋权者和它周围的舰队已经与你们的银河系建立了联系。\n\n我们要说清楚，因为模糊和神秘只会滋生低效。我们来到你们的银河系只为了寻找纯粹的原始能量，我们的舰队会收割其中的每一点物质，真空波动和背景辐射。\n\n§R注意！§!至少有一个本地文明被视为是§R<<对猫块文明有害的>>§!，星际评估§R不可用§!。此河系及其居民将在通知后短时间内被§R<<抹杀>>§!。\n\n§G<<通讯终止>>§!"
@@ -16418,8 +16456,8 @@
   planetcraft_printer_3_fake:0 "$planetcraft_printer_3$"
   planetcraft_printer_3_fake_DESC:0 "$planetcraft_printer_3_DESC$"
   
-  planetcraft_printer_ready:99 "$planetcraft_printer_3$"
-  planetcraft_printer_ready_DESC:99 "$planetcraft_printer_3_DESC$"
+  planetcraft_printer_ready:0 "$planetcraft_printer_3$"
+  planetcraft_printer_ready_DESC:0 "$planetcraft_printer_3_DESC$"
   
   planetcraft_printer_make_planet:0 "组装贝希摩斯行星飞船"
   
@@ -16919,39 +16957,39 @@
   job_maginot_shield_generator_operator:0 "护盾发生器操作者"
   job_maginot_shield_generator_operator_plural:0 "护盾发生器操作者"
   job_maginot_shield_generator_operator_desc:0 "他们被训练来操作城市街区大小的发生器阵列，并确保$name_maginot_world$的安全，不受任何敌方武力袭击的威胁。"
-  job_maginot_shield_generator_operator_effect_desc:0 "£job_maginot_shield_generator_operator£ $job_maginot_shield_generator_operator_plural$可以为$name_maginot_world$提供防御升级点数，每个岗位提供1点数"
+  job_maginot_shield_generator_operator_effect_desc:0 "£job_maginot_shield_generator_operator£$job_maginot_shield_generator_operator_plural$将£energy£§Y$energy$§!与£alloys£§Y$alloys$§!转化为£unity£§Y凝聚力§!，并为$name_maginot_world$提供§Y防御升级§!点数，每个岗位提供1点§Y$defensive_upgrade_point$§!。"
   mod_job_maginot_shield_generator_operator_add:0 "$job_maginot_shield_generator_operator$"
   # gestalt version
   job_maginot_shield_generator_operator_gestalt:0 "护盾发生器操作子个体"
   job_maginot_shield_generator_operator_gestalt_plural:0 "护盾发生器操作子个体"
   job_maginot_shield_generator_operator_gestalt_desc:0 "他们被训练来操作城市街区大小的发生器阵列，并确保$name_maginot_world$的安全，不受任何敌方武力袭击的威胁。"
-  job_maginot_shield_generator_operator_gestalt_effect_desc:0 "£job_maginot_shield_generator_operator_gestalt£ $job_maginot_shield_generator_operator_gestalt_plural$可以为$name_maginot_world$提供防御升级点数，每个岗位提供1点数"
+  job_maginot_shield_generator_operator_gestalt_effect_desc:0 "£job_maginot_shield_generator_operator_gestalt£$job_maginot_shield_generator_operator_gestalt_plural$将£energy£§Y$energy$§!与£alloys£§Y$alloys$§!转化为£unity£§Y凝聚力§!，并为$name_maginot_world$提供§Y防御升级§!点数，每个岗位提供1点§Y$defensive_upgrade_point$§!。"
   mod_job_maginot_shield_generator_operator_gestalt_add:0 "$job_maginot_shield_generator_operator_gestalt$"
   
   ## cannon/orbital uplink district
   job_maginot_planetary_cannon_operator:0 "防御网操作者"
   job_maginot_planetary_cannon_operator_plural:0 "防御网操作者"
   job_maginot_planetary_cannon_operator_desc:0 "一群训练有素的工程师，维护行星火炮与轨道上行链接。训练有素的人员同时驻扎在地面武器与轨道战略防御平台上，与任何愚蠢到敢于与$name_maginot_world$在同一个星系中存在的敌人作战。"
-  job_maginot_planetary_cannon_operator_effect_desc:0 "£job_maginot_planetary_cannon_operator£$job_maginot_planetary_cannon_operator_plural$可以为$name_maginot_world$提供进攻升级点数，每个岗位提供1点数"
+  job_maginot_planetary_cannon_operator_effect_desc:0 "£job_maginot_planetary_cannon_operator£$job_maginot_planetary_cannon_operator_plural$将£energy£§Y$energy$§!与£alloys£§Y$alloys$§!转化为£unity£§Y凝聚力§!，并为$name_maginot_world$提供§Y进攻升级§!点数，每个岗位提供1点§Y$offensive_upgrade_point$§!。"
   mod_job_maginot_planetary_cannon_operator_add:0 "$job_maginot_planetary_cannon_operator$"
   # gestalt version
   job_maginot_planetary_cannon_operator_gestalt:0 "防御网操作子个体"
   job_maginot_planetary_cannon_operator_gestalt_plural:0 "防御网操作子个体"
   job_maginot_planetary_cannon_operator_gestalt_desc:0 "一群训练有素的工程子个体，维护行星火炮与轨道上行链接。作战子个体同时驻扎在地面武器与轨道战略防御平台上，与任何愚蠢到敢于与$name_maginot_world$在同一个星系中存在的敌人作战。"
-  job_maginot_planetary_cannon_operator_gestalt_effect_desc:0 "£job_maginot_planetary_cannon_operator_gestalt£$job_maginot_planetary_cannon_operator_gestalt_plural$可以为$name_maginot_world$提供进攻升级，每个岗位提供1点数"
+  job_maginot_planetary_cannon_operator_gestalt_effect_desc:0 "£job_maginot_planetary_cannon_operator_gestalt£$job_maginot_planetary_cannon_operator_gestalt_plural$将£energy£§Y$energy$§!与£alloys£§Y$alloys$§!转化为£unity£§Y凝聚力§!，并为$name_maginot_world$提供§Y进攻升级§!点数，每个岗位提供1点§Y$offensive_upgrade_point$§!。"
   mod_job_maginot_planetary_cannon_operator_gestalt_add:0 "$job_maginot_planetary_cannon_operator_gestalt$"
   
   ## bunker district
   job_maginot_bunker_officer:0 "马奇诺防御指挥官"
   job_maginot_bunker_officer_plural:0 "马奇诺防御指挥官"
   job_maginot_bunker_officer_desc:0 "这些官员负责组织一整个堡垒星域的防御。"
-  job_maginot_bunker_officer_effect_desc:0 "£job_maginot_bunker_officer£$job_maginot_bunker_officer_plural$产生£unity£§Y$unity$§!，提高£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!并生成£defense_army£§Y防御部队§!"
+  job_maginot_bunker_officer_effect_desc:0 "£job_maginot_bunker_officer£$job_maginot_bunker_officer_plural$将£energy£§Y$energy$§!与£alloys£§Y$alloys$§!转化为£unity£§Y$unity$§!，提高£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!并生成£defense_army£§Y防御部队§!"
   mod_job_maginot_bunker_officer_add:0 "$job_maginot_bunker_officer$"
   # gestalt version
   job_maginot_bunker_officer_gestalt:0 "马奇诺防御指挥子个体"
   job_maginot_bunker_officer_gestalt_plural:0 "马奇诺防御指挥子个体"
   job_maginot_bunker_officer_gestalt_desc:0 "专门为组织整个掩体区的防御而创建的子个体。"
-  job_maginot_bunker_officer_gestalt_effect_desc:0 "£job_maginot_bunker_officer_gestalt£$job_maginot_bunker_officer_gestalt_plural$产生£unity£§Y$unity$§!，提高£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!并生成£defense_army£§Y防御部队§!"
+  job_maginot_bunker_officer_gestalt_effect_desc:0 "£job_maginot_bunker_officer_gestalt£$job_maginot_bunker_officer_gestalt_plural$将£energy£§Y$energy$§!与£alloys£§Y$alloys$§!转化为£unity£§Y$unity$§!，提高£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!并生成£defense_army£§Y防御部队§!"
   mod_job_maginot_bunker_officer_gestalt_add:0 "$job_maginot_bunker_officer_gestalt$"
   
   ## housing district military police (non-gestalts only)
@@ -16966,7 +17004,7 @@
   ######################
   # megastructure object
   maginot_world_0:0 "$gc_mega$$name_maginot_world$基址"
-  maginot_world_0_DESC:0 "将在下方行星上建造的$name_maginot_world$的基址。这一巨大的壁垒将有一天下抵地幔，上达深空，成为敌人不可动摇的阻碍。该行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。"
+  maginot_world_0_DESC:0 "将在下方行星上建造的$name_maginot_world$的基址。这一巨大的壁垒将有一天下抵地幔，上达深空，成为敌人不可动摇的阻碍。该行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。$orbital_ring_tier_1_plural$将不兼容并被移除。"
   maginot_world_0_MEGASTRUCTURE_DETAILS:0 "£gigastructural£$giga_list_category_megastructure$-$giga_list_category_defensive$\n提供大量§Y防御部队§!，§Y超光速抑制器§!并阻碍§Y跃迁引擎§!使用-§B需要有马奇诺要塞复合体建筑的星球§!\n§L大量的壁垒复合体吞噬了整个星球，提供了终极的防御。§!"
   # against any enemy in any theatre.§!"
   # F to pay respects to full description, line space needed for steam commenter instructions
@@ -16978,7 +17016,7 @@
   maginot_world_2_DESC:0 "巨大的，覆盖行星的要塞，对一切敌军来说都坚不可摧。"
   # ringworld version
   maginot_world_ringworld_0:0 "$name_maginot_ringworld$基址"
-  maginot_world_ringworld_0_DESC:0 "将在下方环世界区段上建造的$name_maginot_ringworld$的基址。这一巨大的壁垒将有一天变为环状超结构，成为敌人不可动摇的阻碍。该行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。"
+  maginot_world_ringworld_0_DESC:0 "将在下方环世界区段上建造的$name_maginot_ringworld$的基址。这一巨大的壁垒将有一天变为环状超结构，成为敌人不可动摇的阻碍。该环世界上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。"
   maginot_world_ringworld_0_MEGASTRUCTURE_DETAILS:0 "它不应万众瞩目。"
   maginot_world_ringworld_1:0 "$name_maginot_ringworld$超结构"
   maginot_world_ringworld_1_DESC:0 "初步的环世界改造，包含对整体上部结构的大量改造。最深处的堡垒已经安装完毕，可以开始死手系统的安装。"
@@ -16986,13 +17024,13 @@
   maginot_world_ringworld_2_DESC:0 "巨大的，覆盖环世界的要塞，对一切敌军来说都坚不可摧。"
   
   # tooltip fail messages
-  requires_maginotable_planet_type:0 "$TRIGGER_FAIL$必须建造于一个普通星球或环世界上，且不得有其它已存在人造建筑。"
+  requires_maginotable_planet_type:0 "$TRIGGER_FAIL$马奇诺星球只能在常规星球、气态巨行星居住站或环世界区段上建造。"
   requires_not_maginot_world:0 "$TRIGGER_FAIL$不能在一个马奇诺星球上建造一个马奇诺星球。"
   requires_maginot_stronghold_built:0 "$TRIGGER_FAIL$我们必须先建造一个$building_giga_maginot_stronghold$来为行星掩体准备建筑空间。"
   
   # event popups for stages
   giga_dialog.5001.name:0 "$name_maginot_world$基址完工！"
-  giga_dialog.5001.desc:0 "未来的$name_maginot_world$基址已经在[giga_system.GetName]上完成。很快，这一行星就会变成一个巨大的壁垒综合体，我们也会拥有终极的防御。\n\n行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。\n\n§R警告：$name_maginot_world$设有失效保护功能，在殖民地被毁时会引爆行星并摧毁一切在轨舰船！"
+  giga_dialog.5001.desc:0 "未来的$name_maginot_world$基址已经在[giga_system.GetName]上完成。很快，这一行星就会变成一个巨大的壁垒综合体，我们也会拥有终极的防御。\n\n§S行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。§!$orbital_ring_tier_1_plural$将不兼容并被移除。\n\n§R警告：$name_maginot_world$设有失效保护功能，在殖民地被毁时会引爆行星并摧毁一切在轨舰船！"
   giga_dialog.5001.a:0 "好极了。"
   
   giga_dialog.5002.name:0 "$name_maginot_world$内部结构完工"
@@ -17000,12 +17038,12 @@
   giga_dialog.5002.a:0 "好极了。"
   
   giga_dialog.5003.name:0 "$name_maginot_world$建造完成！"
-  giga_dialog.5003.desc:0 "大新闻！在[giga_system.GetName]星系里我们完成了从地幔延伸到深空的终极壁垒。这一震撼人心的建筑几乎无可撼动，它具有综合轨道防御、行星火炮、大量的地表掩体、深层的地下指挥综合体、以及能碾压整支海军舰队水平的护盾发生器。\n此外，最终的死手系统甚至能阻止行星级的毁灭，在失效保护系统启动的情况下，整个行星将被作为一整个巨大的反物质燃料驱动的异形弹丸——§R能完全歼灭在轨的一切敌对势力§!。\n\n这些防御系统可以通过§Y决议§!管理。建造§Y区划§!以获得可用于以上决议的$defensive_upgrade_point_plural$和$offensive_upgrade_point_plural$。"
+  giga_dialog.5003.desc:0 "大新闻！在[giga_system.GetName]星系里我们完成了从地幔延伸到深空的终极壁垒。这一震撼人心的建筑几乎无可撼动，它具有综合轨道防御、行星火炮、大量的地表掩体、深层的地下指挥综合体、以及能碾压整支海军舰队水平的护盾发生器。\n此外，最终的死手系统甚至能阻止行星级的毁灭，在失效保护系统启动的情况下，整个行星将被作为一整个巨大的反物质燃料驱动的异形弹丸——§R能完全歼灭在轨的一切敌对势力§!。\n\n这些防御系统可以通过§Y决议§!管理。建造§Y区划§!并派遣§Y岗位§!以获得可用于以上决议的§E$defensive_upgrade_point_plural$§!和§E$offensive_upgrade_point_plural$§!。"
   giga_dialog.5003.a:0 "终于，我们安全了。"
   
   # ringworld versions
   giga_dialog.5004.name:0 "$name_maginot_ringworld$基址完工"
-  giga_dialog.5004.desc:0 "未来的$name_maginot_ringworld$基址已经在[giga_system.GetName]星系中完成。很快，环世界的这一部分就会变成一个巨大的壁垒综合体，我们也会拥有终极的防御。\n\n行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。\n\n§R警告：$name_maginot_ringworld$设有失效保护功能，在殖民地被毁时会引爆行星并摧毁一切在轨舰船！"
+  giga_dialog.5004.desc:0 "未来的$name_maginot_ringworld$基址已经在[giga_system.GetName]星系中完成。很快，环世界的这一部分就会变成一个巨大的壁垒综合体，我们也会拥有终极的防御。\n\n§S行星上所有区划都将被特殊的防御区段取代，并启用行星防御平台管理。§!\n\n§R警告：$name_maginot_ringworld$设有失效保护功能，在殖民地被毁时会引爆行星并摧毁一切在轨舰船！"
   giga_dialog.5004.a:0 "非常好。"
   
   giga_dialog.5005.name:0 "$name_maginot_ringworld$外部完成"
@@ -17013,7 +17051,7 @@
   giga_dialog.5005.a:0 "非常好。"
   
   giga_dialog.5006.name:0 "$name_maginot_ringworld$完成！"
-  giga_dialog.5006.desc:0 "大新闻！在[giga_system.GetName]星系里，我们完成了部分包围整个恒星的终极壁垒。这一震撼人心的建筑几乎无可撼动，它具有综合近空防御、超结构火炮、大量的地表掩体、深层的地下指挥综合体、以及能碾压整支海军舰队水平的护盾发生器。\n此外，最终的死手系统甚至能阻止环世界区段级的毁灭，在失效保护系统启动的情况下，整个超结构将被作为一整个巨大的，由反物质燃料驱动的异形弹丸——§R能完全歼灭在轨的一切敌对势力§!。\n\n这些防御系统可以通过§Y决议§!管理。建造§Y区划§!以获得可用于以上决议的$defensive_upgrade_point_plural$和$offensive_upgrade_point_plural$。"
+  giga_dialog.5006.desc:0 "大新闻！在[giga_system.GetName]星系里，我们完成了部分包围整个恒星的终极壁垒。这一震撼人心的建筑几乎无可撼动，它具有综合近空防御、超结构火炮、大量的地表掩体、深层的地下指挥综合体、以及能碾压整支海军舰队水平的护盾发生器。\n此外，最终的死手系统甚至能阻止环世界区段级的毁灭，在失效保护系统启动的情况下，整个超结构将被作为一整个巨大的，由反物质燃料驱动的异形弹丸——§R能完全歼灭在轨的一切敌对势力§!。\n\n这些防御系统可以通过§Y决议§!管理。建造§Y区划§!并派遣§Y岗位§!以获得可用于以上决议的§E$defensive_upgrade_point_plural$§!和§E$offensive_upgrade_point_plural$§!。"
   giga_dialog.5006.a:0 "终于，我们安全了。"
   
   #####################
@@ -17264,7 +17302,7 @@
   #############################################################################################################################################
   
   mod_giga_elysium_host_stability_add:0 "轨道乐土主行星稳定度"
-  mod_giga_elysium_host_jobs_produces_mult:99 "Elysium Host Planet Job Output"
+  mod_giga_elysium_host_jobs_produces_mult:0 "轨道乐土主行星岗位产出"
   
   giga_elysium_host_planet:0 "$name_orb_elysium$主行星"
   giga_elysium_host_planet_desc:0 "此行星的大部分行政事物都交予行星当局管理，而其上级则在轨道环的站点里高高遥控他们。"
@@ -17423,7 +17461,7 @@
   mod_job_giga_elysium_controller_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_giga_elysium_controller_drone_add£"
   
   # extra bit for the origin effect
-  job_giga_elysium_controller_origin_effect_desc:99 "and £job£ §YJob Output§! "
+  job_giga_elysium_controller_origin_effect_desc:0 "与£job£§Y岗位产出§!"
   
   #############################################################################################################################################
   ### More Katzen Stuff #######################################################################################################################
@@ -18175,7 +18213,7 @@
   giga_fallen_empire_misc.1042.a.tooltip:0 "§Y布奇恩终结者§!已经恢复成常规觉醒帝国，§Y加佐指导者§!。"
   
   giga_pouchkinn_fe_disarray:0 "完全混乱"
-  giga_pouchkinn_fe_disarray_desc:0 "布奇恩不做后备计划。经典布奇恩行为。"
+  giga_pouchkinn_fe_disarray_desc:0 "普契金不做后备计划。经典普契金行为。"
   
   giga_fallen_empire_misc.1043.name:0 "布奇恩终结者陷入混乱"
   giga_fallen_empire_misc.1043.desc:0 "随着布奇恩离开我们的现实，§Y布奇恩终结者§!已经没有了目标。\n\n在布奇恩飞升时，他们的套娃脑被摧毁，这意味着大多数研究工作已经停滞。由于他们的存在没有了真正目的，等待曾经强大的觉醒帝国的，似乎只有混乱和无序。"
@@ -18204,7 +18242,7 @@
   GIGA_DG_VASSAL_GREETING_DISLOYAL_01:0 "你破坏了规矩，那我们就得破坏你。"
   
   GIGA_LG_ARROGANT_GREETING_01:0 "在了却银河万事之后，我们兴许才能恢复往常的和平活动。"
-  GIGA_LG_BELLIGERENT_GREETING_01:0 "在痛苦中翻滚着去死吧。我们还有要紧事儿要做。"
+  GIGA_LG_BELLIGERENT_GREETING_01:0 "请你坐以待毙去吧。我们还有要紧事儿要做。"
   GIGA_LG_OVERLORD_GREETING_01:0 ""
   GIGA_LG_MECH_OVERLORD_GREETING_01:0 ""
   
@@ -19054,3 +19092,13 @@
   PLANET_KILLER_NANOBOTS_SYSTEMCRAFT_ACTION:0 "$PLANET_KILLER_NANOBOTS_ACTION$"
   MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS_SYSTEMCRAFT:0 "$MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS$"
   FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NANOBOTS_SYSTEMCRAFT:0 "$FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NANOBOTS$"
+  
+  gigadocs_title:0 "£giga_docs£模组文档"
+  gigadocs_desc:0 "这将在游戏内浏览器打开模组的§Y谷歌文档§!。\n\n如果谷歌文档在群星的浏览器上不好用，可以在模组的§Y工坊页§!找到链接。"
+  
+  gigalore_title:0 "£giga_lore£背景维基"
+  gigalore_desc:0 "这将在游戏内浏览器打开模组的§Y背景故事维基§!。该维基只包含背景故事，传统等内容，不包含任何游戏内数据。\n\n如果群星内置浏览器不好用，可以在模组的§Y工坊页§!找到链接。"
+  
+  gigadiscord_title:0 "£giga_discord£Discord"
+  gigadiscord_desc:0 "这将打开或加入§Y更多巨构的Discord频道§!。需要在电脑上安装§YDiscord应用§!，因为群星内置浏览器不支持Discord，但邀请链接仍会生效并唤醒应用。\n\n推荐使用Discord来§Y汇报bug§!，或者如果你有对本模组的常规§Y问题§!要问，因为steam评论已经被证明没有重点，所以直接禁用了。\n\n如果邀请不生效，可以在模组§Y工坊页§!找到Discord的邀请链接。"
+  

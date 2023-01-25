@@ -43,6 +43,14 @@ ambient_object = {
 }
 
 ambient_object = {
+	name = "giga_fe_shield"
+	entity = "nbd_shield_project_system_effect"
+	selectable = no
+	tooltip = "giga_fe_shield_tooltip"
+	show_name = yes
+}
+
+ambient_object = {
 	name = "giga_size_13_ring"
 	entity = "orbital_arcology_13_entity"
 	selectable = no
@@ -153,30 +161,30 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+#Animate UV seems to be functioning properly nowadays without needing this, however using this causes a bit of shenanigans with mesh placement
+# # SM Forge to fix animate UV
+# ambient_object = {
+# 	name = "sm_forge_p2"
+# 	entity = "ehof_sm_forge_phase2_sphere_entity"
+# 	selectable = no
+# 	show_name = no
+# }
 
-# SM Forge to fix animate UV
-ambient_object = {
-	name = "sm_forge_p2"
-	entity = "ehof_sm_forge_phase2_sphere_entity"
-	selectable = no
-	show_name = no
-}
+# # SM Forge to fix animate UV
+# ambient_object = {
+# 	name = "sm_forge_p3"
+# 	entity = "ehof_sm_forge_phase3_sphere_entity"
+# 	selectable = no
+# 	show_name = no
+# }
 
-# SM Forge to fix animate UV
-ambient_object = {
-	name = "sm_forge_p3"
-	entity = "ehof_sm_forge_phase3_sphere_entity"
-	selectable = no
-	show_name = no
-}
-
-# SM Forge to fix animate UV
-ambient_object = {
-	name = "sm_forge_p4"
-	entity = "ehof_sm_forge_phase4_sphere_entity"
-	selectable = no
-	show_name = no
-}
+# # SM Forge to fix animate UV
+# ambient_object = {
+# 	name = "sm_forge_p4"
+# 	entity = "ehof_sm_forge_phase4_sphere_entity"
+# 	selectable = no
+# 	show_name = no
+# }
 
 # Fake CPlanet (Shader fix)
 ambient_object = {

@@ -332,13 +332,13 @@
   mod_job_frameworld_defender_drone_per_pop:0 "每$VALUE$人口§G+1§! $job_frameworld_defender_drone$岗位"
   mod_job_frameworld_defender_drone_per_pop_short:0 "\n每$VALUE$£pop£产出的£mod_job_warrior_drone_add£§G+1§!"
   
-  job_frameworld_outpost_job:99 "Explorer"
-  job_frameworld_outpost_job_plural:99 "Explorers"
-  job_frameworld_outpost_job_desc:99 "A planet-side delegation sent to map out this world."
-  job_frameworld_outpost_job_effect_desc:99 "£job_frameworld_outpost_job£ $job_frameworld_outpost_job_plural$ staff a $col_frameworld_planetary_outpost£."
-  mod_job_frameworld_outpost_job_add:99 "$job_frameworld_outpost_job$ Jobs"
-  mod_job_frameworld_outpost_job_per_pop:99 "§G+1§! $job_frameworld_outpost_job$ Job per $VALUE$ Pops"
-  mod_job_frameworld_outpost_job_per_pop_short:99 "\n§G+1§! £mod_job_colonist_add£ per $VALUE$ £pop£"
+  job_frameworld_outpost_job:0 "探险家"
+  job_frameworld_outpost_job_plural:0 "探险家"
+  job_frameworld_outpost_job_desc:0 "被派来绘制这个星球的行星代表团。"
+  job_frameworld_outpost_job_effect_desc:0 "£job_frameworld_outpost_job£ $job_frameworld_outpost_job_plural$ staff a $col_frameworld_planetary_outpost£."
+  mod_job_frameworld_outpost_job_add:0 "$job_frameworld_outpost_job$岗位"
+  mod_job_frameworld_outpost_job_per_pop:0 "每$VALUE$人口§G+1§!$job_frameworld_outpost_job$岗位"
+  mod_job_frameworld_outpost_job_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_colonist_add£"
   
   ################
   ### Deposits ###
@@ -616,7 +616,7 @@
   tech_frameworld_harvest_2:0 "小行星分解技术升级"
   tech_frameworld_harvest_2_desc:0 "将新开发的采矿激光运用到小行星收割技术上去，能让我们更高效地分解小行星。"
   
-  tech_frameworld_harvest_3:0 "自动化分解无人机"
+  tech_frameworld_harvest_3:0 "自主分解无人机"
   tech_frameworld_harvest_3_desc:0 "自动化采矿无人机舰队最初设计用于采集矿物，它也能用于更大型的物质采集活动。"
   
   # defensive station upgrades (granted by corresponding starbase tech and maginot)

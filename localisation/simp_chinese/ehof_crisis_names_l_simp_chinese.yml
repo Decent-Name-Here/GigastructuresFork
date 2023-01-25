@@ -2,7 +2,7 @@
   
   # Compound
   NAME_The_Compound:0 "$ehof_the_compound$"
-  nAME_Dark_Matter_Species:0 "黑渊"
+  NAME_Dark_Matter_Species:0 "泰纳瑞斯"
   
   NAME_Unbidden_Starbase:0 "破界者恒星基地"
   NAME_Architect:0 "筑造者"
@@ -40,6 +40,9 @@
   NAME_Giga_Large:0 "克隆普雷索林战士"
   NAME_Giga_Carrier:0 "克隆普雷索林育母"
   NAME_Giga_Small:0 "克隆普雷索林育母"
+  NAME_Giga_Deity:99 "Cloned Toxic God"
+  NAME_Giga_Amoeba:99 "Cloned Amoeba"
+  NAME_Giga_Tiyanki_Small:99 "Cloned Tiyanki Ox"
   
   # Hidden
   #NAME_ehof_global_hidden_empire:99 "Dimensional Reflection"
