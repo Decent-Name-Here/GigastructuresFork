@@ -1548,12 +1548,14 @@ country_event = {
 		name = giga_flusionoperations.5000.c #BLOW THE BUNDESHALLE - Can't revive him but hella expensive + lowers resistance
 		custom_tooltip = "giga_flusionoperations.5000.c.tooltip"
 		allow = {
-			custom_tooltip = "needs_6_solak_res"
-			hidden_trigger = {
-				event_target:flusion_primitives_country = {
-					check_variable = {
-						which = solak_resources
-						value >= 6
+			custom_tooltip = {
+				fail_text = "needs_6_solak_res"
+				hidden_trigger = {
+					event_target:flusion_primitives_country = {
+						check_variable = {
+							which = solak_resources
+							value >= 6
+						}
 					}
 				}
 			}
@@ -1583,35 +1585,42 @@ country_event = {
 	}
 
 	option = {
-		name = giga_flusionoperations.5000.d #Kidnap him - doesnt die so he cant be revived :kaisersmug:
+		name = giga_flusionoperations.5000.d #KIDNAP THE BOZO ("DOOO NOOOT!!! I HAVE A WIFE AND CHILDRENINGS!!!", "loris we're bringing them too") - doesnt die so he cant be revived :kaisersmug:
 		custom_tooltip = "giga_flusionoperations.5000.d.tooltip"
 		allow = {
 			custom_tooltip = { 
-				fail_text = "loris_kidnap_condition"
+				fail_text = "needs_8_solak_res"
 				hidden_trigger = {
 					event_target:flusion_primitives_country = {
 						check_variable = {
 							which = solak_resources
 							value >= 8
 						}
-						check_variable = {
-							which = zousa_res
-							value >= 2
-						}
+					}
+				}
+			}
+			custom_tooltip = { 
+				fail_text = "requires_2_zousa_res"
+				hidden_trigger = { 
+					check_variable = {
+						which = zousa_res
+						value >= 2
 					}
 				}
 			}
 			#NOOO GENOCIDAL GROBCREMOR
 			custom_tooltip = { 
-				fail_text = "not_genocidal_loris"		
-				hidden_trigger = { 	
-					NOR = { 
-						has_valid_civic = civic_machine_terminator 	
-					#	has_valid_civic = civic_hive_devouring_swarm 		NOM NOM NOM NOM		
-						has_valid_civic = civic_fanatic_purifiers 	
-					} 						
-				} 
-			} 
+				fail_text = "cant_if_terminator_loris"		
+				hidden_trigger = { NOT = { has_valid_civic = civic_machine_terminator } }
+			}
+			custom_tooltip = { 
+				fail_text = "cant_if_purifier_loris"
+				hidden_trigger = { NOT = { has_valid_civic = civic_fanatic_purifiers } }
+			}
+			# custom_tooltip = { #NOM NOM NOM TASTY LORIS
+			# 	fail_text = "cant_if_devouring_loris"
+			# 	hidden_trigger = { NOT = { has_valid_civic = civic_hive_devouring_swarm } }
+			# }
 		}
 		hidden_effect = {
 			decrease_solak_resources = yes
@@ -1620,6 +1629,9 @@ country_event = {
 			decrease_solak_resources = yes
 			decrease_solak_resources = yes
 			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+
 			event_target:flusion_primitives_country = {
 				set_variable = {
 					which = flusion_operation_odds
@@ -1650,7 +1662,7 @@ country_event = {
 	id = giga_flusionoperations.5001
 	title = "giga_flusionoperations.5001.name"
 	desc = { 
-		trigger = { NOT = { has_global_flag = giga_kidnapping_loris} }
+		trigger = { NOT = { has_global_flag = giga_kidnapping_loris } }
 		text = "giga_flusionoperations.5001.desc"
 	}
 	desc = { 
@@ -1736,11 +1748,13 @@ country_event = {
 		event_target:flusion_loris = { kill_leader = { show_notification = yes } }
 		hidden_effect = {
 			country_event = { id = giga_flusionoperations.5007 days = 90 random = 90 } #Loris Mourning
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1804,11 +1818,13 @@ country_event = {
 		event_target:flusion_loris = { kill_leader = { show_notification = yes } }
 		hidden_effect = {
 			country_event = { id = giga_flusionoperations.5007 days = 90 random = 90 } #Loris Mourning
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1850,8 +1866,10 @@ country_event = {
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1896,19 +1914,12 @@ country_event = {
 
 	option = {
 		name = "giga_flusionoperations.5008.a"
-		if = { 
-			limit = { NOT = { has_authority = auth_machine_intelligence has_valid_civic = civic_machine_assimilator } } 
-			custom_tooltip = "giga_flusionoperations.5008.a.tooltip" 
-		}
+		custom_tooltip = "giga_flusionoperations.5008.a.tooltip"
 		event_target:flusion_primitives_country = {
 			add_modifier = {
 				modifier = giga_loris_removed_modifier
 				days = -1
 			}
-		}
-		country_event = {
-			id = giga_katzenprison.1000
-			days = 0
 		}
 		hidden_effect = {
 			create_country = { #Le Katzen High Command Prison
@@ -1918,42 +1929,62 @@ country_event = {
 			last_created_country = {
 				save_global_event_target_as = giga_katzen_prison
 			}
+			country_event = { id = giga_flusionoperations.5009 days = 30 }
 			event_target:flusion_loris = { set_owner = event_target:giga_katzen_prison }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_kidnapped remove_planet_flag = loris_active }
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
 			set_global_flag = loris_kidnapped
+			remove_global_flag = loris_active
 		}
 
 	}
 }
-	# country_event = { #Loris contact 
-	# 	id = giga_flusionoperations.5009
-	# 	title = "giga_flusionoperations.5009.name"
-	# 	desc = "giga_flusionoperations.5009.desc"
-	# 	is_triggered_only = yes
-	# 	diplomatic = yes
-	# 	picture_event_data = {
-	# 		portrait = event_target:flusion_loris
-	# 		room = katzen_prison_room
-	# 	}
-	# 	option = {
-	# 		name = "giga_flusionoperations.5009.convince"
-	# 		trigger = { NOT = { has_ethic = ethic_gestalt_consciousness } }
-	# 		allow = {
-	# 			OR = {  
-	# 				has_ethic = ethic_egalitarian
-	# 				has_ethic = ethic_fanatic_egalitarian
-	# 				has_ethic = ethic_militarist
-	# 				has_ethic = ethic_fanatic_militarist
-	# 				has_ethic = ethic_xenophile
-	# 				has_ethic = ethic_fanatic_xenophile
-	# 			}
-	# 		}
-	# 	}
-	# }
+#Flusionians want loris back (I am LOVED unlike you SMELLY GROBCREMOR)
+country_event = {
+	id = giga_flusionoperations.5009
+	title = "giga_flusionoperations.5009.name"
+	desc = "giga_flusionoperations.5009.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_worrying_signal
+	show_sound = event_ghost_town 
+
+	immediate = {
+		hidden_effect = {country_event = { id = giga_flusionoperations.5010 days = 14 } }
+		decrease_puffy_partisans = yes
+		decrease_katzen_partisans = yes
+		decrease_symby_partisans = yes
+	}
+
+	option = {
+		name = "giga_flusionoperations.5009.a"
+		custom_tooltip = "giga_flusionoperations.5009.a.tooltip"
+	}
+}
+#Zousa Crackdow (Novasum: YOURE DOING WHAT TO THE ZOUSANIANS)
+country_event = {
+	id = giga_flusionoperations.5010
+	title = "giga_flusionoperations.5010.name"
+	desc = "giga_flusionoperations.5010.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_surrender	
+	show_sound = event_planetary_riot
+
+	immediate = {
+		set_global_flag = zousa_cracked_down_loris
+		decrease_zousa_partisans = yes
+		decrease_zousa_partisans = yes
+		decrease_ravka_partisans = yes
+		decrease_solak_partisans = yes
+	}
+	option = {
+		name = "giga_flusionoperations.5010.a"
+		custom_tooltip = "giga_flusionoperations.5010.a.tooltip"
+	}
+}
+
 ###STORM THE PYRAMID###
 country_event = {
 	id = giga_flusionoperations.6000
@@ -2068,7 +2099,7 @@ country_event = {
 		}
 		allow = {
 			custom_tooltip = {
-				fail_text = "needs_10_solak_res"
+				fail_text = "needs_10_solak_res_katown"
 				event_target:flusion_primitives_country = {
 					check_variable = {
 						which = solak_resources
@@ -5288,6 +5319,7 @@ country_event = {
 			}
 			set_country_flag = contacted_solak_rebels
 			set_global_flag = solak_resistance_active
+			country_event = { id = giga_katzenprison.11 days = 360 random = 180 }
 			country_event = { id = giga_katrebels.2002 }
 		}
 	}
@@ -12186,7 +12218,7 @@ planet_event = {
 					trait = leader_trait_trickster
 				}
 				effect = {
-					save_global_event_target_as = laurn_aaron
+					save_global_event_target_as = aaron
 					set_aaron_real_portrait = yes
 				}
 			}
@@ -12844,8 +12876,8 @@ country_event = {
 			country_remove_ethic = ethic_xenophile
 			country_add_ethic = ethic_fanatic_authoritarian
 			country_add_ethic = ethic_militarist
-			set_leader = event_target:laurn_aaron
-			event_target:laurn_aaron = {
+			set_leader = event_target:aaron
+			event_target:aaron = {
 				add_trait = katzen_trait_elite
 			}
 			change_country_flag = {

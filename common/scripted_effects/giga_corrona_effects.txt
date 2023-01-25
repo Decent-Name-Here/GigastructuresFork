@@ -2296,6 +2296,41 @@ update_total_flusion_res_value = {
 		}
 	}
 }
+update_total_flusion_high_command_left_value = { 
+	event_target:flusion_primitives_country = {
+		set_variable = {
+			which = "flusion_high_command_left_value"
+			value = 0
+		}
+		if = { limit = { has_global_flag = katzenartig_imperium_defeated 	} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #Kaiser
+		if = { limit = { has_global_flag = katzenartig_imperium_defeated 	} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #Douclaw
+		if = { limit = { has_global_flag = loris_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #loris
+		if = { limit = { has_global_flag = meolson_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #meolson
+		if = { limit = { has_global_flag = steve_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #steve
+		if = { limit = { has_global_flag = wolfgang_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #wolfgang
+		if = { limit = { has_global_flag = dietrich_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #dietrich
+		if = { limit = { has_global_flag = flopparnold_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #flopparnold
+		if = { limit = { has_global_flag = itch_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #itch
+		if = { limit = { has_global_flag = katzsauffe_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #katzsauffe
+		if = { limit = { has_global_flag = kimitz_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #kimitz
+		if = { limit = { has_global_flag = koko_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #koko
+		if = { limit = { has_global_flag = meorwin_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #meorwin
+		if = { limit = { has_global_flag = pawllas_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #pawllas
+		if = { limit = { has_global_flag = pawtton_removed	 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #pawtton
+		if = { limit = { has_global_flag = katzmann_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #katzmann
+		if = { limit = { has_global_flag = lilith_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #lilith
+		if = { limit = { has_global_flag = novasum_removed  				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #novasum
+		if = { limit = { has_global_flag = pawlbert_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #pawlbert
+		if = { limit = { has_global_flag = tarynn_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #tarynn
+		if = { limit = { has_global_flag = birch_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #birch
+		if = { limit = { has_global_flag = garf_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #garf
+		if = { limit = { has_global_flag = katzhaum_removed 				} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #katzhaum
+		if = { limit = { has_global_flag = rex_removed 						} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #rex
+		if = { limit = { has_global_flag = strobel_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #strobel
+		if = { limit = { has_global_flag = stron_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #stron
+		if = { limit = { has_global_flag = ungers_removed 					} change_variable = { which = "flusion_high_command_left_value" value = 1 } } #ungers
+	}
+}
 
 defect_sonya = {
 	if = {

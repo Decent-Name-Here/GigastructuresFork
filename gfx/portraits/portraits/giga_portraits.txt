@@ -38,6 +38,14 @@ portraits = {
 		greeting_sound = "mammalian_01_greetings"
 	}
 
+	aaron = { 
+		entity = "portrait_reptilian_08_entity"
+		clothes_selector = "reptilian_normal_clothes_01"
+		attachment_selector = "no_texture"
+		greeting_sound = "reptilian_01_greetings"
+		character_textures = { "gfx/models/portraits/reptilian/reptilian_normal_08_black.dds" }
+	}
+
 	aaronreal = {
 		texturefile = "gfx/models/portraits/aaronreal.dds"
 		clothes_selector = "no_texture"
@@ -73,5 +81,17 @@ portraits = {
 		attachment_selector = "no_texture"
 		greeting_sound = "mammalian_01_greetings"
 		character_textures = { "gfx/models/portraits/mammalian/mammalian_massive_14_black.dds" }
+	}
+	lorissilly = { 
+		texturefile = "gfx/models/portraits/lorissilly.dds"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "mammalian_01_greetings"
+	}
+	lorisreal = { 
+		texturefile = "gfx/models/portraits/lorisreal.dds"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "mammalian_01_greetings"
 	}
 }
