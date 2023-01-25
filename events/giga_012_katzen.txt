@@ -787,7 +787,7 @@ country_event = {
 			if = {
                 limit = { exists = sector }
                 sector = {
-					assign_leader = event_target:flusion_loris
+					assign_leader = event_target:loris
                 }
             }
 		}
@@ -809,7 +809,7 @@ country_event = {
 					trait = katzen_trait_blitzkrieg
 				}
 				effect = {
-					save_global_event_target_as = flusion_douclaw
+					save_global_event_target_as = douclaw
 					set_douclaw_real_portrait = yes
 				}
 			}

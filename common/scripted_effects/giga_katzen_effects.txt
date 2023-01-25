@@ -482,6 +482,7 @@ rename_planet_katzen = {
 			1 = { set_name = "Weimiau" }
 			1 = { set_name = "Weimeow" }
 			1 = { set_name = "Schnurrfurt" }
+			1 = { set_name = "Neu Pawsterdam" }
 		}
 	}
 }

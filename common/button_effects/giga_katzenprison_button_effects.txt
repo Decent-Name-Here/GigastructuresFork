@@ -1,6 +1,6 @@
 #Invulnerable Bozos
 giga_kaiser_active = { 
-    potential = { exists = from has_global_flag = silly_flusionian_portraits_enabled NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_country_flag = giga_achievement_kaiser7 } }
+    potential = { exists = from NOT = { has_global_flag = silly_flusionian_portraits_enabled_cattail } NOT = { has_global_flag = katzenartig_imperium_defeated } NOT = { has_country_flag = giga_achievement_kaiser7 } }
     allow = { hidden_trigger = { always = yes } }
     effect = { hidden_effect = { from = {  } } }
 }
@@ -31,7 +31,7 @@ giga_loris_kidnapped = {
     allow = { always = yes }
     effect = {  }
 }
-giga_loris_convert = { 
+giga_loris_converted = { 
     potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_converted } 
     allow = { always = yes }
     effect = {  }
