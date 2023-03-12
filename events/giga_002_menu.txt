@@ -600,7 +600,10 @@ country_event = {
 				}
 
 				every_country = {
-					limit = { is_ai = yes }
+					limit = { 
+						is_ai = yes 
+						giga_country_gets_bank = yes
+					}
 
 					# init mega savings account stuff
 					giga_ai_savings_init = yes
@@ -700,7 +703,17 @@ country_event = {
 						NOT = { any_system = { has_star_flag = flusion_system } }
 						NOT = { has_global_flag = giga_jublio_disabled } 
 					}
-					random_system = { spawn_system = { initializer = "giga_flusion_initializer" } }
+					random_system = { 
+						limit = { 
+							NOR = { 
+								is_fe_cluster = yes 
+								any_neighbor_system = {
+									is_fe_cluster = yes
+								}
+							} 
+						}
+						spawn_system = { initializer = "giga_flusion_initializer" } 
+					}
 					last_created_system = {
 						# Add extra hyperlane
 						random_list = {
@@ -764,7 +777,17 @@ country_event = {
 					}
 					random_list = {
 						50 = {
-							random_system = { spawn_system = { initializer = "giga_eaw_initializer" } }
+							random_system = { 
+								limit = { 
+									NOR = { 
+										is_fe_cluster = yes 
+										any_neighbor_system = {
+											is_fe_cluster = yes
+										}
+									} 
+								}
+								spawn_system = { initializer = "giga_eaw_initializer" } 
+							}
 							last_created_system = {
 								# Add extra hyperlane
 								random_list = {
@@ -788,7 +811,17 @@ country_event = {
 					}
 					random_list = {
 						50 = {
-							random_system = { spawn_system = { initializer = "cat_orbital_initializer" } }
+							random_system = { 
+								limit = { 
+									NOR = { 
+										is_fe_cluster = yes 
+										any_neighbor_system = {
+											is_fe_cluster = yes
+										}
+									} 
+								}
+								spawn_system = { initializer = "cat_orbital_initializer" } 
+							}
 							last_created_system = {
 								# Add extra hyperlane
 								random_list = {
@@ -816,6 +849,10 @@ country_event = {
 							random_system = {
 								limit = {
 									NOR = {
+										is_fe_cluster = yes 
+										any_neighbor_system = {
+											is_fe_cluster = yes
+										}
 										has_star_flag = giga_inner
 										has_star_flag = giga_outer_01
 										has_star_flag = giga_outer_02
@@ -851,6 +888,10 @@ country_event = {
 							random_system = {
 								limit = {
 									NOR = {
+										is_fe_cluster = yes 
+										any_neighbor_system = {
+											is_fe_cluster = yes
+										}
 										has_star_flag = giga_inner
 										has_star_flag = giga_outer_01
 										has_star_flag = giga_outer_02
