@@ -28,13 +28,19 @@ giga_loris_dead = {
 }
 giga_loris_kidnapped = { 
     potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_kidnapped } 
-    allow = { always = yes }
-    effect = {  }
+    allow = { NOT = { has_country_flag = giga_loris_menu_active } }
+    effect = { 
+        set_country_flag = giga_loris_menu_active
+        if = { limit = { has_country_flag = loris_cooperation_low } custom_tooltip = "giga_loris_kidnapped_low" } 
+        if = { limit = { has_country_flag = loris_cooperation_medium } custom_tooltip = "giga_loris_kidnapped_medium" } 
+        if = { limit = { has_country_flag = loris_cooperation_high } custom_tooltip = "giga_loris_kidnapped_high" } 
+        hidden_effect = { country_event = { id = giga_katzenprison.2001 } } 
+    }
 }
 giga_loris_converted = { 
     potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_converted } 
     allow = { always = yes }
-    effect = {  }
+    effect = { custom_tooltip = "giga_loris_kidnapped_converted" }
 }
 giga_loris_missing = { #use? idk yet
     potential = { exists = from NOT = { has_global_flag = katzenartig_imperium_defeated } has_global_flag = loris_missing } 

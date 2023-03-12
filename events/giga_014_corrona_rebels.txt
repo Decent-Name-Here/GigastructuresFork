@@ -1405,7 +1405,14 @@ country_event = {
 country_event = {
 	id = giga_flusionoperations.5000
 	title = "giga_flusionoperations.5000.name"
-	desc = "giga_flusionoperations.5000.desc"
+	desc = { 
+		trigger = { NOT = { has_global_flag = laurn_resistance_active }  }
+		text = "giga_flusionoperations.5000.desc"
+	}
+	desc = { 
+		trigger = { has_global_flag = laurn_resistance_active }
+		text = "giga_flusionoperations.5000.desc.b"
+	}
 	is_triggered_only = yes
 	picture = GFX_evt_civil_action
 	show_sound = event_mystic_reveal_light
@@ -1924,13 +1931,6 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			create_country = { #Le Katzen High Command Prison
-				type = neutral_faction
-				name = "Katzen High Command Holding Facility"
-			}
-			last_created_country = {
-				save_global_event_target_as = giga_katzen_prison
-			}
 			country_event = { id = giga_flusionoperations.5009 days = 30 }
 			event_target:flusion_loris = { set_owner = event_target:giga_katzen_prison }
 			remove_global_flag = flusion_special_resistance_operation_ongoing

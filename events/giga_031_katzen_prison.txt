@@ -122,17 +122,133 @@ country_event = { #OH HI AARON (Laurn contact pt4)
 #Loris main - LET ME OUT GROBCREMOR
 country_event = {
 	id = giga_katzenprison.2001
-	title = "Katzgouverneur Loris"
+	title = "giga_loris_title"
 	is_triggered_only = yes
 	diplomatic = yes
 	picture_event_data = {
 		portrait = event_target:flusion_loris
-		room = "dossier_background"
+		room = "katzen_prisoner_room"
 	}
 	immediate = { 
 		set_country_flag = katzenprison_dossier_loris_active
 	}
-	custom_gui = "giga_katzen_dossier"
+	option = { 
+		name = "giga_katzenprison_medium_cooperation"
+		trigger = { 
+			has_country_flag = loris_cooperation_low
+		}
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option = { 
+		name = "giga_katzenprison_medium_cooperation"
+		trigger = { 
+			has_country_flag = loris_cooperation_medium
+		}
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option = { 
+		name = "giga_katzenprison_high_cooperation"
+		trigger = { 
+			has_country_flag = loris_cooperation_high
+		}
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option = {#Loris lore n stuff
+		name = "giga_katzenprison.2001.lore"
+		hidden_effect = { country_event = { id = giga_katzenprison.2002 } }
+	}
+	option = { 
+		name = "giga_katzenprison_prisoner_actions"
+		hidden_effect = { country_event = { id = giga_katzenprison.2003 } }
+	}
+	option = { 
+		name = "Exit"
+		remove_country_flag = giga_loris_menu_active
+	}
+}
+# Loris Lore
+country_event = {
+	id = giga_katzenprison.2002
+	title = "giga_loris_title"
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:flusion_loris
+		room = "katzen_prisoner_room"
+	}
+	option = { 
+		name = "TEST"
+		is_dialog_only = yes
+		response_text = "MEIN KAYZOOR"
+	}
+
+	option = { 
+		name = "Return To Main Menu"
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option =  { 
+		name = "Exit"
+		remove_country_flag = giga_loris_menu_active
+	}
+}
+country_event = { # ACTIONS MENU
+	id = giga_katzenprison.2003
+	title =  "giga_loris_title"
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:flusion_loris
+		room = "katzen_prisoner_room"
+	}
+	option = { 
+		name = "INCREASE COOPERATION"
+		loris_increase_cooperation = yes
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option = { 
+		name = "DECREASE_COOPERATION"
+		loris_decrease_cooperation = yes
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option = { 
+		name = "CONVERT LORIS"
+		remove_global_flag = loris_kidnapped
+		set_global_flag = loris_converted
+		allow = { 
+			custom_tooltip = { 
+				fail_text = "giga_katzenprison_prisoner_cannot_be_converted_yet"
+				trigger = { 
+					has_country_flag = loris_cooperation_high
+				}
+			}
+		}
+		event_target:flusion_loris = { 
+			set_owner = ROOT
+		}
+		country_event = { id = giga_katzenprison.2004 }
+	}
+
+	option = { 
+		name = "Return To Main Menu"
+		hidden_effect = { country_event = { id = giga_katzenprison.2001 } }
+	}
+	option =  { 
+		name = "Exit"
+		remove_country_flag = giga_loris_menu_active
+	}
+}
+country_event = { #Convert request response (yes mein bozo ill join you, kaiser is EVIL authoritarian anyway) 
+	id = giga_katzenprison.2004 
+	title = "giga_loris_title"
+	is_triggered_only = yes
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:flusion_loris
+		room = "katzen_prisoner_room"
+	}
+	option = { 
+		name = "giga_katzenprison.2004.a"
+	}
 }
 
 #############

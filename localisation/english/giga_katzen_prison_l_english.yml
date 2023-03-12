@@ -3,9 +3,9 @@
     giga_contact_laurn_tooltip:0 "§HContact the §YLaurnaise Liberation Army§!...§!"
     giga_katzenprison.0001.name:0 "REPLACE_ME" #Main Menu
     giga_katzenprison.0001.desc:0 "REPLACE_ME" #Main mENU
-    giga_katzenprison.11.t:0 "The Gears In The Katzen Machine"
+    giga_katzenprison.11.t:0 "The Katzen High Command"
     giga_katzenprison.11.desc:0 "Following the emergence of the §YKatzenartig Imperium§!, Our spies and friends in the §YSolakian Freedom Fighters§! have found §YKaiser Kattail§! has surrounded himself with some of the most skilled and competent leaders on flusion, supposedly all hand selected. These §Y27§! Members, including the Kaiser himself, of the §YKatzen High Command§! have proven vital components in the Kaiser's war machine and our strategists have suggested finding a way to remove them from their positions using whatever means possible."
-    giga_katzenprison.11.a:0 "Maybe the Solakians know what to do with these guys, Contact Dofus"
+    giga_katzenprison.11.a:0 "Contact the Solakians, we should discuss this with them"
     giga_katzenprison.12.t:0 "Solakian Freedom Fighters"
     giga_katzenprison.12.desc:0 "Hello my friend, "
     giga_katzenprison.12.a:0 "Open channels with the Laurnaise"
@@ -15,7 +15,19 @@
 
     giga_katzen_prison.aaron.low:0 "No time to wait, lets get down to business"
 
-#CHARACTER TOOLTIPS
+#CHARACTER TOOLTIPS & MISC
+    giga_katzenprison_prisoner_actions:0 "§BOpen Prisoner Actions"
+    giga_katzenprison_prisoner_cannot_be_converted_yet:0 "§PThis prisoner isnt cooperative enough to be converted to our side"
+    giga_katzenprison_low_cooperation:0 "§PUncooperative§!"
+    giga_katzenprison_medium_cooperation:0 "§HSomewhat Cooperative§!"    
+    giga_katzenprison_highly_cooperation:0 "§GHighly Cooperative§!"
+    #Loris Von Kattensbach
+    giga_loris_title:0 "Katzgouverneur Loris Von Kattensbach"
+    giga_loris_active:0 "§YLoris Von Kattensbach§!\n\n§HStatus§! - §RInvulnerable to LLA activities, joint operation with Solakian Freedom Fighters Required§!\n§HSecurity Level§! - §PExtreme§!\n§HLocation§! - §BBundeshalle, Bundengrad§!§H\n\nBiography:\n§L§YLoris Von Kattensbach§! is the planetary governor of §YFlusion§! and perhaps one of the most important and influential figures within the Katzenartig Imperium alongside §YDouclaw MacCathur§! and besides the Kaiser himself.\n\nReportedly known for being very competent, he is responsible for managing Flusion's development and ensuring the Kaiser's main industrial heartland runs as smoothly as possible.\n\nIt is thus obvious that removing such an important asset from the equation would be highly detrimental to the Kaiser's carefully crafted administration, but managing to successfully eliminate such an important and influential Katzen will require immense investments and a careful deconstruction of the plethora of security measures surrounding him.§!"
+    giga_loris_kidnapped_low:0 "§YLoris Von Kattensbach§!\n\n§HStatus§! - §BIn [Root.GetAdjective] Custody§!\n§HCooperation Level§! - §PLow§!"
+    giga_loris_kidnapped_medium:0 "§YLoris Von Kattensbach§!\n\n§HStatus§! - §BIn [Root.GetAdjective] Custody§!\n§HCooperation Level§! - §HMedium§!"
+    giga_loris_kidnapped_high:0 "§YLoris Von Kattensbach§!\n\n§HStatus§! - §BIn [Root.GetAdjective] Custody§!\n§HCooperation Level§! - §GHigh§!"
+    giga_loris_kidnapped_converted:0 "§YLoris Von Kattensbach§!\n\n§HStatus§! - §BIn [Root.GetAdjective] Custody§!\n§HCooperation Level§! - §BConverted§!"
+    giga_katzenprison.2001.lore:0 "Tell us more about yourself"
 
-    giga_remove_loris_desc_2:0 "\n§HSecurity Level§! - §PExtreme§!\n§HLocation§! - §BBundeshalle, Bundengrad§!§H\n\nBiography:\n§L§YLoris Von Kattensbach§! is the planetary governor of §YFlusion§! and perhaps one of the most important and influential figures within the Katzenartig Imperium alongside §YDouclaw MacCathur§! and besides the Kaiser himself.\n\nReportedly known for being very competent, he is responsible for managing Flusion's development and ensuring the Kaiser's main industrial heartland runs as smoothly as possible.\n\nIt is thus obvious that removing such an important asset from the equation would be highly detrimental to the Kaiser's carefully crafted administration, but managing to successfully eliminate such an important and influential Katzen will require immense investments and a careful deconstruction of the plethora of security measures surrounding him.§!"
-    giga_loris_active:99 "§YLoris Von Kattensbach§!\n\n§HStatus§! - §RInvulnerable to LLA activities, joint operation with Solakian Freedom Fighters Required§!$giga_remove_loris_desc_2$"
+    giga_katzenprison.2004.a:0 "Pleasure to have you onboard Loris"
