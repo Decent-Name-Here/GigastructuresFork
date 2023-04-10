@@ -5133,6 +5133,7 @@ planet_event = { #bombing
 			habitable_structure = no
 			is_planet_class = pc_habitat
 			is_planet_class = pc_gigaorbital_ring
+			is_planet_class = pc_giga_elysium
 		}
 		NOT = { has_planet_flag = gigaflusion }
 		from = { is_country_type = awakaned_corrona }
@@ -11870,7 +11871,7 @@ country_event = { #ezics leave
 		}
 	}
 	picture = GFX_evt_gray_goo_ships
-	show_sound = event_primitive_civilization
+	show_sound = event_pre_ftl_civilization
 
 	is_triggered_only = yes
 
@@ -11994,8 +11995,10 @@ country_event = {
 					set_leader = loufmoving
 					set_country_flag = ezic_tropiana_country
 					save_global_event_target_as = ezic_tropiana_country
+					set_country_flag = tech_frozen
 					set_country_flag = ezic_age
 					set_primitive_age = ezic_age
+					set_pre_ftl_age = giga_ezic_age
 					add_modifier = {
 						modifier = ezic_tropiana
 						days = -1

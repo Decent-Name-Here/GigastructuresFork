@@ -6340,6 +6340,22 @@ country_event = { #laurandar recognized
 			energy = 500
 			minor_artifacts = 10
 		}
+		if = {
+			limit = {
+				has_ancrel = yes
+			}
+			add_resource = {
+				minor_artifacts = 100
+			}
+		}
+		if = {
+			limit = {
+				has_ancrel = yes
+			}
+			add_resource = {
+				minor_artifacts = 100
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = { is_ai = no }
