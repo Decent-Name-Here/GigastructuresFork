@@ -1,0 +1,25 @@
+# CHARACTER COOPERATION 
+loris_increase_cooperation = { 
+	if = { 
+		limit = { has_country_flag = loris_cooperation_low }
+		remove_country_flag = loris_cooperation_low
+		set_country_flag = loris_cooperation_medium
+	}
+	if = { 
+		limit = { has_country_flag = loris_cooperation_medium }
+		remove_country_flag = loris_cooperation_medium
+		set_country_flag = loris_cooperation_high
+	}
+}
+loris_decrease_cooperation = { 
+	if = { 
+		limit = { has_country_flag = loris_cooperation_high }
+		remove_country_flag = loris_cooperation_high
+		set_country_flag = loris_cooperation_medium
+	}
+	if = { 
+		limit = { has_country_flag = loris_cooperation_medium }
+		remove_country_flag = loris_cooperation_medium
+		set_country_flag = loris_cooperation_low
+	}
+}
