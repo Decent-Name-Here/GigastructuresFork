@@ -1405,7 +1405,14 @@ country_event = {
 country_event = {
 	id = giga_flusionoperations.5000
 	title = "giga_flusionoperations.5000.name"
-	desc = "giga_flusionoperations.5000.desc"
+	desc = { 
+		trigger = { NOT = { has_global_flag = laurn_resistance_active }  }
+		text = "giga_flusionoperations.5000.desc"
+	}
+	desc = { 
+		trigger = { has_global_flag = laurn_resistance_active }
+		text = "giga_flusionoperations.5000.desc.b"
+	}
 	is_triggered_only = yes
 	picture = GFX_evt_civil_action
 	show_sound = event_mystic_reveal_light
@@ -1548,12 +1555,14 @@ country_event = {
 		name = giga_flusionoperations.5000.c #BLOW THE BUNDESHALLE - Can't revive him but hella expensive + lowers resistance
 		custom_tooltip = "giga_flusionoperations.5000.c.tooltip"
 		allow = {
-			custom_tooltip = "needs_6_solak_res"
-			hidden_trigger = {
-				event_target:flusion_primitives_country = {
-					check_variable = {
-						which = solak_resources
-						value >= 6
+			custom_tooltip = {
+				fail_text = "needs_6_solak_res"
+				hidden_trigger = {
+					event_target:flusion_primitives_country = {
+						check_variable = {
+							which = solak_resources
+							value >= 6
+						}
 					}
 				}
 			}
@@ -1583,6 +1592,73 @@ country_event = {
 	}
 
 	option = {
+		name = giga_flusionoperations.5000.d #KIDNAP THE BOZO ("DOOO NOOOT!!! I HAVE A WIFE AND CHILDRENINGS!!!", "loris we're bringing them too") - doesnt die so he cant be revived :kaisersmug:
+		custom_tooltip = "giga_flusionoperations.5000.d.tooltip"
+		allow = {
+			custom_tooltip = { 
+				fail_text = "needs_8_solak_res"
+				hidden_trigger = {
+					event_target:flusion_primitives_country = {
+						check_variable = {
+							which = solak_resources
+							value >= 8
+						}
+					}
+				}
+			}
+			custom_tooltip = { 
+				fail_text = "requires_2_zousa_res"
+				hidden_trigger = {
+					event_target:flusion_primitives_country = {
+						check_variable = {
+							which = zousa_res
+							value >= 2
+						}
+					}
+				}
+			}
+			#NOOO GENOCIDAL GROBCREMOR
+			custom_tooltip = { 
+				fail_text = "cant_if_terminator_loris"		
+				hidden_trigger = { NOT = { has_valid_civic = civic_machine_terminator } }
+			}
+			custom_tooltip = { 
+				fail_text = "cant_if_purifier_loris"
+				hidden_trigger = { NOT = { has_valid_civic = civic_fanatic_purifiers } }
+			}
+			# custom_tooltip = { #NOM NOM NOM TASTY LORIS
+			# 	fail_text = "cant_if_devouring_loris"
+			# 	hidden_trigger = { NOT = { has_valid_civic = civic_hive_devouring_swarm } }
+			# }
+		}
+		hidden_effect = {
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+			decrease_solak_resources = yes
+
+			event_target:flusion_primitives_country = {
+				set_variable = {
+					which = flusion_operation_odds
+					value = flusion_success_chance_total
+				}
+				change_variable = {
+					which = flusion_operation_odds
+					value = 20
+				}
+			}
+			set_global_flag = giga_kidnapping_loris
+			set_global_flag = flusion_special_resistance_operation_ongoing
+			set_country_flag = is_the_country_doing_flusion_op
+			run_flusion_resistance_operation_special = yes
+		}
+	}
+
+	option = {
 		name = giga_katrebels.2010.no #no
 		hidden_effect = {
 			remove_global_flag = flusion_resistance_operation_ongoing
@@ -1594,7 +1670,14 @@ country_event = {
 country_event = {
 	id = giga_flusionoperations.5001
 	title = "giga_flusionoperations.5001.name"
-	desc = "giga_flusionoperations.5001.desc"
+	desc = { 
+		trigger = { NOT = { has_global_flag = giga_kidnapping_loris } }
+		text = "giga_flusionoperations.5001.desc"
+	}
+	desc = { 
+		trigger = { has_global_flag = giga_kidnapping_loris }
+		text = "giga_flusion_operations_5001.desc.kidnap"
+	}
 	is_triggered_only = yes
 	picture = GFX_evt_surrender
 	show_sound = event_planetary_riot
@@ -1674,11 +1757,13 @@ country_event = {
 		event_target:flusion_loris = { kill_leader = { show_notification = yes } }
 		hidden_effect = {
 			country_event = { id = giga_flusionoperations.5007 days = 90 random = 90 } #Loris Mourning
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1742,11 +1827,13 @@ country_event = {
 		event_target:flusion_loris = { kill_leader = { show_notification = yes } }
 		hidden_effect = {
 			country_event = { id = giga_flusionoperations.5007 days = 90 random = 90 } #Loris Mourning
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1788,8 +1875,10 @@ country_event = {
 			remove_global_flag = flusion_special_resistance_operation_ongoing
 			remove_global_flag = flusion_resistance_operation_ongoing
 			remove_country_flag = is_the_country_doing_flusion_op
-			event_target:gigaflusion = { set_planet_flag = loris_removed }
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_dead remove_planet_flag = loris_active }
 			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_dead
+			remove_global_flag = loris_active
 		}
 	}
 }
@@ -1814,6 +1903,87 @@ country_event = {
 	option = {
 		name = "giga_flusionoperations.5007.a"
 		custom_tooltip = "giga_flusionoperations.5007.a.tooltip"
+	}
+}
+#Loris Kidnapped - YOU BOZOO THE KAYZOOO WILL COME AND SAVE MEEE (he won't care lol)
+country_event = {
+	id = giga_flusionoperations.5008
+	title = "giga_flusionoperations.5008.name"
+	desc = "giga_flusionoperations.5008.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_cover_blown
+	show_sound = event_super_explosion
+
+	immediate = {
+		increase_katzen_wary = yes
+		increase_katzen_wary = yes
+		increase_katzen_wary = yes
+		update_total_flusion_res_value = yes
+	}
+
+	option = {
+		name = "giga_flusionoperations.5008.a"
+		custom_tooltip = "giga_flusionoperations.5008.a.tooltip"
+		event_target:flusion_primitives_country = {
+			add_modifier = {
+				modifier = giga_loris_removed_modifier
+				days = -1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = giga_flusionoperations.5009 days = 30 }
+			event_target:flusion_loris = { set_owner = event_target:giga_katzen_prison }
+			remove_global_flag = flusion_special_resistance_operation_ongoing
+			remove_global_flag = flusion_resistance_operation_ongoing
+			remove_country_flag = is_the_country_doing_flusion_op
+			event_target:gigaflusion = { set_planet_flag = loris_removed set_planet_flag = loris_kidnapped remove_planet_flag = loris_active }
+			set_global_flag = loris_removed #NOOOOOOOOOOOOOOOOOOOOO!!!!!!
+			set_global_flag = loris_kidnapped
+			remove_global_flag = loris_active
+		}
+
+	}
+}
+#Flusionians want loris back (I am LOVED unlike you SMELLY GROBCREMOR)
+country_event = {
+	id = giga_flusionoperations.5009
+	title = "giga_flusionoperations.5009.name"
+	desc = "giga_flusionoperations.5009.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_worrying_signal
+	show_sound = event_ghost_town 
+
+	immediate = {
+		hidden_effect = {country_event = { id = giga_flusionoperations.5010 days = 14 } }
+		decrease_puffy_partisans = yes
+		decrease_katzen_partisans = yes
+		decrease_symby_partisans = yes
+	}
+
+	option = {
+		name = "giga_flusionoperations.5009.a"
+		custom_tooltip = "giga_flusionoperations.5009.a.tooltip"
+	}
+}
+#Zousa Crackdow (Novasum: YOURE DOING WHAT TO THE ZOUSANIANS)
+country_event = {
+	id = giga_flusionoperations.5010
+	title = "giga_flusionoperations.5010.name"
+	desc = "giga_flusionoperations.5010.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_surrender	
+	show_sound = event_planetary_riot
+
+	immediate = {
+		set_global_flag = zousa_cracked_down_loris
+		decrease_zousa_partisans = yes
+		decrease_zousa_partisans = yes
+		decrease_ravka_partisans = yes
+		decrease_solak_partisans = yes
+	}
+	option = {
+		name = "giga_flusionoperations.5010.a"
+		custom_tooltip = "giga_flusionoperations.5010.a.tooltip"
 	}
 }
 
@@ -1931,7 +2101,7 @@ country_event = {
 		}
 		allow = {
 			custom_tooltip = {
-				fail_text = "needs_10_solak_res"
+				fail_text = "needs_10_solak_res_katown"
 				event_target:flusion_primitives_country = {
 					check_variable = {
 						which = solak_resources
@@ -3146,6 +3316,13 @@ country_event = {
 				}
 				remove_global_flag = giga_blowing_up_loris
 				country_event = { id = giga_flusionoperations.5006 }
+			}
+			if = { #Loris is kidnapped 
+				limit = { 
+					has_global_flag = giga_kidnapping_loris
+				}
+				remove_global_flag = giga_kidnapping_loris
+				country_event = { id = giga_flusionoperations.5008 }
 			}
 		}
 	}
@@ -5145,6 +5322,7 @@ country_event = {
 			}
 			set_country_flag = contacted_solak_rebels
 			set_global_flag = solak_resistance_active
+			country_event = { id = giga_katzenprison.11 days = 360 random = 180 }
 			country_event = { id = giga_katrebels.2002 }
 		}
 	}
@@ -12044,7 +12222,7 @@ planet_event = {
 					trait = leader_trait_trickster
 				}
 				effect = {
-					save_global_event_target_as = laurn_aaron
+					save_global_event_target_as = aaron
 					set_aaron_real_portrait = yes
 				}
 			}
@@ -12702,8 +12880,8 @@ country_event = {
 			country_remove_ethic = ethic_xenophile
 			country_add_ethic = ethic_fanatic_authoritarian
 			country_add_ethic = ethic_militarist
-			set_leader = event_target:laurn_aaron
-			event_target:laurn_aaron = {
+			set_leader = event_target:aaron
+			event_target:aaron = {
 				add_trait = katzen_trait_elite
 			}
 			change_country_flag = {

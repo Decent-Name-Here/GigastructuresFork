@@ -1,0 +1,10 @@
+giga_flusion_operation_odds_value = { 
+	complex_trigger_modifier = {
+		trigger = check_variable
+		trigger_scope = event_target:flusion_primitives_country
+		parameters = {
+			which = flusion_operation_odds
+		}
+		mode = set
+	}
+}

@@ -709,6 +709,70 @@ country_event = {
 				}
 			}
 		}
+		if = { 
+			limit = { has_global_flag = katzenprison_mechanics_enabled }
+			event_target:gigaflusion = { #Leader Flags
+				set_planet_flag = loris_active
+				set_planet_flag = meolson_active
+				set_planet_flag = steve_active
+				set_planet_flag = wolfgang_active
+				set_planet_flag = dietrich_active
+				set_planet_flag = flopparnold_active
+				set_planet_flag = itch_active #YOU ARE NOW ITCHY DEAL WITH IT
+				set_planet_flag = katzsauffe_active
+				set_planet_flag = kimitz_active
+				set_planet_flag = koko_active
+				set_planet_flag = meorwin_active
+				set_planet_flag = pawllas_active
+				set_planet_flag = pawtton_active
+				set_planet_flag = katzmann_active
+				set_planet_flag = lilith_active
+				set_planet_flag = novasum_active
+				set_planet_flag = pawlbert_active
+				set_planet_flag = tarynn_active
+				set_planet_flag = birch_active
+				set_planet_flag = garf_active
+				set_planet_flag = katzhaum_active
+				set_planet_flag = rex_active
+				set_planet_flag = strobel_active
+				set_planet_flag = stron_active
+				set_planet_flag = ungers_active
+				#global flags aswell for consistency with other events
+				set_global_flag = loris_active
+				set_global_flag = meolson_active
+				set_global_flag = steve_active
+				set_global_flag = wolfgang_active
+				set_global_flag = dietrich_active
+				set_global_flag = flopparnold_active
+				set_global_flag = itch_active #YOU ARE NOW ITCHY DEAL WITH IT
+				set_global_flag = katzsauffe_active
+				set_global_flag = kimitz_active
+				set_global_flag = koko_active
+				set_global_flag = meorwin_active
+				set_global_flag = pawllas_active
+				set_global_flag = pawtton_active
+				set_global_flag = katzmann_active
+				set_global_flag = lilith_active
+				set_global_flag = novasum_active
+				set_global_flag = pawlbert_active
+				set_global_flag = tarynn_active
+				set_global_flag = birch_active
+				set_global_flag = garf_active
+				set_global_flag = katzhaum_active
+				set_global_flag = rex_active
+				set_global_flag = strobel_active
+				set_global_flag = stron_active
+				set_planet_flag = ungers_active
+			}
+			create_country = { #Le Katzen High Command Prison
+				type = neutral_faction
+				name = "Katzen High Command Holding Facility"
+			}
+			last_created_country = {
+				save_global_event_target_as = giga_katzen_prison
+			}
+		}
+		
 		create_leader = {
 			class = governor
 			species = event_target:loris_portrait
@@ -724,6 +788,8 @@ country_event = {
 			}
 			effect = {
 				save_global_event_target_as = flusion_loris
+				set_loris_real_portrait = yes
+				set_leader_flag = loris
 			}
 		}
 		create_ship_design = { design = "Pawris" }
@@ -732,7 +798,7 @@ country_event = {
 			if = {
                 limit = { exists = sector }
                 sector = {
-					assign_leader = event_target:flusion_loris
+					assign_leader = event_target:loris
                 }
             }
 		}
@@ -754,7 +820,7 @@ country_event = {
 					trait = katzen_trait_blitzkrieg
 				}
 				effect = {
-					save_global_event_target_as = flusion_douclaw
+					save_global_event_target_as = douclaw
 					set_douclaw_real_portrait = yes
 				}
 			}
@@ -1452,6 +1518,21 @@ country_event = {
 			effect = {
 				set_leader_flag = louf
 				save_global_event_target_as = louf
+			}
+		}
+		create_leader = { 
+			class = ruler
+			species = event_target:aaron_portrait
+			name = "Aaron N. Bleu"
+			skill = 4
+			gender = male
+			traits = { 
+				trait = katzen_trait_elite
+			}
+			effect = {
+				set_leader_flag = aaron
+				save_global_event_target_as = aaron
+				set_aaron_real_portrait = yes
 			}
 		}
 		set_variable = { #initialize ezic resistance
@@ -6257,6 +6338,22 @@ country_event = { #laurandar recognized
 		add_resource = {
 			influence = 50
 			energy = 500
+		}
+		if = {
+			limit = {
+				has_ancrel = yes
+			}
+			add_resource = {
+				minor_artifacts = 100
+			}
+		}
+		if = {
+			limit = {
+				has_ancrel = yes
+			}
+			add_resource = {
+				minor_artifacts = 100
+			}
 		}
 		if = {
 			limit = {
