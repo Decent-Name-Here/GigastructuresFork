@@ -320,6 +320,27 @@ generate_flusion_primitives_on_planet = {
 		name = "Katzen"
 		plural = "Katzens"
 		class = POUCHKINN
+		portrait = meolson
+		homeworld = THIS
+		namelist = MAM1
+		traits = {
+			trait = trait_pc_continental_preference
+			trait = trait_adaptive
+			trait = trait_quick_learners
+			trait = trait_traditional
+			trait = trait_sedentary
+			trait = trait_wasteful
+			trait = katzen_trait_martial
+		}
+		effect = {
+			set_global_flag = meolson_portraits_exists
+			save_global_event_target_as = meolson_portrait
+		}
+	}
+	create_species = {
+		name = "Katzen"
+		plural = "Katzens"
+		class = POUCHKINN
 		portrait = dietrich
 		namelist = MAM1
 		homeworld = THIS

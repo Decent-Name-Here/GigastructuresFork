@@ -729,6 +729,7 @@ create_katzen_loris = {
 						limit = { has_global_flag = giga_loris_is_now_soulbot }
 						add_trait = leader_trait_synthetic
 					}
+					set_loris_real_portrait = yes
 				}
 			}
 			set_leader = event_target:flusion_loris
@@ -883,7 +884,8 @@ create_katzen_dietrich = {
 					trait = leader_trait_unyielding
 				}
 				effect = {
-					save_event_target_as = flusion_dietrich
+					save_global_event_target_as = flusion_dietrich
+					set_dietrich_real_portrait = yes
 				}
 			}
 			set_leader = event_target:flusion_dietrich
@@ -1119,6 +1121,66 @@ setup_real_flusion_portraits = {
 					save_global_event_target_as = aaron_portrait_real
 				}
 			}
+			#Loris
+			create_species = {
+				name = "Katzen"
+				plural = "Katzens"
+				class = POUCHKINN
+				portrait = lorisreal
+				homeworld = event_target:giga_flusion
+				traits = {
+					trait = trait_pc_continental_preference
+					trait = trait_adaptive
+					trait = trait_quick_learners
+					trait = trait_traditional
+					trait = trait_sedentary
+					trait = trait_wasteful
+					trait = katzen_trait_martial
+				}
+				effect = {
+					save_global_event_target_as = loris_portrait_real
+				}
+			}
+			#Meolson
+			create_species = {
+				name = "Katzen"
+				plural = "Katzens"
+				class = POUCHKINN
+				portrait = meolsonreal
+				homeworld = event_target:giga_flusion
+				traits = {
+					trait = trait_pc_continental_preference
+					trait = trait_adaptive
+					trait = trait_quick_learners
+					trait = trait_traditional
+					trait = trait_sedentary
+					trait = trait_wasteful
+					trait = katzen_trait_martial
+				}
+				effect = {
+					save_global_event_target_as = meolson_portrait_real
+				}
+			}
+			#Dietrich
+			create_species = {
+				name = "Katzen"
+				plural = "Katzens"
+				class = POUCHKINN
+				portrait = dietrichreal
+				homeworld = event_target:giga_flusion
+				traits = {
+					trait = trait_pc_continental_preference
+					trait = trait_adaptive
+					trait = trait_quick_learners
+					trait = trait_traditional
+					trait = trait_sedentary
+					trait = trait_wasteful
+					trait = katzen_trait_martial
+				}
+				effect = {
+					save_global_event_target_as = dietrich_portrait_real
+				}
+			}
 		}
 	}
 }
@@ -1155,5 +1217,26 @@ set_aaron_real_portrait = {
 		limit = { has_global_flag = silly_flusionian_portraits_enabled }
 		change_species = event_target:aaron_portrait_real
 		change_leader_portrait = species
+	}
+}
+
+set_loris_real_portrait = {
+	if = {
+		limit = { has_global_flag = silly_flusionian_portraits_enabled }
+		change_species = event_target:loris_portrait_real
+		change_leader_portrait = species
+	}
+}
+set_meolson_real_portrait = {
+	if = {
+		limit = { has_global_flag = silly_flusionian_portraits_enabled }
+		change_species = event_target:meolson_portrait_real
+		change_leader_portrait = species
+	}
+}
+set_dietrich_real_portrait = {
+	if = {
+		limit = { has_global_flag = silly_flusionian_portraits_enabled }
+		change_species = event_target:dietrich_portrait_real
 	}
 }

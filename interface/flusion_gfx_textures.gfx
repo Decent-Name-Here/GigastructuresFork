@@ -180,6 +180,12 @@ spriteTypes = {
 	spriteType = { name = "GFX_symby_sign"									texturefile = "gfx/interface/flusion_ui/resistance_areas/symby_sign.dds" }
 	spriteType = { name = "GFX_symby_ext"									texturefile = "gfx/interface/flusion_ui/resistance_areas/symby_ext.dds" }
 
+	#map katzeninsel
+	spriteType = { name = "GFX_katzeninsel_low"								texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_low.dds" }
+	spriteType = { name = "GFX_katzeninsel_med"								texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_med.dds" }
+	spriteType = { name = "GFX_katzeninsel_sign"							texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_sign.dds" }
+	spriteType = { name = "GFX_katzeninsel_ext"								texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_ext.dds" }
+
 	#map ravka
 	spriteType = { name = "GFX_ravka_low"									texturefile = "gfx/interface/flusion_ui/resistance_areas/ravka_low.dds" }
 	spriteType = { name = "GFX_ravka_med"									texturefile = "gfx/interface/flusion_ui/resistance_areas/ravka_med.dds" }

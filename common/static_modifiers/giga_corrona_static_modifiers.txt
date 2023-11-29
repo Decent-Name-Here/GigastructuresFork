@@ -314,6 +314,31 @@ katown_shield_3 = {
 	icon_frame = 3
 }
 
+#katzeninsel
+katzeninsel_partisans_0 = { 
+	ship_fire_rate_mult = 0.25
+	ship_experience_gain_mult = 0.4
+	admiral_exp_gain = 0.4
+}
+
+katzeninsel_partisans_1 = { 
+	ship_fire_rate_mult = 0.1
+	ship_experience_gain_mult = 0.15
+	admiral_exp_gain = 0.15
+}
+
+katzeninsel_partisans_2 = { 
+	ship_fire_rate_mult = -0.15
+	ship_experience_gain_mult = -0.1
+	admiral_exp_gain = -0.1
+}
+
+katzeninsel_partisans_3 = { 
+	ship_fire_rate_mult = -0.4
+	ship_experience_gain_mult = -0.5
+	admiral_exp_gain = -0.5
+}
+
 kaiser_moon_gun_sabotaged = {
 	ship_weapon_damage = -0.30
 }

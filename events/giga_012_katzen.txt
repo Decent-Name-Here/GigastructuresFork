@@ -739,6 +739,7 @@ country_event = {
 			}
 			effect = {
 				save_global_event_target_as = flusion_loris
+				set_loris_real_portrait = yes
 			}
 		}
 		create_ship_design = { design = "Pawris" }
@@ -1094,6 +1095,8 @@ country_event = {
 			}
 			effect = {
 				save_event_target_as = katzen_admiral
+				save_global_event_target_as = flusion_dietrich
+				set_dietrich_real_portrait = yes
 			}
 		}
 		create_fleet = { #Spawn a simple task force of panzers & bombers
@@ -1138,14 +1141,19 @@ country_event = {
 				}
 			}
 		}
-		create_leader = {
+		create_leader = { 
 			class = admiral
-			species = event_target:flusion_katzens
-			name = "Phoenix Katt"
+			species = event_target:meolson_portrait
+			name = "Clawatio Clawtz-Meolson"
 			skill = 3
 			gender = male
+			traits = { 
+				trait = katzen_trait_elite
+				trait = leader_trait_aggressive
+			}
 			effect = {
-				save_event_target_as = katzen_admiral
+				save_global_event_target_as = flusion_meolson
+				set_meolson_real_portrait = yes
 			}
 		}
 		create_fleet = { #Spawn a simple task force of panzers & bombers
@@ -1182,10 +1190,10 @@ country_event = {
 					}
 				}
 				set_fleet_flag = important_katzen_fleet
-				assign_leader = event_target:katzen_admiral
+				assign_leader = event_target:flusion_meolson
 				set_location = {
 					target = event_target:gigaflusion
-					distance = 30
+					distance = 15
 					angle = random
 				}
 			}
@@ -1298,6 +1306,10 @@ country_event = {
 		}
 		add_modifier = {
 			modifier = ravka_partisans_0
+			days = -1
+		}
+		add_modifier = { 
+			modifier = katzeninsel_partisans_0
 			days = -1
 		}
 		if = {

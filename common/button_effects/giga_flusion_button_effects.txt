@@ -494,6 +494,20 @@ giga_remove_loris_done = {
 	effect = { custom_tooltip = "giga_remove_loris_done" hidden_effect = { from = { country_event = { id = giga_katrebels.2002 } } } }
 }
 
+#Meolson (Ben i dont feel so good...)
+giga_remove_meolson_no = {
+	potential = {
+		exists = from
+		OR = {
+			event_target:flusion_primitives_country = { check_variable = { which = katzeninsel_res value < 3 } }
+			event_target:gigaflusion = { NOT = { has_planet_flag = loris_dam_blown } }
+		}
+		event_target:gigaflusion = { NOT = { has_planet_flag = meolson_removed } }
+	}
+	allow = { always = no }
+	effect = { custom_tooltip = "giga_remove_meolson_no" hidden_effect = { from = { country_event = { id = giga_katrebels.2002 } } } }
+}
+
 
 #Zuspri
 giga_ezicania_low = {
@@ -818,6 +832,32 @@ giga_symby_ext = {
 	potential = { exists = from event_target:flusion_primitives_country = { check_variable = { which = symby_res value >= 3 } } }
 	allow = { hidden_trigger = { always = yes } }
 	effect = { custom_tooltip = "symby_res_ext_tooltip" hidden_effect = { from = { country_event = { id = giga_katrebels.2002 } } } }
+}
+
+#Katzeninsel
+
+giga_katzeninsel_low = { 
+	potential = { exists = from event_target:flusion_primitives_country = { check_variable = { which = katzeninsel_res value <= 0 } } }
+	allow = { hidden_trigger = { always = yes } }
+	effect = { custom_tooltip = "katzeninsel_res_low_tooltip" hidden_effect = { from = { country_event = { id = giga_katrebels.2025 }  } } }
+}
+
+giga_katzeninsel_med = { 
+	potential = { exists = from event_target:flusion_primitives_country = { check_variable = { which = katzeninsel_res value = 1 } } }
+	allow = { hidden_trigger = { always = yes } }
+	effect = { custom_tooltip = "katzeninsel_res_med_tooltip" hidden_effect = { from = { country_event = { id = giga_katrebels.2025 } } } }
+}
+
+giga_katzeninsel_sign = { 
+	potential = { exists = from event_target:flusion_primitives_country = { check_variable = { which = katzeninsel_res value = 2 } } }
+	allow = { hidden_trigger = { always = yes } }
+	effect = { custom_tooltip = "katzeninsel_res_sign_tooltip" hidden_effect = { from = { country_event = { id = giga_katrebels.2025 } } } }	
+}
+
+giga_katzeninsel_ext = { 
+	potential = { exists = from event_target:flusion_primitives_country = { check_variable = { which = katzeninsel_res value >= 3 } } }
+	allow = { hidden_trigger = { always = yes } }
+	effect = { custom_tooltip = "katzeninsel_res_ext_tooltip" hidden_effect = { from = { country_event = { id = giga_katrebels.2002 } } } }	 
 }
 
 #Ravka

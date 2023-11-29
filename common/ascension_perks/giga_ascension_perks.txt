@@ -230,7 +230,7 @@ ap_celestial_printing = {
 	possible = {
 		custom_tooltip = { fail_text = "requires_ap_gigastructural_constructs"		has_gigastructural_constructs = yes }
 		custom_tooltip = { fail_text = "requires_ascension_perks_3"					num_ascension_perks > 2 }
-		custom_tooltip = { fail_text = "requires_war_planets"						has_technology = giga_tech_war_planet }
+		custom_tooltip = { fail_text = "requires_planetcraft"						has_technology = giga_tech_war_planet }
 		custom_tooltip = { fail_text = "requires_tetraengineering"					has_technology = giga_tech_tetradimensional_engineering }
 	}
 

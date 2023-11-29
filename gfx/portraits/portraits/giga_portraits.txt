@@ -74,4 +74,33 @@ portraits = {
 		greeting_sound = "mammalian_01_greetings"
 		character_textures = { "gfx/models/portraits/mammalian/mammalian_massive_14_black.dds" }
 	}
+
+	meolson = {
+		entity = "portrait_mammalian_14_entity"
+		clothes_selector = "mammalian_massive_clothes_01"
+		attachment_selector = "no_texture"
+		greeting_sound = "mammalian_01_greetings"
+		character_textures = { "gfx/models/portraits/mammalian/mammalian_massive_14_black.dds" }
+	}
+
+	meolsonreal = {
+		texturefile =  "gfx/models/portraits/meolsonreal.dds"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "mammalian_01_greetings"
+	}
+
+	lorisreal = {
+		texturefile =  "gfx/models/portraits/lorisreal.dds"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "mammalian_01_greetings"
+	}
+
+	dietrichreal = {
+		texturefile =  "gfx/models/portraits/dietrichreal.dds"
+		clothes_selector = "no_texture"
+		attachment_selector = "no_texture"
+		greeting_sound = "mammalian_01_greetings"
+	}
 }
