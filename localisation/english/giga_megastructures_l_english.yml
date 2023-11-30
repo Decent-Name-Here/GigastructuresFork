@@ -283,9 +283,6 @@
   penrose_sphere_1:0 "$name_penrose$ Frame"
   penrose_sphere_1_DESC:0 "This skeletal frame will support massive mirrors, capable of reflecting light back and forth through the Black Hole's ergosphere, generating vast amounts of energy."
 
-  penrose_sphere_2:0 "$name_penrose$"
-  penrose_sphere_2_DESC:0 "A ball of mirrors around a Black Hole."
-
   penrose_sphere_a2:0 "Unarmed Subspace Distortion Bomb"
   penrose_sphere_a2_DESC:0 "This $name_penrose$ has been repurposed into a bomb. We must now let it accumulate energy for a while before detonating it."
 
@@ -330,12 +327,12 @@
   succ_0_DESC:0 "The construction site for a future $name_succ_full$. It houses the necessary personnel and infrastructure to construct a $name_succ$ around this Gas Giant."
 
   succ_0_CONSTRUCTION_INFO_DELAYED:0 "$giga_list_additional_data$ - Removes §Y1 Size§! off the planet every §Y2 Years§!. Depletes when the planet reaches §YSize 10§!, leaving a §YBarren World§! with a §Y£exotic_gases£5 £volatile_motes£5§! deposit behind.\n\nThis deposit, like all Strategic Resource deposits, can be exploited further with a $habitat_0$ or terraforming megastructure."
+  #Old first stage
+  # succ_1:0 "$name_succ$ Orbital Apparatus"
+  # succ_1_DESC:0 "This gigantic ring stretches around the Gas Giant, and houses fusion reactors for energy generation, as well as purifying facilities for harvesting exotic gases and volatile motes from the Gas Giant's atmosphere."
 
-  succ_1:0 "$name_succ$ Orbital Apparatus"
-  succ_1_DESC:0 "This gigantic ring stretches around the Gas Giant, and houses fusion reactors for energy generation, as well as purifying facilities for harvesting exotic gases and volatile motes from the Gas Giant's atmosphere."
-
-  succ_2:0 "$name_succ$"
-  succ_2_DESC:0 "A complete and operational $name_succ_full$, steadily harvesting vast amounts of gases from a Gas Giant. Fusion reactors are using collected Hydrogen to generate vast amounts of energy."
+  succ_1:0 "$name_succ$"
+  succ_1_DESC:0 "A complete and operational $name_succ_full$, steadily harvesting vast amounts of gases from a Gas Giant. Fusion reactors are using collected Hydrogen to generate vast amounts of energy."
 
   # Matrioshka Brain + VR
 
@@ -478,12 +475,12 @@
   automated_stripmine_0_DESC:0 "The construction site for a future $name_auto_stripmine$. It contains everything needed to construct the orbital mining apparatus as well as the planetbound factories."
   automated_stripmine_0_MEGASTRUCTURE_DETAILS:0 "$giga_list_category_megastructure$ - $giga_list_category_basic_resource_production$\nHarvests any §YRocky World§! for £minerals£ §YMinerals§! - $giga_list_category_eventually_runs_out$\n§LThe Automated Stripmine combines planetbound robotic stripminers with orbital harvesting beams to peel away a planet and extract valuable resources." #gigalistentry AUTOMATED STRIPMINE
   automated_stripmine_0_CONSTRUCTION_INFO_DELAYED:0 "$giga_list_additional_data$ - Removes §Y1 Size§! off the planet every §Y2 Years§!. Depletes when the planet reaches §YSize 2§!, leaving a tiny core with a £minerals£§Y20§! deposit. Gets additional resources if built on a §YChthonian§!, §YDiamond§! or §YEthane Ocean§! world from §YPlanetary Diversity§!"
+  # Old first stage
+  # automated_stripmine_1:0 "$name_auto_stripmine$ Orbital Apparatus"
+  # automated_stripmine_1_DESC:0 "This large orbital apparatus is equipped with two enormous tractor beams capable of pulling large amounts of minerals into orbit. Those minerals will be extracted by a plethora of automated drilling units on the surface of the planet."
 
-  automated_stripmine_1:0 "$name_auto_stripmine$ Orbital Apparatus"
-  automated_stripmine_1_DESC:0 "This large orbital apparatus is equipped with two enormous tractor beams capable of pulling large amounts of minerals into orbit. Those minerals will be extracted by a plethora of automated drilling units on the surface of the planet."
-
-  automated_stripmine_2:0 "$name_auto_stripmine$"
-  automated_stripmine_2_DESC:0 "A large orbital construct pulling large amounts of mineral from a planet. The minerals are extracted by thousands and thousands of drilling units on the surface of the planet, peeling it away layer by layer."
+  automated_stripmine_1:0 "$name_auto_stripmine$"
+  automated_stripmine_1_DESC:0 "A large orbital construct pulling large amounts of mineral from a planet. The minerals are extracted by thousands and thousands of drilling units on the surface of the planet, peeling it away layer by layer."
 
 
   # Yggdrasil Orchid 
@@ -697,11 +694,14 @@
   fusion_suppressor_5:0 "$name_fusion_suppressor$ - Neutron Star Stage"
   fusion_suppressor_5_DESC:0 "The $name_fusion_suppressor$ has managed to compress the star so much that protons and electrons have fused to become neutrons within the star's core, transforming said core into a neutron star. This is effectively a neutron star surrounded by regular stellar plasma."
 
-  fusion_suppressor_6:0 "$name_fusion_suppressor$"
+  fusion_suppressor_6:0 "Collapse Star Into Black Hole"
   fusion_suppressor_6_DESC:0 "The star's matter has now been collapsed to such an extent that even light cannot escape the body's gravitational pull, effectively transforming it into an artificial Black Hole, possessing incredible research potential."
 
+  fusion_suppressor_6b:0 "Detonate Star"
+  fusion_suppressor_6b_DESC:0 "Order the $name_fusion_suppressor$ to release the gravitational field and exert a repulsive force, causing the compressed star to detonate in a devastating supernova, destroying the $name_fusion_suppressor$. Any planet smaller than 5, as well as asteroids, will be destroyed, and gas giants will be striped of their atmosphere. The surviving planets will get Iodizium deposits, which are crystals generated by the artificial supernova slamming into planets at relativistic speeds. These crystals can be used to construct powerful buildings on our planets."
+
   fusion_suppressor_7:0 "Dismantle $name_fusion_suppressor$"
-  fusion_suppressor_7_DESC:0 "Remove this $name_fusion_suppressor$, making its Black Hole usable."
+  fusion_suppressor_7_DESC:0 "Remove this $name_fusion_suppressor$, making its Black Hole usable for other projects."
 
   # HRAE-MC
 
@@ -1249,6 +1249,7 @@
   # Alderson Disk
 
   name_alderson:0 "Alderson Disk"
+
   alderson_disk_0:0 "$gc_giga$$name_alderson$ Construction Site"
   alderson_disk_0_DESC:0 "This construction platform houses the necessary infrastructure to begin constructing a massive disk spanning this entire solar system."
   alderson_disk_0_MEGASTRUCTURE_DETAILS:0 "$giga_list_category_gigastructure$ - $giga_list_category_habitable_mega$\nA system-sized disk consisting of eight gigantic §YSlices§! which can be further specialized\n$giga_list_removes_system_planets$\n§LA gigantic solar-system sized disk offering tremendous amounts of living space." #megalistentry ALDERSON DISK
@@ -1261,38 +1262,20 @@
   alderson_disk_2_DESC:0 "A colossal frame that will be used to construct a complete Alderson Slice."
   alderson_disk_2_MEGASTRUCTURE_DETAILS:0 "$alderson_disk_2_DESC$"
 
-  alderson_disk_2_specialize:0 "Choose Alderson Specialization"
-  alderson_disk_2_specialize_DESC:0 "We must decide what kind of Alderson Slice we wish to upgrade this frame into."
-
-  alderson_disk_2_construction_gaia:0 "Gaia Alderson Slice Frame"
-  alderson_disk_2_construction_gaia_DESC:0 "A colossal frame that will be used to construct a complete Gaia Alderson Slice."
-
-  alderson_disk_2_construction_pc:0 "Alderson Computing Complex Frame"
-  alderson_disk_2_construction_pc_DESC:0 "A colossal frame that will be used to construct a complete Alderson Computing Complex."
-
-  alderson_disk_2_construction_ecu:0 "Ecumenopolis Alderson Frame"
-  alderson_disk_2_construction_ecu_DESC:0 "A colossal frame that will be used to construct a complete Ecumenopolis Alderson."
-
-  alderson_disk_2_construction_hive:0 "Hive Alderson Frame"
-  alderson_disk_2_construction_hive_DESC:0 "A colossal frame that will be used to construct a complete Hive Alderson."
-
-  alderson_disk_2_construction_machine:0 "Machine Alderson Frame"
-  alderson_disk_2_construction_machine_DESC:0 "A colossal frame that will be used to construct a complete Machine Alderson."
-
   alderson_disk_2_ecu:0 "Ecumenopolis Alderson"
-  alderson_disk_2_ecu_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. It functions as one colossal city, and can harbor tremendous amounts of industries and people."
+  alderson_disk_2_ecu_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. It functions as one colossal city, and can harbor tremendous amounts of industries and people.\n\nFeatures Districts to generate £consumer_goods£ §YConsumer Goods§!, £alloys£ §YAlloys§!, and £amenities£ §YAmenities§!"
 
   alderson_disk_2_hive:0 "Hive Alderson"
-  alderson_disk_2_hive_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. It functions as one colossal city, and can harbor tremendous amounts of industries and drones."
+  alderson_disk_2_hive_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. It functions as one colossal city, and can harbor tremendous amounts of industries and drones.\n\nFeatures Districts to generate £minerals£ §YMinerals§! and £alloys£ §YAlloys§!"
 
   alderson_disk_2_machine:0 "Machine Alderson"
-  alderson_disk_2_machine_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. It functions as one colossal city, and can harbor tremendous amounts of industries and population."
+  alderson_disk_2_machine_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. It functions as one colossal city, and can harbor tremendous amounts of industries and population.\n\nFeatures Districts to generate £minerals£ §YMinerals§! and £alloys£ §YAlloys§!"
 
   alderson_disk_2_gaia:0 "Gaia Alderson Slice"
-  alderson_disk_2_gaia_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. Capable of housing untold amounts of people on its surface."
+  alderson_disk_2_gaia_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. Capable of housing untold amounts of people on its surface.\n\nFeatures Districts to generate £energy£ §YEnergy§!, £food£ §YFood§!, and £minerals£ §YMinerals§!"
 
   alderson_disk_2_pc:0 "Alderson Computing Complex"
-  alderson_disk_2_pc_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. Capable of untold amounts of processing power."
+  alderson_disk_2_pc_DESC:0 "A gargantuan slice of an $name_alderson$, stretching all the way to the edges of this solar system. Capable of untold amounts of processing power.\n\nFeatures Districts to generate £physics£ £society£ £engineering£ §YResearch§! and £unity£ §Yunity§!"
 
   alderson_disk_ruined_left:0 "Ruined $name_alderson$ Hypersegment"
   alderson_disk_ruined_left_DESC:0 "It's unknown as to who or what built this gargantuan structure. This segment was partially finished and over time has become in need of serious repair."
@@ -1305,60 +1288,6 @@
   alderson_disk_ruined_right:0 "$alderson_disk_ruined_left$"
   alderson_disk_ruined_right_DESC:0 "$alderson_disk_ruined_left_DESC$"
   alderson_disk_ruined_right_MEGASTRUCTURE_DETAILS:0 "$alderson_disk_ruined_left_DESC$"
-
-  alderson_disk_restored_left:0 "$alderson_disk_2_specialize$"
-  alderson_disk_restored_left_DESC:0 "$alderson_disk_2_specialize_DESC$"
-
-  alderson_disk_restored_center:0 "$alderson_disk_2_specialize$"
-  alderson_disk_restored_center_DESC:0 "$alderson_disk_2_specialize_DESC$"
-
-  alderson_disk_restored_right:0 "$alderson_disk_2_specialize$"
-  alderson_disk_restored_right_DESC:0 "$alderson_disk_2_specialize_DESC$"
-
-  alderson_disk_2_construction_gaia_restored_left:0 "$alderson_disk_2_construction_gaia$"
-  alderson_disk_2_construction_gaia_restored_left_DESC:0 "$alderson_disk_2_construction_gaia_DESC$"
-
-  alderson_disk_2_construction_gaia_restored_center:0 "$alderson_disk_2_construction_gaia$"
-  alderson_disk_2_construction_gaia_restored_center_DESC:0 "$alderson_disk_2_construction_gaia_DESC$"
-
-  alderson_disk_2_construction_gaia_restored_right:0 "$alderson_disk_2_construction_gaia$"
-  alderson_disk_2_construction_gaia_restored_right_DESC:0 "$alderson_disk_2_construction_gaia_DESC$"
-
-  alderson_disk_2_construction_pc_restored_left:0 "$alderson_disk_2_construction_pc$"
-  alderson_disk_2_construction_pc_restored_left_DESC:0 "$alderson_disk_2_construction_pc_DESC$"
-
-  alderson_disk_2_construction_pc_restored_center:0 "$alderson_disk_2_construction_pc$"
-  alderson_disk_2_construction_pc_restored_center_DESC:0 "$alderson_disk_2_construction_pc_DESC$"
-
-  alderson_disk_2_construction_pc_restored_right:0 "$alderson_disk_2_construction_pc$"
-  alderson_disk_2_construction_pc_restored_right_DESC:0 "$alderson_disk_2_construction_pc_DESC$"
-
-  alderson_disk_2_construction_ecu_restored_left:0 "$alderson_disk_2_construction_ecu$"
-  alderson_disk_2_construction_ecu_restored_left_DESC:0 "$alderson_disk_2_construction_ecu_DESC$"
-
-  alderson_disk_2_construction_ecu_restored_center:0 "$alderson_disk_2_construction_ecu$"
-  alderson_disk_2_construction_ecu_restored_center_DESC:0 "$alderson_disk_2_construction_ecu_DESC$"
-
-  alderson_disk_2_construction_ecu_restored_right:0 "$alderson_disk_2_construction_ecu$"
-  alderson_disk_2_construction_ecu_restored_right_DESC:0 "$alderson_disk_2_construction_ecu_DESC$"
-
-  alderson_disk_2_construction_hive_restored_left:0 "$alderson_disk_2_construction_hive$"
-  alderson_disk_2_construction_hive_restored_left_DESC:0 "$alderson_disk_2_construction_hive_DESC$"
-
-  alderson_disk_2_construction_hive_restored_center:0 "$alderson_disk_2_construction_hive$"
-  alderson_disk_2_construction_hive_restored_center_DESC:0 "$alderson_disk_2_construction_hive_DESC$"
-
-  alderson_disk_2_construction_hive_restored_right:0 "$alderson_disk_2_construction_hive$"
-  alderson_disk_2_construction_hive_restored_right_DESC:0 "$alderson_disk_2_construction_hive_DESC$"
-
-  alderson_disk_2_construction_machine_restored_left:0 "$alderson_disk_2_construction_machine$"
-  alderson_disk_2_construction_machine_restored_left_DESC:0 "$alderson_disk_2_construction_machine_DESC$"
-
-  alderson_disk_2_construction_machine_restored_center:0 "$alderson_disk_2_construction_machine$"
-  alderson_disk_2_construction_machine_restored_center_DESC:0 "$alderson_disk_2_construction_machine_DESC$"
-
-  alderson_disk_2_construction_machine_restored_right:0 "$alderson_disk_2_construction_machine$"
-  alderson_disk_2_construction_machine_restored_right_DESC:0 "$alderson_disk_2_construction_machine_DESC$"
 
   alderson_disk_2_construction_gaia_restored_left_complete:0 "$alderson_disk_2_gaia$"
   alderson_disk_2_construction_gaia_restored_left_complete_DESC:0 "$alderson_disk_2_gaia_DESC$"
@@ -1692,14 +1621,6 @@
   ehof_megastructure_phase1_DESC:0 "Manipulates and inflates $ehof_wormholes$ for interstellar travel.\n\n"
   ehof_megastructure_phase1_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
 
-  ehof_megastructure_phase1_activating:0 "$ehof_megastructure_phase1$"
-  ehof_megastructure_phase1_activating_DESC:0 "$ehof_megastructure_phase1_DESC$"
-  ehof_megastructure_phase1_activating_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_phase1_active:0 "$ehof_ehofp1$ ($ehof_wormhole$)"
-  ehof_megastructure_phase1_active_DESC:0 "$ehof_megastructure_phase1_DESC$"
-  ehof_megastructure_phase1_active_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
   ehof_megastructure_phase1_decommissioned:0 "$ehof_ehofp1$ (§EDecommissioned§!)"
   ehof_megastructure_phase1_decommissioned_DESC:0 "Encrypted, we cannot regain control of this facility, but it still produces valuable $ehof_qnm$."
   ehof_megastructure_phase1_decommissioned_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase1_decommissioned_DESC$"
@@ -1708,14 +1629,6 @@
   ehof_megastructure_phase2:0 "$ehof_ehofp2$"
   ehof_megastructure_phase2_DESC:0 "Manipulates and inflates $ehof_wormholes$ for interstellar travel.\n\n"
   ehof_megastructure_phase2_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_phase2_activating:0 "$ehof_megastructure_phase2$"
-  ehof_megastructure_phase2_activating_DESC:0 "$ehof_megastructure_phase2_DESC$"
-  ehof_megastructure_phase2_activating_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_phase2_active:0 "$ehof_ehofp2$ ($ehof_wormhole$)"
-  ehof_megastructure_phase2_active_DESC:0 "$ehof_megastructure_phase2_DESC$"
-  ehof_megastructure_phase2_active_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
 
   ehof_megastructure_phase2_decommissioned:0 "$ehof_ehofp2$ (§EDecommissioned§!)"
   ehof_megastructure_phase2_decommissioned_DESC:0 "$ehof_megastructure_phase1_decommissioned_DESC$"
@@ -1726,14 +1639,6 @@
   ehof_megastructure_phase3_DESC:0 "Uses §H£ehof_sr_negative_mass£Negative Mass§! to stabilize $ehof_wormholes$ for interstellar travel and $sr_dark_matter$ extraction."
   ehof_megastructure_phase3_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
 
-  ehof_megastructure_phase3_activating:0 "$ehof_megastructure_phase3$"
-  ehof_megastructure_phase3_activating_DESC:0 "$ehof_megastructure_phase3_DESC$"
-  ehof_megastructure_phase3_activating_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_phase3_active:0 "$ehof_ehofp3$ ($ehof_wormhole$)"
-  ehof_megastructure_phase3_active_DESC:0 "$ehof_megastructure_phase3_DESC$"
-  ehof_megastructure_phase3_active_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
   ehof_megastructure_phase3_decommissioned:0 "$ehof_ehofp3$ (§EDecommissioned§!)"
   ehof_megastructure_phase3_decommissioned_DESC:0 "$ehof_megastructure_phase1_decommissioned_DESC$"
   ehof_megastructure_phase3_decommissioned_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase3_decommissioned_DESC$"
@@ -1742,14 +1647,6 @@
   ehof_megastructure_phase4:0 "$ehof_ehofp4$"
   ehof_megastructure_phase4_DESC:0 "Uses §H£ehof_sr_negative_mass£Negative Mass§! to stabilize $ehof_wormholes$ for interstellar travel and $sr_dark_matter$ extraction."
   ehof_megastructure_phase4_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_phase4_activating:0 "$ehof_megastructure_phase4$"
-  ehof_megastructure_phase4_activating_DESC:0 "$ehof_megastructure_phase4_DESC$"
-  ehof_megastructure_phase4_activating_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_phase4_active:0 "$ehof_ehofp4$ ($ehof_wormhole$)"
-  ehof_megastructure_phase4_active_DESC:0 "$ehof_megastructure_phase4_DESC$"
-  ehof_megastructure_phase4_active_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
 
   ehof_megastructure_phase4_decommissioned:0 "$ehof_ehofp4$ (§EDecommissioned§!)"
   ehof_megastructure_phase4_decommissioned_DESC:0 "$ehof_megastructure_phase1_decommissioned_DESC$"
@@ -1763,11 +1660,6 @@
   ehof_megastructure_ruined:0 "Ruined $ehof_ehofp2$"
   ehof_megastructure_ruined_DESC:0 "A partially constructed orbital structure in severe disrepair. This $ehof_ehof$ was once used for interstellar travel."
   ehof_megastructure_ruined_MEGASTRUCTURE_DETAILS:0 "$ehof_megastructure_phase0_MEGASTRUCTURE_DETAILS$"
-
-  ehof_megastructure_ruined_origin:0 "Ruined $ehof_ehof_abr$ Alpha"
-  ehof_megastructure_ruined_origin_DESC:0 "A partially constructed orbital structure in severe disrepair. This $ehof_ehof$ was once used for interstellar travel."
-  ehof_megastructure_restored_origin:0 "Restore $ehof_ehof_abr$ Alpha"
-  ehof_megastructure_restored_origin_DESC:0 "debug" # mega is swapped on build
 
   # Preservation sphere dyson
   ehof_presphere_ruined:0 "Ruined $ehof_presphere_dyson$"
