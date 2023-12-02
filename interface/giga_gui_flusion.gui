@@ -1074,47 +1074,6 @@ guiTypes = {
 				position = { x = 775 y = 290 }
 			}
 
-			#Katzeninsel
-			effectButtonType = {
-				size = { x = 90 y = -1 }
-				scale = 1
-				name = "katzeninsel_map_icon_low"
-				no_clicksound = yes
-				effect = "giga_katzeninsel_low"
-				spriteType = "GFX_katzeninsel_low"
-				position = { x = 775 y = 357 }
-			}
-
-			effectButtonType = {
-				size = { x = 90 y = -1 }
-				scale = 1
-				name = "katzeninsel_map_icon_med"
-				no_clicksound = yes
-				effect = "giga_katzeninsel_med"
-				spriteType = "GFX_katzeninsel_med"
-				position = { x = 775 y = 357 }
-			}
-
-			effectButtonType = {
-				size = { x = 90 y = -1 }
-				scale = 1
-				name = "katzeninsel_map_icon_sign"
-				no_clicksound = yes
-				effect = "giga_katzeninsel_sign"
-				spriteType = "GFX_katzeninsel_sign"
-				position = { x = 775 y = 357 }
-			}
-
-			effectButtonType = {
-				size = { x = 90 y = -1 }
-				scale = 1
-				name = "katzeninsel_map_icon_ext"
-				no_clicksound = yes
-				effect = "giga_katzeninsel_ext"
-				spriteType = "GFX_katzeninsel_ext"
-				position = { x = 775 y = 357 }
-			}
-
 			#ezicania
 			effectButtonType  = {
 				size = { x = 90 y = -1 }

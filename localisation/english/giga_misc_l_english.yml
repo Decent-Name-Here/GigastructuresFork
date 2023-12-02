@@ -4,6 +4,13 @@
   ### Requirements ############################################################################################################################
   #############################################################################################################################################
 
+  ring_giga_crystals_hub_condition:0 "§RPlanet must be able to support at least one £building£ §Y$building_crystal_mines$§! Building.§!"
+  ring_giga_motes_hub_condition:0 "§RPlanet must be able to support at least one £building£ §Y$building_mote_harvesters$§! Building.§!"
+  ring_giga_gas_hub_condition:0 "§RPlanet must be able to support at least one £building£ §Y$building_gas_extractors$§! Building.§!"
+  ring_giga_iodizium_hub_condition:0 "§RPlanet must be able to support at least one £building£ §Y$building_giga_iodizium_mines$§! Building.§!"
+
+  must_not_have_real_space:0 "Dsabled if §YReal Space§! is active to prevent duplicate star classes."
+
   requires_big_star:0 "$TRIGGER_FAIL$Due to the immense power requirements of this structure, it must be constructed around a B-class or A-class star in a single star system."
   requires_habitable:0 "$TRIGGER_FAIL$Must target habitable planet."
   requires_sentient_ai:0 "$TRIGGER_FAIL$Requires the £physics_research£ §Y$tech_self_aware_logic$§! technology."
@@ -72,7 +79,12 @@
   requires_ehof_not_in_use:0 "$TRIGGER_FAIL$Cannot upgrade while $ehof_ehof$ is in use."
   requires_no_gargantua:0 "$TRIGGER_FAIL$Cannot build $ehof_ehof$ in the Gargantua system."
   requires_cohesive_system:0 "$TRIGGER_FAIL$Requires $ehof_cohesive$ system."
+  requires_no_cohesive_system:0 "$TRIGGER_FAIL$Cannot be built in a $ehof_cohesive$ system."
   requires_no_crisis_system:0 "$TRIGGER_FAIL$Something about this system doesn't feel right."
+  requires_no_crisis_planet:0 "$TRIGGER_FAIL$Something about this planet doesn't feel right."
+  requires_further_stars:0 "$TRIGGER_FAIL$This star is too close to another star."
+  requires_not_recently_built_habitat:0 "$TRIGGER_FAIL$We must wait before building another $habitat_0$."
+  requires_not_terraforming:0 "$TRIGGER_FAIL$Can't build around a planet undergoing Terraforming."
 
   must_build_around_asteroid:0 "$TRIGGER_FAIL$Must be built around an asteroid."
   must_build_around_core_black_hole:0 "$TRIGGER_FAIL$The $name_birch$ must be built around a Supermassive Black Hole."
@@ -335,6 +347,16 @@
   giga_system_tooltip_scaling_m_title:0 "§E$pc_m_star$§!"
   giga_system_tooltip_scaling_m:0 "$giga_system_tooltip_scaling_output$: §R-50%§!\n$giga_system_tooltip_scaling_cost$: §G-50%§!\n$giga_system_tooltip_scaling_upkeep$: §G-50%§!\n$giga_system_tooltip_scaling_buildtime$: §G-50%§!\n "
 
+  ###########################
+  ### Job Icon References ###
+  ###########################
+  
+  job_giga_shroud_conduit_worker_icon:0 "£job_giga_shroud_conduit_worker£"
+
+ job_giga_shroud_conduit_priest_icon:0 "£job_giga_shroud_conduit_priest£"
+
+ job_giga_shroud_conduit_drone_icon:0 "£job_giga_shroud_conduit_drone£" 
+
   #######################################
   ### Miscellaneous Miscellaneous yes ###
   #######################################
@@ -352,6 +374,8 @@
   interstellar_habitat_completed_core_MEGASTRUCTURE_DETAILS:0 "debug"
 
   FLAG_CATEGORY_flusionian:0 "Miscellaneous"
+
+  giga_hypersiphon_power_estimate:0 "§HCalculated Power Estimate:§!\n- Max Naval Cap: §Y[this.GigaGetNavalCap]§!\n- Naval Cap Used: §Y[this.GigaGetUsedNavalCap]§!\n- Current Fleet Power: §Y[this.GigaGetFleetPower]§!\n\n- Estimated Power: §Y[This.giga_hypersiphon_incursion_power]§!"
 
   #######################################
   ### DEBUG #############################

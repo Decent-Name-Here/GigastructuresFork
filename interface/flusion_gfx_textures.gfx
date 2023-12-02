@@ -73,7 +73,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_sonya_real_dofus"							texturefile = "gfx/interface/flusion_ui/sonya_real_dofus.dds" }
 	spriteType = { name = "GFX_sonya_serious_dofus"							texturefile = "gfx/interface/flusion_ui/sonya_serious_dofus.dds" }
 
-	#Solak Dam
+	#Roqual Dam
 	spriteType = { name = "GFX_giga_blow_solak_dam_no"						texturefile = "gfx/interface/flusion_ui/missions/blow_solak_dam_no.dds" }
 	spriteType = { name = "GFX_giga_blow_solak_dam_yes"						texturefile = "gfx/interface/flusion_ui/missions/blow_solak_dam_yes.dds" }
 	spriteType = { name = "GFX_giga_blow_solak_dam_done"					texturefile = "gfx/interface/flusion_ui/missions/blow_solak_dam_done.dds" }
@@ -179,12 +179,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_symby_med"									texturefile = "gfx/interface/flusion_ui/resistance_areas/symby_med.dds" }
 	spriteType = { name = "GFX_symby_sign"									texturefile = "gfx/interface/flusion_ui/resistance_areas/symby_sign.dds" }
 	spriteType = { name = "GFX_symby_ext"									texturefile = "gfx/interface/flusion_ui/resistance_areas/symby_ext.dds" }
-
-	#map katzeninsel
-	spriteType = { name = "GFX_katzeninsel_low"								texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_low.dds" }
-	spriteType = { name = "GFX_katzeninsel_med"								texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_med.dds" }
-	spriteType = { name = "GFX_katzeninsel_sign"							texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_sign.dds" }
-	spriteType = { name = "GFX_katzeninsel_ext"								texturefile = "gfx/interface/flusion_ui/resistance_areas/katzeninsel_ext.dds" }
 
 	#map ravka
 	spriteType = { name = "GFX_ravka_low"									texturefile = "gfx/interface/flusion_ui/resistance_areas/ravka_low.dds" }

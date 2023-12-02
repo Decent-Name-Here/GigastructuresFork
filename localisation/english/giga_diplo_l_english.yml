@@ -105,6 +105,8 @@
   ### Opinions ################################################################################################################################
   #############################################################################################################################################
 
+  opinion_xenophage_stripmine:0 "Biophages"
+  
   opinion_policy_orbital_bombardment_redtoxin:0 "We don't like yo mustard gas"
 
   giga_opinion_from_jobs:0 "From Pop Jobs"
@@ -206,13 +208,13 @@
   resolution_denounce_ezic_warcrimes_success:0 "This will increase §YZuspri Resistance§! by 2.\n\nA future revolution by the §YZuspri Vanguard§! will be §Y10%§! more powerful.\n\nWill §Rdecrease§! the §YKaiser's Opinion§! of everyone in the [global_event_country.GetGalCommunityOrGalImperium] by §Y1§!."
   ezics_already_denounced:0 "The Katzen Invasion of the Zuspri Intermarium has already been denounced."
 
-  resolution_public_recognition_of_solakia:0 "Galactic Recognition of the Solakian Republic"
-  resolution_public_recognition_of_solakia_desc:0 "The Solakian Republic is one of the many Flusionian nations which fell victim to the Kaiser's asinine tide of rampant militarism. Recognizing them as the legitimate government of their former land and declaring Katzen occupation to be illegal will certainly help bolster their partisans."
-  resolution_public_recognition_of_solakia_success:0 "This will increase §YPartisan Activity§! by §Y1§! everywhere except in §YKatown§! and §YKatzen Herzlands§!, and by §Y2§! in §YSolakien§!.\n\nThe §YExert our Influence§! decision will grant §Y2§! Resistance Resources instead of §Y1§!.\n\nWill §Rdecrease§! the §YKaiser's Opinion§! of everyone in the [global_event_country.GetGalCommunityOrGalImperium] by §Y1§!."
-  solakia_already_recognised:0 "Solakia is already recognized."
+  resolution_public_recognition_of_solakia:0 "Galactic Recognition of the Roqualian Republic"
+  resolution_public_recognition_of_solakia_desc:0 "The Roqualian Republic is one of the many Flusionian nations which fell victim to the Kaiser's asinine tide of rampant militarism. Recognizing them as the legitimate government of their former land and declaring Katzen occupation to be illegal will certainly help bolster their partisans."
+  resolution_public_recognition_of_solakia_success:0 "This will increase §YPartisan Activity§! by §Y1§! everywhere except in §YKatown§! and §YKatzen Herzlands§!, and by §Y2§! in §YRokalien§!.\n\nThe §YExert our Influence§! decision will grant §Y2§! Resistance Resources instead of §Y1§!.\n\nWill §Rdecrease§! the §YKaiser's Opinion§! of everyone in the [global_event_country.GetGalCommunityOrGalImperium] by §Y1§!."
+  solakia_already_recognised:0 "Roqualia is already recognized."
 
   resolution_public_recognition_of_laurandar:0 "International Support for Laurandar"
-  resolution_public_recognition_of_laurandar_desc:0 "Laurandar was an island nation off the coast of Flusion's supercontinent. It is highly populated and unlike what many might think, not flat. The Laurnaise possessed dangerously powerful weaponry capable of rivalling or even surpassing that of the Kaiser but were unable to resist the Katzenarmee due to their unfortunately unstable government.\n\nThe Kaiser uses Laurandar as his main propaganda center, thus by officially lending our support to the Laurnaise rebels, recognizing their independence, and funding them, we can help them work with the Solakian Freedom Fighters and break the Katzen propaganda machine. This would have a significant impact on the organization of Katzen armed forces who would also have to deal with bolstered Laurnaise resistance thanks to our support." 
+  resolution_public_recognition_of_laurandar_desc:0 "Laurandar was an island nation off the coast of Flusion's supercontinent. It is highly populated and unlike what many might think, not flat. The Laurnaise possessed dangerously powerful weaponry capable of rivalling or even surpassing that of the Kaiser but were unable to resist the Katzenarmee due to their unfortunately unstable government.\n\nThe Kaiser uses Laurandar as his main propaganda center, thus by officially lending our support to the Laurnaise rebels, recognizing their independence, and funding them, we can help them work with the Roqualian Freedom Fighters and break the Katzen propaganda machine. This would have a significant impact on the organization of Katzen armed forces who would also have to deal with bolstered Laurnaise resistance thanks to our support." 
   resolution_public_recognition_of_laurandar_success:0 "This will increase §YPartisan Activity§! by §Y2§! in §YLaurendaar§! and §YGeschwollen§!.\n\nWill §Rdecrease§! the §YKaiser's Opinion§! of everyone in the [global_event_country.GetGalCommunityOrGalImperium] by §Y2§!.\n\nRaiding Katzen Warehouses will grant twice as many §BResistance Resources§!.\n\nWill §Rreduce§! the stats of Katzen ground forces."
   laurandar_already_recognised:0 "Laurandar has already been supported."
 

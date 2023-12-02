@@ -202,8 +202,8 @@
   CONTACT_EZIC_REBELS_PROJECT:0 "Contact the §YZuspri Vanguard§!"
   CONTACT_EZIC_REBELS_PROJECT_DESC:0 "The §YZuspris§! are a fearsome species, which makes up a significant portion of the Katzen Elite Forces despite their low population.\n\nAlthough most of them are obedient to the Kaiser's rule, a lot of them don't agree with his policies, and their incredible combat abilities means that even a few dedicated Zuspri partisans could wreck havoc within the §YKatzenartig Imperium§!."
 
-  CONTACT_SOLAK_REBELS_PROJECT:0 "Contact the §YSolakian Freedom Fighters§!"
-  CONTACT_SOLAK_REBELS_PROJECT_DESC:0 "The §YSolakians§! used to be one of the most independent, democratic and free-spirited people on §YFlusion§! prior to the §YKaiser§!'s global conquest.\n\nThey usually integrated pretty well within Katzen society, and yet, the spirit of the old §YSolakian Republic§! still lives on within some individuals. Bolstering it would undoubtedly contribute to destabilizing the Kaiser's established rule."
+  CONTACT_SOLAK_REBELS_PROJECT:0 "Contact the §YRoqualian Freedom Fighters§!"
+  CONTACT_SOLAK_REBELS_PROJECT_DESC:0 "The §YRoqualians§! used to be one of the most independent, democratic and free-spirited people on §YFlusion§! prior to the §YKaiser§!'s global conquest.\n\nThey usually integrated pretty well within Katzen society, and yet, the spirit of the old §YRoqualian Republic§! still lives on within some individuals. Bolstering it would undoubtedly contribute to destabilizing the Kaiser's established rule."
 
   ANALYSE_KATZEN_SUB_PROJECT:0 "Analyse Katzen Unterraumboots"
   ANALYSE_KATZEN_SUB_PROJECT_DESC:0 "The Katzens have devised a revolutionary \"space submarine\" - A craft capable of submerging into subspace to bypass fortifications and strike at the heart of enemy empires.\n\nIt is crucial that we study and understand these vessels in order to prevent them from causing us any harm.\n\nCompleting this project will enable us to develop countermeasures against these submarines, but will cause the §YKaiser's Opinion§! of us to §Rdecrease§! by §R2§!.\n\nHaving the §BEnigmatic Engineering§! Ascension Perk will ensure the Kaiser cannot figure out our plans, avoiding the opinion drop."
@@ -341,32 +341,32 @@
   ### Toxic ###
 
   code1_digsite:0 "Reality Code - Toxic Excavation"
-  code1_digsite_desc:0 "The equipment necessary for the excavation on §H[code_world_planet.GetName]§! is ready for deployment. Before we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
+  code1_digsite_desc:0 "The equipment necessary for the excavation on §H[from.planet.GetName]§! is ready for deployment. Before we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
 
   ### Shattered ###
 
   code2_digsite:0 "Reality Code - Shattered Excavation"
-  code2_digsite_desc:0 "The equipment necessary for the excavation on §H[code_world_planet.GetName]§! is ready for deployment.\n\nBefore we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
+  code2_digsite_desc:0 "The equipment necessary for the excavation on §H[from.planet.GetName]§! is ready for deployment.\n\nBefore we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
 
   ### Frozen ###
 
   code3_digsite:0 "Reality Code - Frozen Excavation"
-  code3_digsite_desc:0 "The equipment necessary for the excavation on §H[code_world_planet.GetName]§! is ready for deployment. Before we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
+  code3_digsite_desc:0 "The equipment necessary for the excavation on §H[from.planet.GetName]§! is ready for deployment. Before we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
 
   ### Molten ###
 
   code4_digsite:0 "Reality Code - Molten Excavation"
-  code4_digsite_desc:0 "The equipment necessary for the excavation on §H[code_world_planet.GetName]§! is ready for deployment. Before we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
+  code4_digsite_desc:0 "The equipment necessary for the excavation on §H[from.planet.GetName]§! is ready for deployment. Before we can start the excavation, the digsite needs to be secured and the equipment needs to be installed."
 
   ### Gas Giant ###
 
   code5_digsite:0 "Reality Code - Gas Giant Excavation"
-  code5_digsite_desc:0 "The equipment necessary for the excavation on §H[code_world_planet.GetName]§! is ready for deployment. Due to the fact, that the amplifier object is located inside the deeper atmosphere of a gas giant, an unconventional way for reaching the object needs to be taken."
+  code5_digsite_desc:0 "The equipment necessary for the excavation on §H[from.planet.GetName]§! is ready for deployment. Due to the fact, that the amplifier object is located inside the deeper atmosphere of a gas giant, an unconventional way for reaching the object needs to be taken."
 
   ### Star ###
 
   code6_digsite:0 "Reality Code - Stellar Excavation"
-  code6_digsite_desc:0 "The equipment necessary for the project on §H[code_world_planet.GetName]§! is ready for deployment. Due to the fact, that the amplifier is located inside the convective zone of a star, an unconventional way for reaching the object needs to be taken."
+  code6_digsite_desc:0 "The equipment necessary for the project on §H[from.planet.GetName]§! is ready for deployment. Due to the fact, that the amplifier is located inside the convective zone of a star, an unconventional way for reaching the object needs to be taken."
 
   ### Everchanging ###
 

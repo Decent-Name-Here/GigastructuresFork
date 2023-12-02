@@ -16,7 +16,7 @@
   decision_ringworld_arcology_project:0 "Ringworld Arcology Project"
   decision_ringworld_arcology_project_desc:0 "An unceasing stretch of arcologies will unite this ringworld segment into one massive mega-city, the largest city the galaxy has ever seen."
   decision_ringworld_arcology_project_effects:0 "Turns this ringworld segment into an §Y$pc_ringworld_city$§!, increasing £housing£ §Y$PLANET_HOUSING_TITLE$§!, §YResource Production§! and §YPop Growth§! and unlocking special £district£ §YArcology Districts§! at the expense of the ringworld's entire surface being transformed, preventing all further construction of £district£ §YGenerator§! and §YAgriculture Districts§!."
-  decision_ringworld_arcology_project_requirements:0 "$TRIGGER_FAIL$ §RAll district slots on the planet must be filled with§! §Y$district_city_plural$§!"
+  decision_ringworld_arcology_project_requirements:0 "$TRIGGER_FAIL$ §RAll district slots on the planet must be filled with§! §Y$district_city_plural$§! or §Y$district_industrial_plural$§!"
   
   decision_repaired_shattered_alderson:0 "Repair Hypersegment"
   decision_repaired_shattered_alderson_desc:0 ""
@@ -82,13 +82,13 @@
 
   ### Katzen Decisions ###
 
-  decision_take_solakia_back:0 "Seize Solakia"
+  decision_take_solakia_back:0 "Seize Roqualia"
   decision_take_solakia_back_desc:0 "This little charade has gone on for long enough. Flusion is rightfully ours, all of it."
-  decision_take_solakia_back_effect:0 "We will move to forcefully seize the Solakian enclave on Flusion. This will spawn hostile Solakian armies on the planet. If they exist and we aren't already at war, this will §Rdeclare war§! on the §YSolakian Republic§!."
+  decision_take_solakia_back_effect:0 "We will move to forcefully seize the Roqualian enclave on Flusion. This will spawn hostile Roqualian armies on the planet. If they exist and we aren't already at war, this will §Rdeclare war§! on the §YRoqualian Republic§!."
 
-  decision_give_flusion_to_solakia:0 "Give Flusion to Solakia"
-  decision_give_flusion_to_solakia_desc:0 "If we have no need to directly control Flusion anymore, we may return the entirety of the planet to the Solakian Republic."
-  decision_give_flusion_to_solakia_effect:0 "This will give all of §YFlusion§! to the §YSolakian Republic§!. They will surely be thankful."
+  decision_give_flusion_to_solakia:0 "Give Flusion to Roqualia"
+  decision_give_flusion_to_solakia_desc:0 "If we have no need to directly control Flusion anymore, we may return the entirety of the planet to the Roqualian Republic."
+  decision_give_flusion_to_solakia_effect:0 "This will give all of §YFlusion§! to the §YRoqualian Republic§!. They will surely be thankful."
 
   ### Maginot World Decisions ###
 
@@ -158,3 +158,7 @@
   giga_dismantle_elysium_desc:0 "This station, and the stifling control it provides, no longer suit our needs."
   giga_dismantle_elysium_tooltip:0 "The $name_orb_elysium$ will be §Rdestroyed§!."
 
+  ### Hypersiphon Decisions ###
+  decision_hypersiphon_mass_summon:0 "Mass Summon $shroud_summoned_army_plural$"
+  decision_hypersiphon_mass_summon_effect:0 "Summons §G[owner.GetHypersiphonSummonCount]§! §Y$shroud_summoned_army_plural$§!, based on the number of [owner.GetGigaShroudConduitJobIcon] §Y[owner.GetGigaShroudConduitJob]§! Jobs and £pop£ §YPsionic Pops§! on the planet."
+  decision_hypersiphon_mass_summon_desc:0 "With an intricate ritual preparation, and huge amounts of concentrated $sr_psionic_sublimate$, Shroud entities could be summoned on a massive scale."

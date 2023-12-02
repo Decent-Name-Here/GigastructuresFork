@@ -170,6 +170,15 @@ planet_jobs = {
 			has_trait = trait_psionic
 		}
 	}
+	triggered_upkeep_modifier = {
+		key = planet_psionic_jobs
+		modifier_types = {
+			mult
+		}
+		trigger = {
+			has_trait = trait_psionic
+		}
+	}
 
 	triggered_produces_modifier = {
 		key = planet_cyborg_jobs
@@ -394,6 +403,26 @@ planet_evaluators = {
 	}
 }
 
+planet_traders = {
+	parent = planet_jobs
+	generate_add_modifiers = {
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_telepaths = {
+	parent = planet_administrators
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	generate_mult_modifiers = {
+		produces
+	}
+	modifier_category = pop
+}
+
 planet_doctors = {
 	parent = planet_jobs
 	modifier_category = pop
@@ -525,22 +554,6 @@ planet_miners = {
 		upkeep
 	}
 }
-
-# same as vanilla now
-# planet_researchers = {
-# 	icon = "job_researcher"
-# 	parent = planet_jobs_productive
-# 	modifier_category = pop
-# 	generate_mult_modifiers = {
-# 		produces
-# 		upkeep
-# 	}
-
-# 	generate_add_modifiers = {
-# 		produces
-# 		upkeep
-# 	}
-# }
 
 planet_bio_trophies = {
 	parent = planet_jobs
@@ -737,6 +750,7 @@ pop_category_workers = {
 	modifier_category = pop
 	generate_add_modifiers = {
 		upkeep
+		produces
 	}
 
 	triggered_upkeep_modifier = {
@@ -751,6 +765,7 @@ pop_category_specialists = {
 	modifier_category = pop
 	generate_add_modifiers = {
 		upkeep
+		produces
 	}
 
 	triggered_upkeep_modifier = {
@@ -763,8 +778,12 @@ pop_category_specialists = {
 pop_category_rulers = {
 	parent = planet_pops
 	modifier_category = pop
+	generate_mult_modifiers = {
+		upkeep
+	}
 	generate_add_modifiers = {
 		upkeep
+		produces
 	}
 
 	triggered_upkeep_modifier = {

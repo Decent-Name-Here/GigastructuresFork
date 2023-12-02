@@ -196,7 +196,7 @@
   d_giga_lifeless_iodizium_1_desc:0 "This world has an exploitable source of iodizium crystals."
 
   d_giga_hab_iodizium_1:0 "Iodizium Deposit"
-  d_giga_hab_iodizium_1_desc:0 "This habitat is built near an exploitable iodizium crystal deposit."
+  d_giga_hab_iodizium_1_desc:0 "This Habitat Complex is built near an exploitable iodizium crystal deposit."
 
   #######################
   ### Katzen Deposits ###
@@ -214,11 +214,11 @@
 	d_flusion_kaiser_rift:0 "Hypertemporal Rift"
 	d_flusion_kaiser_rift_desc:0 "An incredible window to the ultimate end of our universe, left over by the Kaiser jumping to a new one."
 
-  d_solaktropa_project:0 "Solaktropa Project"
-  d_solaktropa_project_desc:0 "The Solaktropa Project creates vast quantities of useable land for the Katzens to build upon as well as tremendous quantities of water for agriculture, at the cost of disturbing Flusion's natural climate."
+  d_solaktropa_project:0 "Roqualtropa Project"
+  d_solaktropa_project_desc:0 "The Roqualtropa Project creates vast quantities of useable land for the Katzens to build upon as well as tremendous quantities of water for agriculture, at the cost of disturbing Flusion's natural climate."
 
-  d_solaktropa_project_wreck:0 "Solaktropa Wreck"
-  d_solaktropa_project_wreck_desc:0 "The destruction of the Solaktropa Dam has caused untold quantities of devastation to Flusion and its inhabitants."
+  d_solaktropa_project_wreck:0 "Roqualtropa Wreck"
+  d_solaktropa_project_wreck_desc:0 "The destruction of the Roqualtropa Dam has caused untold quantities of devastation to Flusion and its inhabitants."
 
   d_katlantropa_project:0 "Katlantropa Project"
   d_katlantropa_project_desc:0 "The Katlantropa Project irrigates formerly desertic areas, rendering them suitable for agriculture and irrigation."
@@ -273,3 +273,19 @@
 
   d_giga_elysium_livestock_pens:0 "Makeshift Livestock Enclosure"
   d_giga_elysium_livestock_pens_desc:0 "Less regulated than our standard facilities, this enclosure affords our \"guests\" additional freedoms. Perhaps too many."
+
+  ###################
+  ### Hypersiphon ###
+  ###################
+  
+  d_giga_hypersiphon_goop:0 "£blocker£ Shroud Discharge"
+  d_giga_hypersiphon_goop_desc:0 "Condensed psionic essence and ectoplasmic residue, violently toxic on an ontological level."
+
+  d_giga_hypersiphon_psionic_anomaly:0 "£blocker£ Anomalous Zone"
+  d_giga_hypersiphon_psionic_anomaly_desc:0 "A region where the laws of nature bend like branches in the wind."
+
+  d_giga_hypersiphon_psionic_supercell_planet:0 "£blocker£ Psionic Supercell"
+  d_giga_hypersiphon_psionic_supercell_planet_desc:0 "A ferocious storm consuming a huge region of the planetary surface, rendering it uninhabitable, and sending psionic shock waves through the minds of the entire populace."
+
+  d_giga_hypersiphon_psionic_supercell_artificial:0 "£blocker£ Psionic Systems Interference"
+  d_giga_hypersiphon_psionic_supercell_artificial_desc:0 "A huge psionic anomaly causing significant interference with local systems. Shock waves frequently ripple through the collective consciousness of the entire populace."

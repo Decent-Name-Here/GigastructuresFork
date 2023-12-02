@@ -1,4 +1,4 @@
-﻿  l_english:
+﻿l_english:
   ###############################
   ### Origin Unique Modifiers ###
   ###############################
@@ -18,6 +18,26 @@
 
   magical_neutronium_deficit:0 "Neutronium Deficit"
   magical_neutronium_deficit:0 "Our facilities are using large amounts of energy to replicate the effects of the missing Neutronium."
+
+  #########################################
+  ### Hypersiphon Instability Modifiers ###
+  #########################################
+
+  giga_hypersiphon_instability_resources:0 "Visions of Doom:"
+  giga_hypersiphon_instability_resources_energy:0 "$giga_hypersiphon_instability_resources$ Entropic Void"
+  giga_hypersiphon_instability_resources_energy_desc:0 "Movement slows, charge dissipates at unnatural speed."
+  giga_hypersiphon_instability_resources_minerals:0 "$giga_hypersiphon_instability_resources$ Unnatural Waste"
+  giga_hypersiphon_instability_resources_minerals_desc:0 "A snip here, a cut there... actually let's start this one again..."
+  giga_hypersiphon_instability_resources_food:0 "$giga_hypersiphon_instability_resources$ Ravenous Consumption"
+  giga_hypersiphon_instability_resources_food_desc:0 "Never sated, never quenched, never complete."
+  giga_hypersiphon_instability_resources_alloys:0 "$giga_hypersiphon_instability_resources$ Material Fascination"
+  giga_hypersiphon_instability_resources_alloys_desc:0 "An insatiable desire to tinker, to experiment, to fail."
+  giga_hypersiphon_instability_resources_consumer_goods:0 "$giga_hypersiphon_instability_resources$ Greed Manifest"
+  giga_hypersiphon_instability_resources_consumer_goods_desc:0 "The synthesis of want and need has led to a whirlwind of avarice."
+  giga_hypersiphon_instability_resources_unity:0 "$giga_hypersiphon_instability_resources$ Whispers in the Walls"
+  giga_hypersiphon_instability_resources_unity_desc:0 "Every edifice seethes with contempt, every enclosure feels suffocating."
+  giga_hypersiphon_instability_resources_research:0 "$giga_hypersiphon_instability_resources$ Clouded Cognition"
+  giga_hypersiphon_instability_resources_research_desc:0 "Sharp minds rendered dull by a malaise unknowable."
 
   ###############################
   ### Maginot World Modifiers ###
@@ -466,11 +486,11 @@
   laurandar_lowers_armies:0 "Disorganized Armed Forces"
   laurandar_lowers_armies_desc:0 "Disorganized Armed Forces"
 
-  solakia_free_state:0 "Solakian Free State"
-  solakia_free_state_desc:0 "Flusion's Solakian lands are formally part of the Solakian Republic, effectively free from whoever controls the planet. Trading with the Solakians however represents a lucrative opportunity and their ideas will definitely have an impact on the rest of the planet's population."
+  solakia_free_state:0 "Roqualian Free State"
+  solakia_free_state_desc:0 "Flusion's Roqualian lands are formally part of the Roqualian Republic, effectively free from whoever controls the planet. Trading with the Roqualians however represents a lucrative opportunity and their ideas will definitely have an impact on the rest of the planet's population."
 
-  solak_angry:0 "Solakian Unrest"
-  solak_angry_desc:0 "The Solakians are less than happy about being betrayed by us."
+  solak_angry:0 "Roqualian Unrest"
+  solak_angry_desc:0 "The Roqualians are less than happy about being betrayed by us."
 
   katzen_submarine_subspace_blockade:0 "Subspace Blockade"
   katzen_submarine_subspace_blockade_desc:0 "Katzen Unterraumboots are blockading FTL communications and transit around this world, drastically disrupting productivity."
@@ -510,13 +530,13 @@
   katown_shield_3_desc:0 "The Grand Katown Pyramid's shield has been destroyed, exposing the surface to harsh bombardment."
 
   solak_partisans_1:0 "Katzen Intel Leaked"
-  solak_partisans_1_desc:0 "The Solakians are actively leaking Katzen intel and warplans to the galaxy, allowing us to more easily counter them."
+  solak_partisans_1_desc:0 "The Roqualians are actively leaking Katzen intel and warplans to the galaxy, allowing us to more easily counter them."
 
   solak_partisans_2:0 "Katzen Intel Leaked"
-  solak_partisans_2_desc:0 "The Solakians are actively leaking Katzen intel and warplans to the galaxy, allowing us to more easily counter them."
+  solak_partisans_1_desc:0 "The Roqualians are actively leaking Katzen intel and warplans to the galaxy, allowing us to more easily counter them."
 
   solak_partisans_3:0 "Katzen Intel Leaked"
-  solak_partisans_3_desc:0 "The Solakians are actively leaking Katzen intel and warplans to the galaxy, allowing us to more easily counter them."
+  solak_partisans_3_desc:0 "The Roqualians are actively leaking Katzen intel and warplans to the galaxy, allowing us to more easily counter them."
 
   ezicania_partisans_0: "Zuspri Quarries"
   ezicania_partisans_0_desc:0 "The Zuspri lands are rich in valuable minerals providing great boons to the Katzens' industries, but would cause critical shortages if mining operations were to be sabotaged."
@@ -551,8 +571,8 @@
   katlantropa_economic_crisis:0 "Katlantropa Economic Turmoil"
   katlantropa_economic_crisis_desc:0 "The agricultural loss caused by Katlantropa is having a drastic effect on the Katzens' supply lines."
 
-  solaktropa_economic_crisis:0 "Solaktropa Economic Turmoil"
-  solaktropa_economic_crisis_desc:0 "The loss of the Solaktropa Dam is a crippling blow to the Katzens."
+  solaktropa_economic_crisis:0 "Roqualtropa Economic Turmoil"
+  solaktropa_economic_crisis_desc:0 "The loss of the Roqualtropa Dam is a crippling blow to the Katzens."
 
   katzen_agri_crisis_starvation:0 "Katzen Agricultural Crisis"
   katzen_agri_crisis_starvation_desc:0 "The Kaiser is drawing food from other parts of the Katzenartig Imperium in order to feed Flusion, to the detriment of fringe worlds."
@@ -786,14 +806,14 @@
   ### PD Planet Modifiers ###
   ###########################
 
-	giga_pd_diamond_planet:0 "Diamond Planet"
-	giga_pd_diamond_planet_desc:0 "This marvelous diamond world provides incredible opportunities for mining.\n\n§YAutomated Stripmine Output:§!\n§Y+50§! £minerals£ and §Y+15§! £rare_crystals£\n\n§YCrystal Megabore Output:§!\n§Y+50§! £minerals£ and §Y+25§! £rare_crystals£"
+	#giga_pd_diamond_planet:0 "Diamond Planet"
+	#giga_pd_diamond_planet_desc:0 "This marvelous diamond world provides incredible opportunities for mining.\n\n§YAutomated Stripmine Output:§!\n§Y+50§! £minerals£ and §Y+15§! £rare_crystals£\n\n§YCrystal Megabore Output:§!\n§Y+50§! £minerals£ and §Y+25§! £rare_crystals£"
 
-	giga_pd_ethane_planet:0 "Ethane Ocean"
-	giga_pd_ethane_planet_desc:0 "This ocean of ethane presents a great opportunity to harvest all manners of exotic gasses.\n\n§YAutomated Stripmine Output:§!\n§R-50§! £minerals£ and §Y+15§! £exotic_gases£"
+	#giga_pd_ethane_planet:0 "Ethane Ocean"
+	#giga_pd_ethane_planet_desc:0 "This ocean of ethane presents a great opportunity to harvest all manners of exotic gasses.\n\n§YAutomated Stripmine Output:§!\n§R-50§! £minerals£ and §Y+15§! £exotic_gases£"
 
-	giga_pd_chthonian_planet:0 "Chthonian Planet"
-	giga_pd_chthonian_planet_desc:0 "This former gas giant core is rich in rare heavy elements and alloy-like materials.\n\n§YAutomated Stripmine Output:§!\n§Y+100§! £minerals£ and §Y+75§! £alloys£"
+	#giga_pd_chthonian_planet:0 "Chthonian Planet"
+	#giga_pd_chthonian_planet_desc:0 "This former gas giant core is rich in rare heavy elements and alloy-like materials.\n\n§YAutomated Stripmine Output:§!\n§Y+100§! £minerals£ and §Y+75§! £alloys£"
 
   #######################
   ### Faust Modifiers ###
@@ -872,9 +892,9 @@
   temporary_debug:0 "debug"
   space_storm:0 "debug"
 
-  negative_mass_buffs_1:0 "Negative Mass Momentum"
-  negative_mass_buffs_2:0 "Negative Mass Construction Acceleration"
-  negative_mass_buffs_3:0 "Negative Mass Momentum Construction Acceleration"
+# negative_mass_buffs_1:0 "Negative Mass Momentum"
+# negative_mass_buffs_2:0 "Negative Mass Construction Acceleration"
+# negative_mass_buffs_3:0 "Negative Mass Momentum Construction Acceleration"
 
   ehof_ai_energy_30_month:0 "EHOF Initiation Expenses"
   ehof_ai_energy_25_month:0 "EHOF Initiation Expenses"

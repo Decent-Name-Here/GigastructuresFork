@@ -390,6 +390,19 @@
 
     mod_job_giga_fe_protector_add:0 "$job_fe_protector$ Jobs"
 
+    mod_job_giga_shroud_conduit_worker_add:0 "$job_giga_shroud_conduit_worker$ Jobs"
+    mod_job_giga_shroud_conduit_worker_per_pop:0 "§G+1§! $job_giga_shroud_conduit_worker$ Job per $VALUE$ Pops"
+    mod_job_giga_shroud_conduit_worker_per_pop_short:0 "\n§G+1§! £mod_job_giga_shroud_conduit_worker_add£ per $VALUE$ £pop£"
+   
+    mod_job_giga_shroud_conduit_drone_add:0 "$job_giga_shroud_conduit_drone$ Jobs"
+    mod_job_giga_shroud_conduit_drone_per_pop:0 "§G+1§! $job_giga_shroud_conduit_drone$ Job per $VALUE$ Pops"
+    mod_job_giga_shroud_conduit_drone_per_pop_short:0 "\n§G+1§! £mod_job_giga_shroud_conduit_worker_add£ per $VALUE$ £pop£"
+   
+    mod_job_giga_shroud_conduit_priest_add:0 "$job_giga_shroud_conduit_priest$ Jobs"
+    mod_job_giga_shroud_conduit_priest_per_pop:0 "§G+1§! $job_giga_shroud_conduit_priest$ Job per $VALUE$ Pops"
+    mod_job_giga_shroud_conduit_priest_per_pop_short:0 "\n§G+1§! £mod_job_giga_shroud_conduit_priest_add£ per $VALUE$ £pop£"
+   
+
     #######################################################################################################
     # POPS
 
@@ -474,6 +487,8 @@
     country_base_physics_research_produces_add:0 "Monthly Physics Research"
     country_base_society_research_produces_add:0 "Monthly Society Research"
     country_base_engineering_research_produces_add:0 "Monthly Engineering Research"
+    #Minor Artifacts
+    mod_megastructures_minor_artifacts_cost_mult:0 "Megastructure $minor_artifacts$ Cost"
 
     #######################################################################################################
     # MEGASTRUCTURES

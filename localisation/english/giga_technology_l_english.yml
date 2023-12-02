@@ -163,20 +163,26 @@
 
   # Psionic Hypersiphon
 
-  giga_tech_psychic_hypersiphon_1:0 "Shroud Energy Studies"
-  giga_tech_psychic_hypersiphon_1_desc:0 "Studying what exactly constitutes the Shroud can improve our capacity to connect with our psionic abilities and refine our energy distribution systems using applied Shroud knowledge."
+  giga_tech_shroud_conduit:0 "Direct Shroud Connections"
+  giga_tech_shroud_conduit_desc:0 "After much meditation and study, our telepaths believe that it may be possible to open stable tunnels into the realm known as the Shroud. Though sub-atomic in scale, controlled use of these tunnels would allow our psionic population to benefit from energies otherwise restricted to dangerous and expensive rituals."
+ 
+  giga_tech_psychic_hypersiphon:0 "Opening The Doorway"
+  giga_tech_psychic_hypersiphon_desc:0 "The Shroud is a strange realm. By combining new containment technologies with immense telepathic power, it might become possible to directly link our reality with that of the Shroud on a macroscopic scale. Doing so might improve our Shroud Conduits greatly, bringing our prosperity to new heights. Potential for bleed-through of unwanted energies is theorised to be unavoidable, but minimal at worst."
 
-  giga_tech_psychic_hypersiphon_2:0 "Deep Shroud Network"
-  giga_tech_psychic_hypersiphon_2_desc:0 "Deep inside, the Shroud connects us all. If we adjust our psionic abilities to the Shroud's natural connection, we can achieve great feats of unity."
+  # giga_tech_psychic_hypersiphon_1:0 "Shroud Energy Studies"
+  # giga_tech_psychic_hypersiphon_1_desc:0 "Studying what exactly constitutes the Shroud can improve our capacity to connect with our psionic abilities and refine our energy distribution systems using applied Shroud knowledge."
 
-  giga_tech_psychic_hypersiphon_3:0 "Shroud Summoning Rituals"
-  giga_tech_psychic_hypersiphon_3_desc:0 "If we combine psionic powers with technology, it becomes to possible to materialize entities from the Shroud's energy, which can then be controlled and serve as armies. These entities are no more than raging balls of energy however, and as such, they have low health and high attack."
+  # giga_tech_psychic_hypersiphon_2:0 "Deep Shroud Network"
+  # giga_tech_psychic_hypersiphon_2_desc:0 "Deep inside, the Shroud connects us all. If we adjust our psionic abilities to the Shroud's natural connection, we can achieve great feats of unity."
 
-  giga_tech_psychic_hypersiphon_4:0 "Shroud Energy Capacitors"
-  giga_tech_psychic_hypersiphon_4_desc:0 "Energy can be forcefully extracted from the Shroud using powerful psionic abilities. However, said energy is quite volatile and can hardly form anything more complex than a ball of psionic energies. If we can manage to stabilize the energy, we could store it and redistribute it across an entire planet with a much greater efficiency than before, greatly boosting our industries."
+  # giga_tech_psychic_hypersiphon_3:0 "Shroud Summoning Rituals"
+  # giga_tech_psychic_hypersiphon_3_desc:0 "If we combine psionic powers with technology, it becomes to possible to materialize entities from the Shroud's energy, which can then be controlled and serve as armies. These entities are no more than raging balls of energy however, and as such, they have low health and high attack."
 
-  giga_tech_psychic_hypersiphon_5:0 "Direct Shroud Connections"
-  giga_tech_psychic_hypersiphon_5_desc:0 "The Shroud is a strange realm. However, by combining several technologies and immense telepathic power, it might become possible to directly link our reality with the arcane dimension of the Shroud. Doing so might be very profitable but could end up being dangerous if we are not careful."
+  # giga_tech_psychic_hypersiphon_4:0 "Shroud Energy Capacitors"
+  # giga_tech_psychic_hypersiphon_4_desc:0 "Energy can be forcefully extracted from the Shroud using powerful psionic abilities. However, said energy is quite volatile and can hardly form anything more complex than a ball of psionic energies. If we can manage to stabilize the energy, we could store it and redistribute it across an entire planet with a much greater efficiency than before, greatly boosting our industries."
+
+  # giga_tech_psychic_hypersiphon_5:0 "Direct Shroud Connections"
+  # giga_tech_psychic_hypersiphon_5_desc:0 "The Shroud is a strange realm. However, by combining several technologies and immense telepathic power, it might become possible to directly link our reality with the arcane dimension of the Shroud. Doing so might be very profitable but could end up being dangerous if we are not careful."
 
   allow_psy_siphon:0 "§HUnlocks Megastructure:§! $name_psy_siphon$"
   desc_psy_siphon:0 "A huge artificial portal connecting our universe with the Shroud itself. It is capable of generating glorious amounts of energy and research, and it could improve our psionic potential immensely."
@@ -392,8 +398,11 @@
   giga_tech_maximize_orbital_arcologies_desc:0 "Further refining of our orbital construction techniques enable the incorporation of yet another ring into the design of our Orbital Arcologies, effectively maximizing living space."
 
   giga_tech_orbital_ring_strategic_resources:0 "Orbital Resource Extraction Maximization"
-  giga_tech_orbital_ring_strategic_resources_desc:0 "Orbital Rings can be used as a platform to build a variety of devices to increase the yield of rare resource extraction facilities. Although this is quite efficient, it might have unfortunate side-effects if used too recklessly."
+  giga_tech_orbital_ring_strategic_resources_desc:0 "Orbital Rings can be used as a platform to build a variety of devices to increase the yield of rare resource extraction and refining facilities. Although this is quite efficient, it is only applicable where there are existing resources to extract."
 
+  giga_tech_orbital_ring_iodizium_hub:0 "Orbital Suppression Field Projection"
+  giga_tech_orbital_ring_iodizium_hub_desc:0 "Mining $sr_iodizium$ is a dangerous process, which could be made safer with the deployment of specialized shield generators on our orbital rings.\n\nSuppression of the crystals' most volatile tendencies and compartmentalization of processing facilities with these shields will reduce losses to catastrophic unplanned disassembly of mining equipment."
+  
   # Planetary Computing Complex
 
   giga_tech_planetary_computer:0 "Planetary Scale Computing Complexes"
